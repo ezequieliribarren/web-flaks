@@ -1,0 +1,133 @@
+<%
+  const pad = (n) => String(n).padStart(2, '0');
+  const img = (name) => '/img/recursos/' + r.slug + '/' + name;
+  const pic = (name, alt, eager) => {
+    const big = img(name + '.webp'), small = img(name + '-600.webp');
+    return '<img src="' + asset(small) + '" srcset="' + asset(small) + ' 600w, ' + asset(big) + ' 1080w" sizes="(min-width: 1024px) 420px, 92vw" alt="' + alt.replace(/"/g, '&quot;') + '" width="1080" height="1350"' + (eager ? ' fetchpriority="high"' : ' loading="lazy"') + ' decoding="async">';
+  };
+  const ctaAfter = {};
+  r.ctas.forEach(function (c) { ctaAfter[c.after] = c; });
+  const fecha = new Date(r.updated + 'T12:00:00').toLocaleDateString('es-AR', { day: 'numeric', month: 'long', year: 'numeric' });
+  const shareUrl = siteUrl + '/recursos/' + r.slug;
+%>
+<article class="rs" data-resource="<%= r.slug %>">
+  <!-- ===================== PORTADA ===================== -->
+  <header class="rs-hero">
+    <div class="rs-wrap rs-hero__grid">
+      <div class="rs-hero__copy">
+        <a class="rs-back" href="/recursos"><%- include('partials/icon', { name: 'arrow' }) %>Recursos</a>
+        <p class="rs-badge"><span aria-hidden="true">✳</span> <%= r.badge %></p>
+        <h1 class="rs-title"><%= r.title.text %> <span class="rs-accent"><%= r.title.accent %></span> <%= r.title.rest %></h1>
+        <p class="rs-sub"><%= r.subtitle %></p>
+        <ul class="rs-meta" role="list">
+          <li><%= r.category %></li>
+          <li><%= r.readMinutes %> min de lectura</li>
+          <li>Actualizado el <time datetime="<%= r.updated %>"><%= fecha %></time></li>
+        </ul>
+        <div class="rs-hero__ctas">
+          <a class="rs-btn rs-btn--primary" href="#indice">Empezar a leer<%- include('partials/icon', { name: 'arrow-down' }) %></a>
+          <a class="rs-btn rs-btn--ghost gtm-wa-hero-rc" href="<%= wa(r.finalCta.waText) %>" target="_blank" rel="noopener" data-wa="recurso-hero"><%- include('partials/icon', { name: 'whatsapp' }) %>Que lo hagan por mí<span class="sr-only"> (abre WhatsApp en una pestaña nueva)</span></a>
+        </div>
+      </div>
+      <figure class="rs-cover">
+        <%- pic(r.cover, 'Portada del carrusel: 15 ganchos que funcionan para vender tus productos', true) %>
+      </figure>
+    </div>
+  </header>
+
+  <div class="rs-wrap rs-body">
+    <!-- ===================== ÍNDICE ===================== -->
+    <nav class="rs-toc" id="indice" aria-labelledby="toc-title">
+      <details open data-toc>
+        <summary><span id="toc-title">Los 15 ganchos</span><%- include('partials/icon', { name: 'plus' }) %></summary>
+        <ol class="rs-toc__list" role="list">
+          <% r.ganchos.forEach(function (g, i) { %><li><a href="#gancho-<%= i + 1 %>" data-toc-link><span><%= pad(i + 1) %></span><%= g.title %> <%= g.accent %></a></li><% }) %>
+          <li><a href="#checklist" data-toc-link><span>✓</span>Checklist antes de publicar</a></li>
+          <li><a href="#preguntas" data-toc-link><span>?</span>Preguntas frecuentes</a></li>
+        </ol>
+      </details>
+    </nav>
+
+    <div class="rs-intro">
+      <% r.intro.forEach(function (p) { %><p><%= p %></p><% }) %>
+    </div>
+
+    <!-- ===================== GANCHOS ===================== -->
+    <% r.ganchos.forEach(function (g, i) { const n = i + 1; const c = ctaAfter[n]; %>
+    <section class="gancho" id="gancho-<%= n %>" aria-labelledby="g<%= n %>-title" data-gancho>
+      <div class="gancho__text">
+        <p class="gancho__num">Gancho #<%= n %></p>
+        <h2 class="gancho__title" id="g<%= n %>-title"><%= g.title %> <span class="rs-accent"><%= g.accent %></span></h2>
+        <p class="gancho__lead"><%= g.lead %></p>
+        <figure class="gancho__img gancho__img--mobile"><%- pic(g.image, 'Gancho ' + n + ': ' + g.title + ' ' + g.accent.replace(/[“”]/g, '') + ', ejemplo con velas aromáticas') %></figure>
+        <h3 class="gancho__h">Por qué funciona</h3>
+        <p><%= g.why %></p>
+        <h3 class="gancho__h">Cómo aplicarlo</h3>
+        <ol class="gancho__steps" role="list">
+          <% g.how.forEach(function (h) { %><li><%= h %></li><% }) %>
+        </ol>
+        <ul class="gancho__formats" role="list" aria-label="Formatos recomendados">
+          <% g.formats.forEach(function (f) { %><li><%= f %></li><% }) %>
+        </ul>
+      </div>
+      <figure class="gancho__img gancho__img--desktop" aria-hidden="true"><%- pic(g.image, '') %></figure>
+    </section>
+
+    <% if (c) { %>
+    <aside class="rs-cta rs-cta--<%= c.kind %>" aria-labelledby="cta-<%= n %>">
+      <p class="rs-cta__eyebrow"><%= c.eyebrow %></p>
+      <h2 class="rs-cta__title" id="cta-<%= n %>"><%= c.title %></h2>
+      <p class="rs-cta__text"><%= c.text %></p>
+      <div class="rs-cta__actions">
+        <a class="rs-btn rs-btn--light gtm-wa-cta-rc" href="<%= wa(c.waText) %>" target="_blank" rel="noopener" data-wa="recurso-<%= c.kind %>-<%= n %>"><%- include('partials/icon', { name: 'whatsapp' }) %><%= c.button %><span class="sr-only"> (abre WhatsApp en una pestaña nueva)</span></a>
+        <a class="rs-cta__link" href="<%= c.link.href %>"><%= c.link.label %><%- include('partials/icon', { name: 'arrow' }) %></a>
+      </div>
+    </aside>
+    <% } %>
+    <% }) %>
+
+    <!-- ===================== CHECKLIST ===================== -->
+    <section class="rs-check" id="checklist" aria-labelledby="check-title">
+      <p class="gancho__num">Bonus</p>
+      <h2 class="gancho__title" id="check-title"><%= r.checklist.title %></h2>
+      <p class="rs-check__hint">Tildá cada punto antes de publicar. Tu progreso queda guardado en este dispositivo.</p>
+      <ul class="rs-check__list" role="list">
+        <% r.checklist.items.forEach(function (it, k) { %><li><label><input type="checkbox" data-check="<%= k %>"><span class="rs-check__box" aria-hidden="true"><%- include('partials/icon', { name: 'check' }) %></span><span><%= it %></span></label></li><% }) %>
+      </ul>
+      <p class="rs-check__done" data-check-done hidden>¡Todo listo para publicar! 🎉</p>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section class="rs-faq" id="preguntas" aria-labelledby="faq-title">
+      <h2 class="gancho__title" id="faq-title">Preguntas <span class="rs-accent">frecuentes</span></h2>
+      <div class="rs-faq__list">
+        <% r.faq.forEach(function (f) { %><details class="rs-faq__item">
+          <summary><h3><%= f.q %></h3><%- include('partials/icon', { name: 'plus' }) %></summary>
+          <p><%= f.a %></p>
+        </details><% }) %>
+      </div>
+    </section>
+
+    <!-- ===================== COMPARTIR ===================== -->
+    <section class="rs-share" aria-labelledby="share-title">
+      <h2 id="share-title">¿Te sirvió? Compartilo</h2>
+      <div class="rs-share__actions">
+        <a class="rs-btn rs-btn--ghost" href="https://wa.me/?text=<%= encodeURIComponent('Mirá estos 15 ganchos para vender más: ' + shareUrl) %>" target="_blank" rel="noopener" data-share="whatsapp"><%- include('partials/icon', { name: 'whatsapp' }) %>Enviar por WhatsApp</a>
+        <button class="rs-btn rs-btn--ghost" type="button" data-copy-url="<%= shareUrl %>"><%- include('partials/icon', { name: 'external' }) %><span data-copy-label>Copiar link</span></button>
+      </div>
+    </section>
+  </div>
+</article>
+
+<!-- Progreso de lectura + volver arriba -->
+<div class="rs-float" aria-hidden="true">
+  <span class="rs-float__pct" data-read-pct>0%</span>
+</div>
+<button class="rs-top" type="button" data-to-top aria-label="Volver arriba"><%- include('partials/icon', { name: 'arrow-up-right' }) %></button>
+
+<!-- CTA fijo en móvil -->
+<div class="rs-sticky" data-rs-sticky>
+  <p class="rs-sticky__text">¿Lo hacemos por vos?</p>
+  <a class="rs-btn rs-btn--primary gtm-wa-sticky-rc" href="<%= wa(r.finalCta.waText) %>" target="_blank" rel="noopener" data-wa="recurso-sticky"><%- include('partials/icon', { name: 'whatsapp' }) %>Hablemos</a>
+</div>
+<p class="rs-toast" role="status" aria-live="polite" data-toast></p>

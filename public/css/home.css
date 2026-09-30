@@ -368,7 +368,8 @@ html:not(.js) .svc-tab { display: none; }
 .pgroup__head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; padding-bottom: 0.75rem; }
 .pgroup__title { font-size: var(--fs-sm); font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: var(--muted); }
 .pgroup__count { font-size: var(--fs-sm); font-weight: 700; letter-spacing: 0.15em; color: var(--accent); font-variant-numeric: tabular-nums; }
-.js .pgroup:not(.is-open) .plist__item--more { display: none; }
+@media (min-width: 900px) { .js .pgroup:not(.is-open) .plist__item--more { display: none; } }
+@media (max-width: 899px) { .js .pgroup:not(.is-open) .plist__item--more-m { display: none; } }
 .pgroup__more {
   display: inline-flex;
   align-items: center;
@@ -600,4 +601,19 @@ html:not(.js) .svc-tab { display: none; }
 }
 @media (prefers-reduced-motion: reduce) {
   .vsl-btn, .vsl-btn__play::after { animation: none; }
+}
+
+/* ---------- Móvil: sin carril lateral, botones de servicio en cada panel y paneles más compactos ---------- */
+.svc__mcta { display: none; }
+@media (max-width: 899px) {
+  .rail { display: none; }
+  .work__head { margin-bottom: 0; }
+  .all { padding-top: 2.5rem; }
+  .svc-tabs { display: none; }
+  .svc__mcta { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 0.5rem; }
+  .svc__mcta .btn { flex: 1 1 auto; }
+  .services__head { padding-bottom: 1rem; }
+  .svc__stage { min-height: 0; padding-block: 2.5rem; }
+  .svc__grid { gap: 0.75rem; }
+  .svc__num { font-size: clamp(4.5rem, 26vw, 7rem); }
 }

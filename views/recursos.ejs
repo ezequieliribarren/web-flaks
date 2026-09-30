@@ -1,0 +1,21 @@
+<section class="rs-hero rs-hero--index">
+  <div class="rs-wrap">
+    <p class="rs-badge"><span aria-hidden="true">✳</span> Recursos gratuitos</p>
+    <h1 class="rs-title">Ideas para <span class="rs-accent">vender más</span> online</h1>
+    <p class="rs-sub">Guías prácticas que usamos con las marcas que gestionamos, listas para aplicar en tus redes, tu sitio o tu tienda.</p>
+  </div>
+</section>
+<div class="rs-wrap rs-body">
+  <ul class="rs-cards" role="list">
+    <% recursos.forEach(function (r) { %><li>
+      <a class="rs-card" href="/recursos/<%= r.slug %>">
+        <img src="<%= asset('/img/recursos/' + r.slug + '/' + r.cover + '-600.webp') %>" alt="" width="1080" height="1350" loading="lazy" decoding="async">
+        <span class="rs-card__body">
+          <span class="rs-card__meta"><%= r.category %> · <%= r.readMinutes %> min</span>
+          <span class="rs-card__title"><%= fullTitle(r) %></span>
+          <span class="rs-cta__link">Leer el recurso<%- include('partials/icon', { name: 'arrow' }) %></span>
+        </span>
+      </a>
+    </li><% }) %>
+  </ul>
+</div>

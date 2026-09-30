@@ -95,6 +95,10 @@ Todo el contenido se edita en `data/`, sin tocar código:
   - `node scripts/brand.mjs` genera las versiones con fondo transparente: `logo-icon.png` y `logo-wordmark.png`.
   - Después corré `npm run og` para regenerar el favicon y las imágenes OG.
 
+## Recursos (/recursos)
+
+Cada recurso es un JSON en `data/recursos/<slug>.json` (textos, ganchos, CTAs intermedios, checklist, FAQ) con sus imágenes en `public/img/recursos/<slug>/` (WebP de 1080 y 600 px). Se publica solo en `/recursos/<slug>` y aparece en `/recursos`. Sumá la URL al sitemap (`routes/sitemap.js`) y corré `npm run og` para su imagen para compartir. Eventos en el dataLayer: `resource_progress` (25/50/75/100), `resource_copy`, `resource_share`; clases GTM `gtm-wa-*-rc`.
+
 ## Medición (GTM, GA4, Google Ads, Clarity)
 
 - **Google Tag Manager `GTM-TWHGP8NC`:** es el mismo contenedor que usa el sitio actual.

@@ -94,4 +94,35 @@ fs.writeFileSync(path.join(pub, 'img', 'brand', 'favicon-192.png'), await icon(1
 const logoPng = path.join(pub, 'img', 'brand', 'logo-icon.png');
 if (!fs.existsSync(logoPng)) fs.writeFileSync(logoPng, await icon(512));
 console.log('íconos listos');
+
+// Recursos: portada del carrusel sobre fondo claro (línea visual de recursos).
+const recDir = path.join(root, 'data', 'recursos');
+for (const f of fs.existsSync(recDir) ? fs.readdirSync(recDir).filter((x) => x.endsWith('.json')) : []) {
+  const r = JSON.parse(fs.readFileSync(path.join(recDir, f), 'utf8'));
+  const cover = path.join(pub, 'img', 'recursos', r.slug, `${r.cover}.webp`);
+  if (!fs.existsSync(cover)) continue;
+  const coverB64 = (await sharp(cover).resize({ height: 540 }).png().toBuffer()).toString('base64');
+  const logo = WORDMARK ? WORDMARK.replace('height:58px', 'height:30px') : '<b>FLAKS</b>';
+  await page.setViewportSize({ width: 1200, height: 630 });
+  await page.setContent(`<!doctype html><html><head><meta charset="utf-8"><style>
+  @font-face { font-family: Inter; src: url('${font}') format('woff2'); font-weight: 100 900; }
+  * { margin: 0; box-sizing: border-box; }
+  body { width: 1200px; height: 630px; font-family: Inter, sans-serif; overflow: hidden; color: #0e0a1f;
+    background: radial-gradient(70% 90% at 90% 10%, #e3d9ff, transparent 60%), #fafafc;
+    display: flex; align-items: center; gap: 56px; padding: 0 70px; }
+  .l { flex: 1; display: grid; gap: 22px; }
+  .badge { justify-self: start; background: #5a2bea; color: #fff; font-weight: 800; letter-spacing: 3px; font-size: 20px; padding: 10px 22px; border-radius: 999px; text-transform: uppercase; }
+  h1 { font-size: 64px; line-height: .98; font-weight: 900; letter-spacing: -3px; }
+  h1 em { font-style: normal; color: #5a2bea; }
+  .foot { display: flex; align-items: center; gap: 16px; font-size: 22px; font-weight: 700; color: #4b4666; }
+  .foot span.logo { background: #0e0a1f; padding: 8px 14px; border-radius: 10px; display: inline-flex; }
+  .cover { height: 540px; border-radius: 24px; box-shadow: 0 30px 60px -20px rgba(90,43,234,.5); transform: rotate(3deg); }
+  </style></head><body>
+  <div class="l"><p class="badge">${r.badge}</p><h1>${r.title.text} <em>${r.title.accent}</em> ${r.title.rest}</h1>
+  <div class="foot"><span class="logo">${logo}</span><span>flaks.com.ar/recursos</span></div></div>
+  <img class="cover" src="data:image/png;base64,${coverB64}"></body></html>`, { waitUntil: 'load' });
+  await page.evaluate(() => document.fonts.ready);
+  await sharp(await page.screenshot({ type: 'png' })).png({ compressionLevel: 9 }).toFile(path.join(pub, 'img', 'og', `recurso-${r.slug}.png`));
+  console.log(`og/recurso-${r.slug}.png`);
+}
 await browser.close();

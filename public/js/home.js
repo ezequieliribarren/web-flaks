@@ -60,7 +60,7 @@
       group.classList.toggle('is-open', open);
       btn.setAttribute('aria-expanded', String(open));
       label.textContent = open ? 'Ver menos' : closedText;
-      var extra = $$('.plist__item--more', group);
+      var extra = $$(window.innerWidth < 900 ? '.plist__item--more-m' : '.plist__item--more', group);
       if (open && hasGsap && !reduced) {
         window.gsap.fromTo(extra, { autoAlpha: 0, y: 16 }, { autoAlpha: 1, y: 0, duration: 0.5, stagger: 0.06, ease: 'power3.out', clearProps: 'all' });
       }

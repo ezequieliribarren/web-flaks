@@ -1,17 +1,25 @@
 <%
   // Lista de proyectos estilo "portada de muestrario".
-  // Params: list (proyectos), visible (cuántos se muestran antes de "Ver todos"; 0 = todos)
+  // Params: list (proyectos), visible (cuántos se muestran antes de "Ver más"; 0 = todos),
+  //         featured (cuántos de los primeros son destacados del carril: solo se ven en móvil, donde no hay carril).
+  // El número de cada fila sale de un contador CSS, así no saltea cuando hay filas ocultas.
   const pad = (n) => String(n).padStart(2, '0');
   const shortCat = (c) => c.split('·')[0].trim();
   const visible = locals.visible || 0;
+  const fc = locals.featured || 0;
   const small = (p) => {
     const s = p.images.hero.replace(/\.webp$/, '-800.webp');
     return exists(s) ? s : (exists(p.images.hero) ? p.images.hero : '/img/projects/placeholder.svg');
   };
 %><ol class="plist" role="list">
-  <% list.forEach(function (p, i) { const more = visible && i >= visible; %><li class="plist__item<%= more ? ' plist__item--more' : '' %>">
+  <% list.forEach(function (p, i) {
+    const cls = ['plist__item'];
+    if (i < fc) cls.push('plist__item--featured');
+    if (visible && i >= fc + visible) cls.push('plist__item--more');     // desktop (sin destacados)
+    if (visible && i >= visible) cls.push('plist__item--more-m');        // móvil (con destacados)
+  %><li class="<%= cls.join(' ') %>">
     <a class="plist__row" href="<%= p.url %>" target="_blank" rel="noopener" data-preview="<%= asset(small(p)) %>">
-      <span class="plist__num"><%= pad(i + 1) %></span>
+      <span class="plist__num" aria-hidden="true"></span>
       <img class="plist__thumb" src="<%= asset(small(p)) %>" alt="" width="800" height="500" loading="lazy" decoding="async">
       <span class="plist__name"><%= p.title %></span>
       <span class="plist__dots" aria-hidden="true"></span>

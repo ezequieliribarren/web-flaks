@@ -74,6 +74,9 @@
               <strong><%= pt.title %></strong>
             </li><% }) %>
           </ol>
+          <div class="svc__mcta">
+            <% if (p.links) { p.links.forEach(function (l, k) { %><a class="btn <%= k ? 'btn--ghost' : 'btn--primary' %>" href="<%= l.href %>"><%= l.label %><%- include('partials/icon', { name: 'arrow' }) %></a><% }) } else { %><a class="btn btn--primary" href="<%= p.href %>">Ver servicio<span class="sr-only"> de <%= p.name.toLowerCase() %></span><%- include('partials/icon', { name: 'arrow' }) %></a><% } %>
+          </div>
         </div>
       </div>
     </div>
@@ -106,7 +109,7 @@
   <div class="container work__head">
     <p class="eyebrow">Proyectos</p>
     <h2 class="display" id="work-title">Sitios que ya están <span class="accent">vendiendo.</span></h2>
-    <p class="lead">Un proyecto destacado de cada tipo, todos online hoy.</p>
+    <p class="lead only-desk">Un proyecto destacado de cada tipo, todos online hoy.</p>
   </div>
 
   <div class="rail" data-rail>
@@ -154,16 +157,16 @@
     <div class="pgroups" data-plist>
       <% chapters.forEach(function (c) {
         const rest = c.projects.filter(function (p) { return c.featured.indexOf(p) === -1; });
-        if (!rest.length) return;
-        const extra = rest.length - GROUP_VISIBLE; %>
+        const all = c.featured.concat(rest);
+        const moreDesk = rest.length > GROUP_VISIBLE, moreMob = all.length > GROUP_VISIBLE; %>
       <section class="pgroup" data-group aria-labelledby="pg-<%= c.key %>">
         <div class="pgroup__head">
           <h4 class="pgroup__title" id="pg-<%= c.key %>"><%= c.name %></h4>
-          <span class="pgroup__count"><%= pad(rest.length) %></span>
+          <span class="pgroup__count"><span class="only-desk"><%= pad(rest.length) %></span><span class="only-mob"><%= pad(all.length) %></span></span>
         </div>
-        <%- include('partials/project-list', { list: rest, visible: GROUP_VISIBLE }) %>
-        <% if (extra > 0) { %>
-        <button class="pgroup__more" type="button" aria-expanded="false" data-more>
+        <%- include('partials/project-list', { list: all, featured: c.featured.length, visible: GROUP_VISIBLE }) %>
+        <% if (moreDesk || moreMob) { %>
+        <button class="pgroup__more<%= moreDesk ? '' : ' only-mob' %><%= moreMob ? '' : ' only-desk' %>" type="button" aria-expanded="false" data-more>
           <span data-more-label>Ver más</span><%- include('partials/icon', { name: 'plus' }) %>
         </button>
         <% } %>

@@ -18,6 +18,8 @@ const urls = [
   { loc: '/tienda-digital', files: ['views/service.ejs', 'data/services.json', 'data/faq.json'], changefreq: 'monthly', priority: '0.9' },
   { loc: '/redes-sociales', files: ['views/service.ejs', 'data/services.json', 'data/faq.json'], changefreq: 'monthly', priority: '0.8' },
   { loc: '/pauta-publicitaria', files: ['views/service.ejs', 'data/services.json', 'data/faq.json'], changefreq: 'monthly', priority: '0.8' },
+  { loc: '/recursos', files: ['views/recursos.ejs'], changefreq: 'monthly', priority: '0.6' },
+  { loc: '/recursos/15-ganchos', files: ['views/recurso.ejs', 'data/recursos/15-ganchos.json'], changefreq: 'monthly', priority: '0.7' },
   { loc: '/privacidad', files: ['views/privacidad.ejs'], changefreq: 'yearly', priority: '0.3' },
 ];
 

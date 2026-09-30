@@ -1,0 +1,16 @@
+<div class="read-progress" aria-hidden="true"><span data-read-bar></span></div>
+<header class="site-header site-header--resource" data-header>
+  <div class="container">
+    <a class="brand" href="/" aria-label="FLAKS, ir al inicio"><%- include('logo', { variant: 'header' }) %></a>
+    <nav class="nav" aria-label="Principal">
+      <ul>
+        <li><a href="/recursos">Recursos</a></li>
+        <li><a href="/redes-sociales">Redes sociales</a></li>
+        <li><a href="/tienda-digital">Tiendas online</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn--primary btn--sm gtm-wa-header-rc" href="<%= wa(waText) %>" target="_blank" rel="noopener" data-wa="header"><%- include('icon', { name: 'whatsapp' }) %><span>Hablemos<span class="sr-only"> por WhatsApp (abre en una pestaña nueva)</span></span></a>
+    </div>
+  </div>
+</header>

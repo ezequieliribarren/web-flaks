@@ -94,8 +94,8 @@ for (const slug of ['landing-page', 'sitio-web', 'tienda-digital', 'redes-social
   check('carril: 3 tarjetas, una por capítulo', (await page.locator('[data-card]').count()) === 3);
   check('carril: sin panel "Ver todos"', (await page.locator('.rail__end').count()) === 0);
   const featured = await page.$$eval('[data-card] .pcard__title', (els) => els.map((e) => e.textContent.trim()));
-  const listed = await page.$$eval('#todos .plist__name', (els) => els.map((e) => e.textContent.trim()));
-  check('lista: no repite los destacados', featured.every((t) => !listed.includes(t)), featured.join(', '));
+  const listed = await page.$$eval('#todos .plist__item', (els) => els.filter((li) => getComputedStyle(li).display !== 'none').map((li) => li.querySelector('.plist__name').textContent.trim()));
+  check('lista (desktop): no repite los destacados', featured.every((t) => !listed.includes(t)), featured.join(', '));
   const target = page.locator('[data-card]').nth(2).locator('a.pcard__cta');
   await target.focus();
   await page.waitForTimeout(900);
@@ -151,6 +151,33 @@ for (const [slug, pct] of [['landing-page', 5], ['sitio-web', 5], ['tienda-digit
   const txt = (await page.textContent('[data-promo]')) || '';
   check(`${slug}: popup de ${pct}% al llegar a "¿Es para vos?"`, (await page.isVisible('[data-promo]')) && txt.includes(`${pct}% OFF`), txt.trim().slice(0, 50));
   check(`${slug}: sin línea de plazos en el hero`, (await page.locator('.s-hero__trust').count()) === 0);
+  await ctx.close();
+}
+
+// 5e) Recurso "15 ganchos": progreso de lectura, copiar, checklist, CTAs y barra fija móvil.
+{
+  const { ctx, page, errors } = await newPage({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true });
+  await ctx.grantPermissions(['clipboard-read', 'clipboard-write']);
+  await page.goto(`${BASE}/recursos/15-ganchos`, { waitUntil: 'networkidle' });
+  check('recurso: 15 ganchos', (await page.locator('[data-gancho]').count()) === 15);
+  check('recurso: un solo h1', (await page.locator('h1').count()) === 1);
+  const waCtas = await page.$$eval('.rs-cta a[href^="https://wa.me/"]', (a) => a.length);
+  check('recurso: 3 CTAs intermedios a WhatsApp', waCtas === 3, String(waCtas));
+  check('recurso: sin CTA final repetido', (await page.locator('.rs-final').count()) === 0);
+  check('recurso: barra fija oculta en la portada', !(await page.evaluate(() => document.querySelector('[data-rs-sticky]').classList.contains('is-visible'))));
+  await page.evaluate(() => document.getElementById('gancho-8').scrollIntoView());
+  await page.waitForTimeout(600);
+  const bar = await page.evaluate(() => document.querySelector('[data-read-bar]').style.transform);
+  check('recurso: barra de progreso avanza', /scaleX\(0\.[1-9]/.test(bar), bar);
+  check('recurso: barra fija visible al leer', await page.evaluate(() => document.querySelector('[data-rs-sticky]').classList.contains('is-visible')));
+  const prog = await page.evaluate(() => (window.dataLayer || []).filter((e) => e.event === 'resource_progress').map((e) => e.percent));
+  check('recurso: evento resource_progress', prog.includes(25), prog.join(','));
+  check('recurso: sin bloque de ejemplo', (await page.locator('.gancho__example').count()) === 0);
+  await page.evaluate(() => document.getElementById('checklist').scrollIntoView());
+  await page.locator('.rs-check__list label').first().click();
+  await page.reload({ waitUntil: 'networkidle' });
+  check('recurso: checklist guardado', await page.locator('[data-check="0"]').isChecked());
+  check('recurso: sin errores', errors.length === 0, errors.join(' | '));
   await ctx.close();
 }
 

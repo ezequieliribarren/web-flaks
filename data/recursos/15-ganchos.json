@@ -1,0 +1,344 @@
+{
+  "slug": "15-ganchos",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "readMinutes": 8,
+  "category": "Redes sociales",
+  "badge": "Recurso gratuito",
+  "metaTitle": "15 ganchos que funcionan para vender tus productos | FLAKS",
+  "metaDescription": "15 ganchos probados para vender más en Instagram, tu tienda online o WhatsApp. Por qué funciona cada uno y cómo aplicarlo paso a paso.",
+  "title": {
+    "text": "15 ganchos que",
+    "accent": "funcionan",
+    "rest": "para vender tus productos"
+  },
+  "subtitle": "Ideas listas para usar en tus redes, tu tienda online o WhatsApp. Cada gancho trae por qué funciona y cómo aplicarlo paso a paso.",
+  "cover": "portada",
+  "intro": [
+    "Un gancho es lo que hace que alguien frene el scroll, mire tu publicación y quiera saber más. Sin gancho, el mejor producto pasa desapercibido.",
+    "Juntamos los 15 que más usamos con las marcas que gestionamos. Los ejemplos son de velas aromáticas, pero todos se adaptan a cualquier producto: ropa, herramientas, cosmética, deco o lo que vendas."
+  ],
+  "ganchos": [
+    {
+      "title": "Mostrá el",
+      "accent": "“antes y después”",
+      "lead": "Las personas aman ver transformaciones. Mostrá cómo era el problema y cómo lo resuelve tu producto.",
+      "why": "El cerebro entiende un cambio mucho más rápido que una descripción. En dos imágenes ya contaste el beneficio.",
+      "how": [
+        "Sacá las dos fotos con la misma luz y el mismo encuadre.",
+        "Nombrá el problema del “antes” con palabras de tu cliente.",
+        "Cerrá con una frase corta del resultado."
+      ],
+      "formats": [
+        "Carrusel",
+        "Reel"
+      ],
+      "image": "gancho-01"
+    },
+    {
+      "title": "Mostrá cómo",
+      "accent": "se usa",
+      "lead": "Hacé un mini tutorial o paso a paso de tu producto. Ayuda a que entiendan su valor y se imaginen usándolo.",
+      "why": "Si la persona se imagina usándolo, ya dio el primer paso para comprarlo. Además, un video de uso responde dudas antes de que te las pregunten.",
+      "how": [
+        "Grabá un reel vertical de 15 a 30 segundos.",
+        "Mostrá el producto en uso real, no solo en la mano.",
+        "Sumá subtítulos: la mayoría mira sin sonido."
+      ],
+      "formats": [
+        "Reel",
+        "Historia"
+      ],
+      "image": "gancho-02"
+    },
+    {
+      "title": "Contá una",
+      "accent": "historia real",
+      "lead": "Mostrá el detrás de escena, tu proceso o la experiencia de un cliente. Genera confianza y conexión.",
+      "why": "La gente le compra a personas, no a logos. Una historia real te diferencia de cualquier competidor que vende lo mismo.",
+      "how": [
+        "Elegí un momento concreto: cómo empezaste, un pedido especial o un error que te enseñó algo.",
+        "Contalo en primera persona, con detalles.",
+        "Terminá conectando la historia con tu producto."
+      ],
+      "formats": [
+        "Carrusel",
+        "Historia",
+        "Reel"
+      ],
+      "image": "gancho-03"
+    },
+    {
+      "title": "Generá",
+      "accent": "curiosidad",
+      "lead": "Usá preguntas, datos o frases que despierten interés y hagan que quieran seguir leyendo.",
+      "why": "Una pregunta abierta obliga a quedarse para saber la respuesta. Es la forma más simple de sumar segundos de retención.",
+      "how": [
+        "Arrancá con una pregunta o un dato sorprendente en la primera línea.",
+        "No reveles la respuesta enseguida: dejala para el final.",
+        "Usala como portada de carrusel o como texto en los primeros 2 segundos del reel."
+      ],
+      "formats": [
+        "Carrusel",
+        "Reel"
+      ],
+      "image": "gancho-04"
+    },
+    {
+      "title": "Ofrecé algo por",
+      "accent": "tiempo limitado",
+      "lead": "Las promociones o ediciones especiales generan acción y aumentan las ventas.",
+      "why": "La urgencia real empuja a decidir hoy en lugar de “después lo veo”, que casi siempre significa nunca.",
+      "how": [
+        "Poné una fecha o una cantidad límite concreta, y cumplila.",
+        "Mostrá la cuenta regresiva en historias con el sticker de cuenta atrás.",
+        "Repetí el recordatorio el último día."
+      ],
+      "formats": [
+        "Historia",
+        "Carrusel"
+      ],
+      "image": "gancho-05"
+    },
+    {
+      "title": "Mostrá opiniones",
+      "accent": "de tus clientes",
+      "lead": "Las reseñas generan confianza y ayudan a que más personas se animen a comprar. Compartí mensajes reales, fotos o videos.",
+      "why": "Lo que dice un cliente vale más que lo que decís vos. Es la prueba social que baja el miedo a comprar online.",
+      "how": [
+        "Pedí permiso y compartí capturas reales de WhatsApp o comentarios.",
+        "Acompañá cada reseña con la foto del producto que compró.",
+        "Guardalas en una historia destacada de “Reseñas”."
+      ],
+      "formats": [
+        "Historia",
+        "Carrusel"
+      ],
+      "image": "gancho-06"
+    },
+    {
+      "title": "Mostrá resultados",
+      "accent": "reales de tu negocio",
+      "lead": "Compartí números, fotos o testimonios para que vean el impacto de tus productos y se animen a comprar.",
+      "why": "Los números concretos generan credibilidad y muestran que tu marca crece porque la gente la elige.",
+      "how": [
+        "Elegí un dato que se entienda solo: pedidos del mes, clientes que repiten, envíos a todo el país.",
+        "Mostralo con una imagen simple, sin datos sensibles.",
+        "Agradecé: el protagonista es el cliente, no la cifra."
+      ],
+      "formats": [
+        "Carrusel",
+        "Historia"
+      ],
+      "image": "gancho-07"
+    },
+    {
+      "title": "Mostrá fotos",
+      "accent": "que venden",
+      "lead": "Aprendé a sacar fotos simples y atractivas de tus productos para que se destaquen y generen más ventas.",
+      "why": "En redes y en tu tienda online, la foto es el producto. Una buena foto aumenta los clics y el valor que se percibe.",
+      "how": [
+        "Usá luz natural de ventana, de costado, y nunca el flash.",
+        "Sumá elementos que cuenten el uso: una manta, una taza, una planta.",
+        "Mantené el mismo estilo en todas las fotos para que el feed se reconozca."
+      ],
+      "formats": [
+        "Carrusel",
+        "Reel"
+      ],
+      "image": "gancho-08"
+    },
+    {
+      "title": "Mostrá cómo",
+      "accent": "organizar tu tienda",
+      "lead": "Dale una estructura clara a tus productos para que tus clientes encuentren lo que buscan y compren más fácil.",
+      "why": "Si alguien no encuentra lo que busca en dos clics, se va. Una tienda ordenada vende más con el mismo tráfico.",
+      "how": [
+        "Armá categorías simples por tipo de uso o de regalo.",
+        "Destacá en redes cada categoría con un link directo.",
+        "Usá los destacados de Instagram como un menú de la tienda."
+      ],
+      "formats": [
+        "Carrusel",
+        "Historia destacada"
+      ],
+      "image": "gancho-09"
+    },
+    {
+      "title": "Mostrá una",
+      "accent": "lista de ideas",
+      "lead": "Dale ideas concretas de cómo usar tus productos para que se inspiren y encuentren nuevas oportunidades de compra.",
+      "why": "Las listas se guardan y se comparten. Y cada idea es una razón nueva para comprar.",
+      "how": [
+        "Pensá en ocasiones: regalos, eventos, fechas especiales, empresas.",
+        "Una idea por slide, con foto.",
+        "Cerrá con “¿Cuál te sirve más?” para generar comentarios."
+      ],
+      "formats": [
+        "Carrusel"
+      ],
+      "image": "gancho-10"
+    },
+    {
+      "title": "Mostrá diferentes",
+      "accent": "formas de uso",
+      "lead": "Una misma idea puede adaptarse a distintos momentos y necesidades. Mostrá todas las opciones para que tus clientes se imaginen usándolo.",
+      "why": "Cuantos más momentos de uso ve alguien, más fácil le resulta justificar la compra (o comprar más de uno).",
+      "how": [
+        "Elegí 3 momentos distintos: el día a día, un momento especial y un regalo.",
+        "Mostrá el mismo producto en los tres escenarios.",
+        "Usá el mismo encuadre para que se note la comparación."
+      ],
+      "formats": [
+        "Carrusel",
+        "Reel"
+      ],
+      "image": "gancho-11"
+    },
+    {
+      "title": "Mostrá el",
+      "accent": "paso a paso",
+      "lead": "Explicá cómo se usa tu producto en simples pasos para que entiendan su valor y se animen a comprar.",
+      "why": "El paso a paso quita el miedo a “no sé si lo voy a saber usar” y transmite que tu producto es fácil.",
+      "how": [
+        "Dividí el uso en 3 o 4 pasos numerados.",
+        "Una foto por paso, siempre con el mismo fondo.",
+        "Guardá el contenido como carrusel: se guarda mucho más que un post simple."
+      ],
+      "formats": [
+        "Carrusel",
+        "Reel"
+      ],
+      "image": "gancho-12"
+    },
+    {
+      "title": "Juntá las opiniones",
+      "accent": "de tus clientes",
+      "lead": "Las experiencias reales generan confianza. Mostrá lo que dicen tus clientes para que más personas se animen a comprar.",
+      "why": "Una reseña convence; tres reseñas juntas demuestran que no es casualidad. Es el contenido ideal para los indecisos.",
+      "how": [
+        "Juntá 3 reseñas cortas, cada una con la foto del producto que compró.",
+        "Sumá las estrellas o el comentario textual.",
+        "Usalo en publicidad: los anuncios con reseñas suelen convertir mejor."
+      ],
+      "formats": [
+        "Carrusel",
+        "Anuncio"
+      ],
+      "image": "gancho-13"
+    },
+    {
+      "title": "Mostrá el",
+      "accent": "resultado final",
+      "lead": "Enseñá cómo queda el producto terminado para que tus clientes se imaginen usándolo y se animen a comprar.",
+      "why": "El resultado final es lo que realmente se compra: no una vela, sino el ambiente que genera.",
+      "how": [
+        "Mostrá el producto terminado en su mejor versión y en contexto.",
+        "Resaltá los detalles con planos cortos.",
+        "Contá para qué se puede usar y cerrá con el link de compra."
+      ],
+      "formats": [
+        "Reel",
+        "Carrusel"
+      ],
+      "image": "gancho-14"
+    },
+    {
+      "title": "Mostrá por qué es",
+      "accent": "una buena opción",
+      "lead": "Destacá los beneficios de tu producto para que tus clientes entiendan por qué vale la pena elegirlo.",
+      "why": "La gente compra beneficios, no características. Explicá qué gana el cliente, no solo qué tiene el producto.",
+      "how": [
+        "Elegí 4 beneficios concretos, uno por línea, con un ícono.",
+        "Traducí cada característica en beneficio: “cera de soja” → “no deja humo”.",
+        "Terminá con una llamada a la acción clara."
+      ],
+      "formats": [
+        "Carrusel",
+        "Anuncio"
+      ],
+      "image": "gancho-15"
+    }
+  ],
+  "ctas": [
+    {
+      "after": 3,
+      "kind": "redes",
+      "eyebrow": "Redes sociales",
+      "title": "¿Querés que administremos tus redes?",
+      "text": "Pensamos, diseñamos y publicamos tu contenido todos los meses con estos ganchos, para que vos te ocupes de vender.",
+      "button": "Quiero que gestionen mis redes",
+      "waText": "Hola FLAKS! Leí los 15 ganchos y quiero que gestionen mis redes.",
+      "link": {
+        "label": "Ver planes de redes",
+        "href": "/redes-sociales"
+      }
+    },
+    {
+      "after": 6,
+      "kind": "landing",
+      "eyebrow": "Landing page",
+      "title": "¿A dónde llevás a la gente que se interesa?",
+      "text": "Una landing rápida y enfocada convierte cada clic de tus publicaciones en una consulta por WhatsApp. Lista en 5 días.",
+      "button": "Quiero mi landing",
+      "waText": "Hola FLAKS! Leí los 15 ganchos y quiero una landing page.",
+      "link": {
+        "label": "Ver landing pages",
+        "href": "/landing-page"
+      }
+    },
+    {
+      "after": 12,
+      "kind": "pauta",
+      "eyebrow": "Pauta publicitaria",
+      "title": "¿Y si estos ganchos llegaran a miles de personas?",
+      "text": "Convertimos tus mejores publicaciones en anuncios de Meta y Google que llegan a quien te va a comprar.",
+      "button": "Quiero potenciar mis ventas",
+      "waText": "Hola FLAKS! Leí los 15 ganchos y quiero hacer publicidad.",
+      "link": {
+        "label": "Ver pauta publicitaria",
+        "href": "/pauta-publicitaria"
+      }
+    }
+  ],
+  "checklist": {
+    "title": "Checklist antes de publicar",
+    "items": [
+      "La primera línea (o los primeros 2 segundos) tiene un gancho claro.",
+      "La foto o el video tiene buena luz y muestra el producto en uso.",
+      "El texto habla de beneficios, no solo de características.",
+      "Hay una llamada a la acción: comentá, escribinos, tocá el link.",
+      "El link de compra o de WhatsApp funciona y está a la vista.",
+      "Respondés los comentarios y mensajes en la primera hora."
+    ]
+  },
+  "faq": [
+    {
+      "q": "¿Qué es un gancho en redes sociales?",
+      "a": "Es la primera frase, imagen o segundo de video que hace que alguien frene el scroll y quiera ver más. Define si tu publicación se mira o se ignora."
+    },
+    {
+      "q": "¿Cuántos ganchos tengo que usar por publicación?",
+      "a": "Uno principal por pieza. Podés combinar dos (por ejemplo, curiosidad + antes y después), pero lo importante es que la primera línea o los primeros segundos sean claros."
+    },
+    {
+      "q": "¿Sirven para cualquier tipo de producto?",
+      "a": "Sí. Los ejemplos son de velas, pero funcionan igual para ropa, herramientas, cosmética, deco, alimentos o servicios. Solo cambian las fotos y las palabras."
+    },
+    {
+      "q": "¿Cada cuánto conviene publicar?",
+      "a": "Más que la cantidad, importa la constancia: 3 publicaciones por semana y algunas historias diarias ya generan resultados si cada pieza tiene un buen gancho."
+    },
+    {
+      "q": "¿Pueden hacerlo ustedes por mí?",
+      "a": "Sí. En FLAKS gestionamos las redes de marcas que venden productos: estrategia, diseño, reels, carruseles, historias y publicación. Escribinos por WhatsApp y te contamos los planes."
+    }
+  ],
+  "finalCta": {
+    "title": "¿Querés que administremos",
+    "accent": "tus redes?",
+    "text": "Aplicamos estos 15 ganchos (y muchos más) todos los meses en las marcas que gestionamos. Contanos qué vendés y te armamos una propuesta.",
+    "button": "Hablar por WhatsApp",
+    "waText": "Hola FLAKS! Leí los 15 ganchos y quiero que gestionen mis redes."
+  }
+}

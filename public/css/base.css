@@ -589,7 +589,12 @@ body.menu-open { overflow: hidden; }
 
 /* ---------- Componentes compartidos ---------- */
 /* Lista de proyectos */
-.plist { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--line); }
+.plist { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--line); counter-reset: plist; }
+.plist__item { counter-increment: plist; }
+.plist__num::before { content: counter(plist, decimal-leading-zero); }
+/* Destacados del carril: solo en móvil (en desktop ya se ven en el carril) */
+@media (min-width: 900px) { .plist__item--featured { display: none; } .only-mob { display: none !important; } }
+@media (max-width: 899px) { .only-desk { display: none !important; } }
 .plist__row {
   display: grid;
   grid-template-columns: 2.5rem 1fr auto;

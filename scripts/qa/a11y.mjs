@@ -5,7 +5,7 @@
 import { chromium } from 'playwright';
 
 const BASE = process.env.BASE || 'http://localhost:3000';
-const PAGES = ['/', '/landing-page', '/sitio-web', '/tienda-digital', '/redes-sociales', '/pauta-publicitaria', '/privacidad', '/no-existe'];
+const PAGES = ['/', '/landing-page', '/sitio-web', '/tienda-digital', '/redes-sociales', '/pauta-publicitaria', '/recursos', '/recursos/15-ganchos', '/privacidad', '/no-existe'];
 let fails = 0;
 const report = (ok, msg) => { if (!ok) fails++; console.log(`${ok ? '✓' : '✗'} ${msg}`); };
 
@@ -43,6 +43,11 @@ const pairs = [
   ['Anillo de foco verde / fondo (no textual)', ACCENT, BG, 3],
   ['Anillo de foco verde / fondo profundo', ACCENT, DEEP, 3],
   ['Borde botón fantasma / fondo (no textual)', blend(MUTED, 0.32, BG), BG, 1], // decorativo: el texto del botón da el contraste
+  ['Recursos: violeta / blanco', hex('#5A2BEA'), hex('#FFFFFF'), 4.5],
+  ['Recursos: texto secundario / fondo claro', hex('#4B4666'), hex('#FAFAFC'), 4.5],
+  ['Recursos: violeta / violeta suave (ejemplos)', hex('#5A2BEA'), hex('#EFEAFF'), 4.5],
+  ['Recursos: blanco / botón violeta', WHITE, hex('#5A2BEA'), 4.5],
+  ['Recursos: lila / CTA violeta', hex('#E3DCFF'), hex('#4A24C4'), 4.5],
   ['Contorno de números gigantes (decorativo)', blend(ACCENT, 0.55, BG), BG, 1],
 ];
 console.log('— Contraste');
@@ -72,6 +77,8 @@ for (const path of PAGES) {
         const cs = getComputedStyle(el);
         if (cs.display === 'none' || cs.visibility === 'hidden' || el.closest('[hidden], [aria-hidden="true"], .hp, .sr-only')) return false;
         if (el.matches('.skip-link')) return false;
+        // Checkbox visualmente oculto dentro de un label: el área táctil es el label.
+        if (el.matches('label input') && el.closest('label').getBoundingClientRect().height >= 44) return false;
         if (el.closest('p, li.faq__a, .prose') && cs.display === 'inline') return false;
         const b = el.getBoundingClientRect();
         return b.width > 0 && (b.width < 44 || b.height < 44);

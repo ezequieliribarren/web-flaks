@@ -127,6 +127,7 @@ app.use((req, res, next) => {
 app.use(require('./routes/sitemap'));
 app.use(require('./routes/contact'));
 app.use(require('./routes/pages'));
+app.use(require('./routes/recursos'));
 
 // 6) 404 y errores.
 app.use((req, res) => {
