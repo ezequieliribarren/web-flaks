@@ -1,0 +1,65 @@
+<%
+  // Formulario de contacto compartido. variant: 'home' | 'service'
+  const isHome = variant === 'home';
+  const fid = isHome ? 'home' : page.slug;
+  const serviceOptions = ['Landing page', 'Sitio web', 'Tienda online', 'Redes sociales', 'Pauta publicitaria', 'Todavía no sé, quiero asesoramiento'];
+%>
+<form class="form<%= locals.gtmCode ? ' gtm-form-' + gtmCode : '' %>" action="/api/contacto" method="post" novalidate data-contact-form data-form-location="<%= fid %>">
+  <input type="hidden" name="origen" value="<%= currentPath %>">
+  <% if (!isHome) { %><input type="hidden" name="servicio" value="<%= page.name %>"><% } %>
+  <div class="hp" aria-hidden="true">
+    <label for="website-<%= fid %>">No completes este campo</label>
+    <input type="text" id="website-<%= fid %>" name="website" tabindex="-1" autocomplete="off">
+  </div>
+
+  <div class="form__row">
+    <div class="field">
+      <label for="nombre-<%= fid %>">Nombre</label>
+      <input id="nombre-<%= fid %>" name="nombre" type="text" autocomplete="name" required minlength="2" placeholder="¿Cómo te llamás?" aria-describedby="nombre-<%= fid %>-err">
+      <p class="field__error" id="nombre-<%= fid %>-err"></p>
+    </div>
+    <div class="field">
+      <label for="telefono-<%= fid %>">WhatsApp o teléfono</label>
+      <input id="telefono-<%= fid %>" name="telefono" type="tel" inputmode="tel" autocomplete="tel" required placeholder="11 2345 6789" aria-describedby="telefono-<%= fid %>-err">
+      <p class="field__error" id="telefono-<%= fid %>-err"></p>
+    </div>
+  </div>
+
+  <% if (isHome) { %>
+  <div class="form__row">
+    <div class="field">
+      <label for="email-<%= fid %>">Email <span class="opt">(opcional)</span></label>
+      <input id="email-<%= fid %>" name="email" type="email" autocomplete="email" placeholder="vos@tuempresa.com" aria-describedby="email-<%= fid %>-err">
+      <p class="field__error" id="email-<%= fid %>-err"></p>
+    </div>
+    <div class="field">
+      <label for="servicio-<%= fid %>">¿Qué necesitás? <span class="opt">(opcional)</span></label>
+      <select id="servicio-<%= fid %>" name="servicio" data-service-select>
+        <option value="" selected>Seleccioná una opción</option>
+        <% serviceOptions.forEach(function (o) { %><option value="<%= o %>"><%= o %></option>
+        <% }) %>
+      </select>
+    </div>
+  </div>
+  <% } else { %>
+  <div class="field">
+    <label for="detalle-<%= fid %>"><%= page.formField.label %></label>
+    <input id="detalle-<%= fid %>" name="detalle" type="text" placeholder="<%= page.formField.placeholder %>">
+  </div>
+  <% } %>
+
+  <div class="field">
+    <label for="mensaje-<%= fid %>">Contanos un poco más <span class="opt">(opcional)</span></label>
+    <textarea id="mensaje-<%= fid %>" name="mensaje" rows="4" placeholder="Rubro, plazos, ideas, sitios que te gusten…"></textarea>
+  </div>
+
+  <p class="form__status" role="alert" data-form-status></p>
+  <button class="btn btn--primary btn--block<%= locals.gtmCode ? ' gtm-submit-' + gtmCode : '' %>" type="submit">Pedir presupuesto<%- include('icon', { name: 'arrow' }) %></button>
+  <p class="form__note">Te respondemos en el día hábil. Si preferís, <a href="<%= wa(locals.waText) %>" target="_blank" rel="noopener" data-wa="form">escribinos por WhatsApp</a>.</p>
+</form>
+<div class="form-success" hidden tabindex="-1" data-form-success>
+  <span class="speed-rule" aria-hidden="true"><span></span><span></span><span></span></span>
+  <h3>¡Listo! Recibimos tu consulta.</h3>
+  <p class="muted">Te escribimos en el día hábil. Si es urgente, hablanos ahora por WhatsApp.</p>
+  <a class="btn btn--primary" href="<%= wa(locals.waText) %>" target="_blank" rel="noopener" data-wa="success"><%- include('icon', { name: 'whatsapp' }) %>Hablar por WhatsApp</a>
+</div>

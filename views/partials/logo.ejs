@@ -1,0 +1,5 @@
+<%
+  // Logo del header/footer: wordmark oficial (public/img/brand/logo-wordmark.png, generado con scripts/brand.mjs).
+  // Si no existe, cae a un SVG de respaldo.
+  const word = ['/img/brand/logo-wordmark.svg', '/img/brand/logo-wordmark.png'].find((f) => exists(f));
+%><% if (word) { %><img class="brand__logo" src="<%= asset(word) %>" alt="" width="136" height="28" decoding="async"><% } else { %><svg class="brand__icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><g fill="#00FF7F" transform="translate(9 0) skewX(-14)"><rect x="4" y="12.5" width="11" height="3.2" rx="1.6"/><rect x="7" y="21.8" width="8" height="3.2" rx="1.6" opacity=".75"/><rect x="10" y="31" width="5" height="3.2" rx="1.6" opacity=".5"/><path d="M18 10h20v6.5H25v5.5h11v6.2H25V38h-7z"/></g></svg><svg class="brand__word" viewBox="0 0 108 22" role="img" aria-label="FLAKS"><text x="0" y="19" font-family="Inter, Arial Black, sans-serif" font-size="22" font-weight="900" letter-spacing="-0.6" fill="currentColor" transform="skewX(-8) translate(3 0)">FLAKS</text></svg><% } %>

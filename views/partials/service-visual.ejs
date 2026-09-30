@@ -1,0 +1,27 @@
+<%
+  // Visual del hero para servicios sin captura de proyecto (redes / pauta). Decorativo, sin cifras.
+%><div class="s-visual s-visual--<%= type %>" aria-hidden="true">
+<% if (type === 'redes') { %>
+  <div class="phone">
+    <div class="phone__top"><span class="phone__avatar"></span><span class="phone__handle">tu_marca</span><span class="phone__follow">Seguir</span></div>
+    <div class="phone__stats"><i></i><i></i><i></i></div>
+    <div class="phone__grid">
+      <% ['g1','g2 is-reel','g3','g4','g5 is-reel','g6','g7','g8','g9 is-reel'].forEach(function (c) { %><span class="tile <%= c %>"><% if (c.includes('reel')) { %><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg><% } %></span><% }) %>
+    </div>
+  </div>
+  <div class="float-chip float-chip--a"><%- include('icon', { name: 'social' }) %>Reels · Carruseles · Historias</div>
+  <div class="float-chip float-chip--b"><%- include('icon', { name: 'chart' }) %>Reporte mensual</div>
+<% } else { %>
+  <div class="dash">
+    <div class="dash__head"><span>Campañas activas</span><span class="dash__live"><i></i>En línea</span></div>
+    <ul class="dash__rows">
+      <li><%- include('icon', { name: 'search' }) %><span>Google Ads</span><b style="--w:82%"></b></li>
+      <li><%- include('icon', { name: 'social' }) %><span>Meta Ads</span><b style="--w:68%"></b></li>
+      <li><%- include('icon', { name: 'cart' }) %><span>Mercado Libre Ads</span><b style="--w:54%"></b></li>
+    </ul>
+    <div class="dash__chart"><% [34,42,38,55,51,66,72,70,84].forEach(function (h) { %><span style="--h:<%= h %>%"></span><% }) %></div>
+  </div>
+  <div class="float-chip float-chip--a"><%- include('icon', { name: 'target' }) %>Segmentación precisa</div>
+  <div class="float-chip float-chip--b"><%- include('icon', { name: 'chart' }) %>Optimización semanal</div>
+<% } %>
+</div>

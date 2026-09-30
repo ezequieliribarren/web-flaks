@@ -1,0 +1,31 @@
+<%
+  const navItems = page.nav;
+%>
+<header class="site-header" data-header>
+  <div class="container">
+    <a class="brand" href="/" aria-label="FLAKS, ir al inicio"><%- include('logo', { variant: 'header' }) %></a>
+    <nav class="nav" aria-label="Secciones de la página">
+      <ul>
+        <% navItems.forEach(function (it) { %><li><a href="#<%= it.id %>" data-nav="<%= it.id %>"><%= it.label %></a></li>
+        <% }) %>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn--ghost btn--sm gtm-calendly-<%= gtmCode %>" href="<%= bookingUrl %>" target="_blank" rel="noopener" data-booking><%- include('icon', { name: 'calendar' }) %>Agendar llamada<span class="sr-only"> (abre en una pestaña nueva)</span></a>
+      <a class="btn btn--primary btn--sm" href="#contacto" data-cta="header">Contactar</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle><span></span><span class="sr-only">Abrir menú</span></button>
+    </div>
+  </div>
+</header>
+<div class="mobile-menu" id="mobile-menu" hidden data-mobile-menu>
+  <nav aria-label="Menú móvil">
+    <ul>
+      <% navItems.forEach(function (it, i) { %><li><a href="#<%= it.id %>"><small>0<%= i + 1 %></small><%= it.label %></a></li>
+      <% }) %>
+    </ul>
+  </nav>
+  <div class="mobile-menu__group">
+    <a class="btn btn--primary btn--block" href="<%= wa(waText) %>" target="_blank" rel="noopener" data-wa="menu"><%- include('icon', { name: 'whatsapp' }) %>Hablar por WhatsApp</a>
+    <a class="btn btn--ghost btn--block gtm-calendly-<%= gtmCode %>" href="<%= bookingUrl %>" target="_blank" rel="noopener" data-booking><%- include('icon', { name: 'calendar' }) %>Agendar llamada</a>
+  </div>
+</div>

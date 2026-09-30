@@ -1,0 +1,30 @@
+{
+  "name": "FLAKS",
+  "legalName": "FLAKS Agencia Digital",
+  "email": "info@flaks.com.ar",
+  "whatsappDisplay": "+54 9 11 5745-5803",
+  "instagram": "https://www.instagram.com/flaksweb/",
+  "instagramHandle": "@flaksweb",
+  "city": "Buenos Aires",
+  "region": "Buenos Aires",
+  "country": "AR",
+  "countryName": "Argentina",
+  "year": 2026,
+  "whatsappMessage": "Hola FLAKS! Quiero hacer una consulta.",
+  "home": {
+    "metaTitle": "FLAKS — Agencia Digital | Desarrollo Web, Redes Sociales y Pauta",
+    "metaDescription": "Agencia digital FLAKS: desarrollo web, gestión de redes sociales y pauta publicitaria para hacer crecer tu marca."
+  },
+  "bookingUrl": "https://calendly.com/agendar-reunion-flaks/30min",
+  "vsl": {
+    "label": "Mirá cómo trabajamos",
+    "title": "Así trabajamos",
+    "youtubeId": "",
+    "vimeoId": "",
+    "mp4": "/img/video/vsl-720.mp4",
+    "poster": "/img/video/vsl-poster.webp",
+    "preview": "/img/video/vsl-preview.mp4",
+    "vertical": false
+  },
+  "showReviews": false
+}

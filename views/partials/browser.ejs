@@ -1,0 +1,16 @@
+<%
+  // Mockup de navegador en CSS con una captura del proyecto.
+  // Params: project, kind ('hero' | 'alt'), cls, eager, sizes, altText
+  const src = project.images[kind];
+  const has = exists(src);
+  const small = src.replace(/\.webp$/, '-800.webp');
+  const hasSmall = has && exists(small);
+  const finalSrc = has ? src : '/img/projects/placeholder.svg';
+  const host = (project.url || '').replace(/^https?:\/\//, '').replace(/\/$/, '');
+  const altText = locals.altText !== undefined ? locals.altText : project.alt;
+%><div class="browser <%= locals.cls || '' %>">
+  <div class="browser__bar" aria-hidden="true"><i></i><i></i><i></i><% if (!locals.noUrl) { %><span class="browser__url"><%= host %></span><% } %></div>
+  <div class="browser__screen">
+    <img src="<%= asset(finalSrc) %>"<% if (hasSmall) { %> srcset="<%= asset(small) %> 800w, <%= asset(src) %> 1440w" sizes="<%= locals.sizes || '(min-width: 900px) 50vw, 90vw' %>"<% } %> alt="<%= altText %>" width="1440" height="900"<% if (locals.eager) { %> fetchpriority="high"<% } else { %> loading="lazy"<% } %> decoding="async">
+  </div>
+</div>

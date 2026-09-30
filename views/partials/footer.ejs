@@ -1,0 +1,42 @@
+<footer class="site-footer">
+  <div class="glow site-footer__glow" aria-hidden="true"></div>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="FLAKS, ir al inicio"><%- include('logo', { variant: 'header' }) %></a>
+        <p>Agencia digital de Buenos Aires. Sitios web, redes sociales y pauta publicitaria para que tu negocio crezca.</p>
+      </div>
+      <div class="footer-col">
+        <h2>Servicios</h2>
+        <ul>
+          <li><a href="/landing-page">Landing Pages</a></li>
+          <li><a href="/sitio-web">Web Profesional</a></li>
+          <li><a href="/tienda-digital">Tiendas Online</a></li>
+          <li><a href="/redes-sociales">Redes Sociales</a></li>
+          <li><a href="/pauta-publicitaria">Pauta Publicitaria</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Empresa</h2>
+        <ul>
+          <li><a href="/#proyectos">Proyectos</a></li>
+          <li><a href="/#proceso">Cómo trabajamos</a></li>
+          <li><a href="/#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Contacto</h2>
+        <ul>
+          <li><a href="<%= wa() %>" target="_blank" rel="noopener" data-wa="footer"><%- include('icon', { name: 'whatsapp' }) %><%= site.whatsappDisplay %></a></li>
+          <li><a href="mailto:<%= site.email %>"><%- include('icon', { name: 'mail' }) %><%= site.email %></a></li>
+          <li><a href="<%= site.instagram %>" target="_blank" rel="noopener"><%- include('icon', { name: 'instagram' }) %><%= site.instagramHandle %></a></li>
+          <li><span class="footer-col__plain"><%- include('icon', { name: 'pin' }) %>Buenos Aires, Argentina</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <%= site.year %> FLAKS. Todos los derechos reservados.</p>
+      <a href="/privacidad">Política de privacidad</a>
+    </div>
+  </div>
+</footer>

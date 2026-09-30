@@ -1,0 +1,38 @@
+<%
+  // Video "Mirá cómo trabajamos" (VSL). Se configura en data/site.json → vsl:
+  //   { "mp4": "/img/video/vsl-720.mp4", "poster": "...webp", "preview": "...mp4" }  (o "youtubeId" / "vimeoId")
+  // Una tarjeta inclinada con un adelanto (sin sonido, en loop) asoma desde el borde derecho mientras
+  // se ve el hero; al tocarla se abre el video completo. Sin video cargado, solo aparece en desarrollo.
+  const vsl = site.vsl || {};
+  const src = vsl.youtubeId
+    ? 'https://www.youtube-nocookie.com/embed/' + vsl.youtubeId + '?autoplay=1&rel=0&modestbranding=1&playsinline=1'
+    : vsl.vimeoId
+      ? 'https://player.vimeo.com/video/' + vsl.vimeoId + '?autoplay=1&title=0&byline=0&portrait=0'
+      : '';
+  const kind = src ? 'iframe' : (vsl.mp4 ? 'video' : '');
+  const show = kind || !isProd;
+  const poster = vsl.poster && exists(vsl.poster) ? asset(vsl.poster) : '';
+  const preview = vsl.preview && exists(vsl.preview) ? asset(vsl.preview) : '';
+%><% if (show) { %>
+<button class="vsl-peek" type="button" aria-haspopup="dialog" aria-controls="vsl" data-vsl-open>
+  <span class="vsl-peek__media" aria-hidden="true">
+    <% if (preview) { %><video class="vsl-peek__video" muted loop playsinline preload="none"<% if (poster) { %> poster="<%= poster %>"<% } %> data-src="<%= preview %>"></video><% } else if (poster) { %><img src="<%= poster %>" alt="" width="960" height="540" decoding="async"><% } %>
+    <span class="vsl-peek__play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>
+  </span>
+  <span class="vsl-peek__label"><%= vsl.label || 'Mirá cómo trabajamos' %><%- include('icon', { name: 'arrow' }) %></span>
+</button>
+<div class="vsl<%= vsl.vertical ? ' vsl--vertical' : '' %>" id="vsl" role="dialog" aria-modal="true" aria-labelledby="vsl-title" hidden data-vsl
+     data-kind="<%= kind %>" data-src="<%= kind === 'iframe' ? src : (vsl.mp4 ? asset(vsl.mp4) : '') %>" data-poster="<%= poster %>">
+  <div class="vsl__backdrop" data-vsl-close></div>
+  <div class="vsl__sheet">
+    <div class="vsl__head">
+      <p class="vsl__title" id="vsl-title"><%= vsl.title || 'Así trabajamos' %></p>
+      <button class="vsl__close" type="button" aria-label="Cerrar el video" data-vsl-close><%- include('icon', { name: 'x' }) %></button>
+    </div>
+    <div class="vsl__frame" data-vsl-frame>
+      <% if (!kind) { %><p class="vsl__empty"><span>Falta cargar el video: completá <code>vsl</code> en <code>data/site.json</code> (ID de YouTube o Vimeo, o una URL .mp4). Este aviso solo se ve en desarrollo.</span></p><% } %>
+    </div>
+    <a class="btn btn--primary vsl__cta" href="<%= wa('Hola FLAKS! Vi el video y quiero hablar con ustedes.') %>" target="_blank" rel="noopener" data-wa="vsl"><%- include('icon', { name: 'whatsapp' }) %>Quiero empezar</a>
+  </div>
+</div>
+<% } %>

@@ -1,0 +1,255 @@
+<%
+  const pad = (n) => String(n).padStart(2, '0');
+  const railProjects = chapters.reduce((acc, c) => acc.concat(c.featured), []);
+  const railTotal = pad(railProjects.length);
+  const GROUP_VISIBLE = 3;
+%>
+<div class="preloader" aria-hidden="true" data-preloader>
+  <div class="preloader__mark">
+    <% if (exists('/img/brand/logo-icon.png')) { %><img class="preloader__logo" src="<%= asset('/img/brand/logo-icon.png') %>" alt="" width="200" height="128"><% } else { %><svg class="preloader__logo" viewBox="0 0 48 48"><g fill="#00FF7F" transform="translate(9 0) skewX(-14)"><rect x="4" y="12.5" width="11" height="3.2" rx="1.6"/><rect x="7" y="21.8" width="8" height="3.2" rx="1.6"/><rect x="10" y="31" width="5" height="3.2" rx="1.6"/><path d="M18 10h20v6.5H25v5.5h11v6.2H25V38h-7z"/></g></svg><% } %>
+  </div>
+</div>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="inicio" aria-labelledby="hero-title">
+  <div class="hero__rays" aria-hidden="true" data-rays>
+    <% for (let i = 0; i < 18; i++) { const y = (i * 37) % 100; const w = 80 + ((i * 53) % 220); const d = ((i * 7) % 10) / 10; const o = 0.12 + ((i * 13) % 50) / 100; %><span class="ray" style="--y:<%= y %>%;--w:<%= w %>px;--d:<%= d %>;--o:<%= o.toFixed(2) %>"></span><% } %>
+  </div>
+  <div class="glow hero__glow" aria-hidden="true"></div>
+  <div class="container hero__inner">
+    <p class="chip hero__chip" data-hero-fade><span class="dot" aria-hidden="true"></span>Estamos en línea</p>
+    <h1 class="hero__title" id="hero-title">
+      <span class="line"><span>Impulsamos</span></span>
+      <span class="line"><span>tu presencia</span></span>
+      <span class="line"><span class="accent">digital<span class="hero__dot">.</span></span></span>
+    </h1>
+    <div class="hero__bottom">
+      <p class="hero__sub" data-hero-fade>Desarrollamos sitios web, gestionamos redes sociales y creamos campañas publicitarias que hacen crecer tu negocio.</p>
+      <div class="hero__ctas" data-hero-fade>
+        <a class="btn btn--primary" href="<%= wa() %>" target="_blank" rel="noopener" data-wa="hero"><%- include('partials/icon', { name: 'whatsapp' }) %>¡Empecemos ahora!<span class="sr-only"> Abre WhatsApp en una pestaña nueva</span></a>
+        <a class="btn btn--ghost" href="#proyectos">Ver proyectos</a>
+      </div>
+    </div>
+    <dl class="hero__stats" data-hero-fade>
+      <div><dt>Proyectos online</dt><dd><%= projects.length %>+</dd></div>
+      <div><dt>Landing lista en</dt><dd>5 días</dd></div>
+      <div><dt>Desde</dt><dd>Buenos Aires</dd></div>
+    </dl>
+  </div>
+  <a class="scroll-cue" href="#manifiesto" aria-label="Bajar a la siguiente sección">
+    <span class="scroll-cue__line" aria-hidden="true"></span><span aria-hidden="true">Scroll</span>
+  </a>
+</section>
+
+<!-- ===================== MANIFIESTO ===================== -->
+<section class="manifesto" id="manifiesto" aria-labelledby="manifesto-title">
+  <div class="container">
+    <h2 class="eyebrow" id="manifesto-title">Qué hacemos</h2>
+    <p class="manifesto__text" data-manifesto>
+      Creamos experiencias digitales que <em>conectan</em> tu negocio con <em>más clientes.</em>
+    </p>
+    <span class="speed-rule manifesto__rule" aria-hidden="true"><span></span><span></span><span></span></span>
+  </div>
+</section>
+
+<!-- ===================== SERVICIOS ===================== -->
+<section class="services" id="servicios" aria-labelledby="services-title">
+  <div class="container services__head">
+    <h2 class="eyebrow" id="services-title">Servicios</h2>
+  </div>
+
+  <% panels.forEach(function (p, i) { %>
+  <article class="svc" id="<%= p.id %>" data-panel="<%= i %>" aria-labelledby="<%= p.id %>-title">
+    <div class="svc__stage" data-stage>
+      <div class="svc__bg" aria-hidden="true"></div>
+      <div class="container svc__grid">
+        <div class="svc__num" aria-hidden="true"><%= p.num %></div>
+        <div class="svc__body">
+          <p class="num-label"><span><%= p.num %></span> / .0<%= panels.length %></p>
+          <h3 class="svc__title" id="<%= p.id %>-title"><%= p.name %></h3>
+          <p class="svc__lead"><%= p.lead %></p>
+          <ol class="svc__points" role="list">
+            <% p.points.forEach(function (pt, j) { %><li>
+              <span class="svc__pnum" aria-hidden="true">0<%= j + 1 %></span>
+              <strong><%= pt.title %></strong>
+            </li><% }) %>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </article>
+  <% }) %>
+
+  <!-- Solapas laterales: aparecen mientras el panel está en pantalla -->
+  <div class="svc-tabs">
+    <% panels.forEach(function (p) { %>
+    <aside class="svc-tab" data-svc-tab="<%= p.id %>" aria-label="Más sobre <%= p.name %>">
+      <% if (p.links) { %>
+      <button class="svc-tab__toggle" type="button" aria-expanded="false" aria-controls="<%= p.id %>-opciones" data-tab-toggle>
+        <span class="svc-tab__title">¿Te interesa este servicio?</span>
+        <span class="svc-tab__hint">Ver opciones<%- include('partials/icon', { name: 'plus' }) %></span>
+      </button>
+      <ul class="svc-tab__links" id="<%= p.id %>-opciones" role="list" hidden>
+        <% p.links.forEach(function (l) { %><li><a href="<%= l.href %>"><%= l.label %><%- include('partials/icon', { name: 'arrow' }) %></a></li><% }) %>
+      </ul>
+      <% } else { %>
+      <p class="svc-tab__title">¿Te interesa este servicio?</p>
+      <a class="svc-tab__cta" href="<%= p.href %>">Ver más<span class="sr-only"> sobre <%= p.name.toLowerCase() %></span><%- include('partials/icon', { name: 'arrow' }) %></a>
+      <% } %>
+    </aside>
+    <% }) %>
+  </div>
+</section>
+
+<!-- ===================== PROYECTOS (scroll lateral) ===================== -->
+<section class="work" id="proyectos" aria-labelledby="work-title">
+  <div class="container work__head">
+    <p class="eyebrow">Proyectos</p>
+    <h2 class="display" id="work-title">Sitios que ya están <span class="accent">vendiendo.</span></h2>
+    <p class="lead">Un proyecto destacado de cada tipo, todos online hoy.</p>
+  </div>
+
+  <div class="rail" data-rail>
+    <div class="rail__glow" aria-hidden="true" data-rail-glow></div>
+    <div class="rail__viewport" data-rail-viewport tabindex="0" role="region" aria-label="Proyectos destacados, <%= railProjects.length %> tarjetas. Usá las flechas o Tab para recorrerlos.">
+      <ol class="rail__track" role="list" data-rail-track>
+        <% let railIndex = 0; chapters.forEach(function (c) { %>
+        <li class="rail__chapter" data-chapter="<%= c.key %>" data-glow="<%= c.glow %>">
+          <div class="chapter">
+            <span class="chapter__num" aria-hidden="true"><%= c.num %></span>
+            <h3 class="chapter__title"><%= c.name %> <span class="accent"><%= c.lead %></span></h3>
+            <span class="speed-rule" aria-hidden="true"><span></span><span></span><span></span></span>
+          </div>
+        </li>
+        <% c.featured.forEach(function (p) { railIndex++; %>
+        <li class="rail__item" data-chapter="<%= c.key %>" data-glow="<%= c.glow %>" data-card data-num="<%= railIndex %>">
+          <article class="pcard" aria-labelledby="pc-<%= p.slug %>">
+            <div class="pcard__info">
+              <div class="pcard__meta"><span class="num-label"><%= pad(railIndex) %> / <%= railTotal %></span><span class="pill"><%= p.category %></span></div>
+              <h4 class="pcard__title" id="pc-<%= p.slug %>"><%= p.title %></h4>
+              <p class="pcard__tagline"><%= p.tagline %></p>
+              <ul class="checks">
+                <% p.bullets.forEach(function (b) { %><li><%- include('partials/icon', { name: 'check' }) %><span><%= b %></span></li><% }) %>
+              </ul>
+              <a class="link-arrow pcard__cta" href="<%= p.url %>" target="_blank" rel="noopener">Entrá y miralá<span class="sr-only">: sitio de <%= p.title %> (abre en una pestaña nueva)</span><%- include('partials/icon', { name: 'arrow' }) %></a>
+            </div>
+            <div class="pcard__media" data-parallax-group>
+              <%- include('partials/browser', { project: p, kind: 'hero', cls: 'pcard__main', sizes: '(min-width: 900px) 42vw, 80vw' }) %>
+              <%- include('partials/browser', { project: p, kind: 'alt', cls: 'pcard__float', noUrl: true, sizes: '(min-width: 900px) 20vw, 40vw', altText: 'Sección interior del sitio de ' + p.title }) %>
+            </div>
+          </article>
+        </li>
+        <% }) %>
+        <% }) %>
+      </ol>
+    </div>
+    <div class="rail__hud container">
+      <div class="rail__progress" aria-hidden="true"><span data-rail-progress></span></div>
+      <p class="rail__counter"><span class="sr-only">Proyecto </span><span data-rail-counter data-total="<%= railTotal %>" aria-live="polite" aria-atomic="true">01 / <%= railTotal %></span></p>
+    </div>
+  </div>
+
+  <div class="container all" id="todos">
+    <h3 class="all__title">Ya se digitalizaron <span class="accent">con nosotros.</span></h3>
+    <div class="pgroups" data-plist>
+      <% chapters.forEach(function (c) {
+        const rest = c.projects.filter(function (p) { return c.featured.indexOf(p) === -1; });
+        if (!rest.length) return;
+        const extra = rest.length - GROUP_VISIBLE; %>
+      <section class="pgroup" data-group aria-labelledby="pg-<%= c.key %>">
+        <div class="pgroup__head">
+          <h4 class="pgroup__title" id="pg-<%= c.key %>"><%= c.name %></h4>
+          <span class="pgroup__count"><%= pad(rest.length) %></span>
+        </div>
+        <%- include('partials/project-list', { list: rest, visible: GROUP_VISIBLE }) %>
+        <% if (extra > 0) { %>
+        <button class="pgroup__more" type="button" aria-expanded="false" data-more>
+          <span data-more-label>Ver más</span><%- include('partials/icon', { name: 'plus' }) %>
+        </button>
+        <% } %>
+      </section>
+      <% }) %>
+    </div>
+    <div class="plist__preview" aria-hidden="true" data-plist-preview><img alt="" width="800" height="500" decoding="async"></div>
+  </div>
+</section>
+
+<% /* Reseñas: ocultas hasta tener las oficiales (data/site.json → showReviews: true) */ %>
+<% if (site.showReviews && reviews.length) { %>
+<!-- ===================== RESEÑAS ===================== -->
+<section class="reviews" aria-labelledby="reviews-title">
+  <div class="container reviews__head">
+    <p class="eyebrow eyebrow--ink">Clientes</p>
+    <h2 class="reviews__title" id="reviews-title">Lo que dicen quienes ya trabajan con nosotros.</h2>
+    <% if (reviews.some(function (r) { return !r.verified; })) { %><p class="reviews__draft">Borrador: reseñas de ejemplo, solo visibles en desarrollo. En producción se muestran únicamente las marcadas como verificadas en data/reviews.json.</p><% } %>
+  </div>
+  <div class="reviews__viewport" data-reviews tabindex="0" role="region" aria-label="Reseñas de clientes">
+    <div class="reviews__track" data-reviews-track>
+      <% [0, 1].forEach(function (dup) { %><ul class="reviews__list" role="list"<% if (dup) { %> aria-hidden="true"<% } %>>
+        <% reviews.forEach(function (r) { const p = r.project; %><li class="review">
+          <% if (p) { %><div class="review__shot"><%- include('partials/browser', { project: p, kind: 'hero', cls: 'review__browser', noUrl: true, sizes: '320px', altText: dup ? '' : 'Sitio de ' + p.title }) %></div><% } %>
+          <div class="review__body">
+            <p class="review__stars" role="img" aria-label="<%= r.rating %> de 5 estrellas"><% for (let s = 0; s < 5; s++) { %><svg viewBox="0 0 24 24" aria-hidden="true" class="<%= s < r.rating ? 'on' : '' %>"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.5 1.3 6.6L12 17.3 6.1 20.5l1.3-6.6L2.5 9.4l6.6-.8z"/></svg><% } %></p>
+            <blockquote class="review__text"><p><%= r.text %></p></blockquote>
+            <p class="review__author"><strong><%= r.author %></strong><span><%= r.role %></span></p>
+          </div>
+          <% if (!r.verified) { %><span class="review__badge">Ejemplo</span><% } %>
+        </li><% }) %>
+      </ul><% }) %>
+    </div>
+  </div>
+</section>
+<% } %>
+
+<!-- ===================== PROCESO ===================== -->
+<section class="process section" id="proceso" aria-labelledby="process-title">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Proceso</p>
+      <h2 id="process-title">Así trabajamos, <span class="accent">paso a paso.</span></h2>
+    </div>
+    <ol class="steps" role="list" data-steps>
+      <li class="steps__line" aria-hidden="true"><span data-steps-line></span></li>
+      <li class="step" data-step>
+        <span class="step__num">.01</span>
+        <h3>Brief</h3>
+        <p class="muted">Nos contás tu negocio, tu cliente y qué querés lograr. En una charla definimos alcance y plazos.</p>
+      </li>
+      <li class="step" data-step>
+        <span class="step__num">.02</span>
+        <h3>Diseño y desarrollo</h3>
+        <p class="muted">Diseñamos a medida y lo programamos rápido, liviano y optimizado para Google y para pauta.</p>
+      </li>
+      <li class="step" data-step>
+        <span class="step__num">.03</span>
+        <h3>Lanzamiento</h3>
+        <p class="muted">Publicamos, conectamos dominio, WhatsApp y métricas. Tu sitio queda listo para recibir clientes.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ===================== CTA + CONTACTO ===================== -->
+<section class="contact section" id="contacto" aria-labelledby="contact-title">
+  <div class="glow contact__glow" aria-hidden="true"></div>
+  <div class="container contact__grid">
+    <div class="contact__head">
+      <p class="eyebrow">Contacto</p>
+      <h2 class="contact__title" id="contact-title">¿Empezamos?</h2>
+    </div>
+    <div class="contact__intro">
+      <p class="lead">Contanos qué necesitás y te respondemos en el día hábil con una propuesta clara, sin compromiso.</p>
+      <a class="btn btn--primary contact__wa" href="<%= wa() %>" target="_blank" rel="noopener" data-wa="contact"><%- include('partials/icon', { name: 'whatsapp' }) %>Hablar por WhatsApp</a>
+      <ul class="contact__list" role="list">
+        <li><%- include('partials/icon', { name: 'mail' }) %><a href="mailto:<%= site.email %>"><%= site.email %></a></li>
+        <li><%- include('partials/icon', { name: 'instagram' }) %><a href="<%= site.instagram %>" target="_blank" rel="noopener"><%= site.instagramHandle %></a></li>
+        <li><%- include('partials/icon', { name: 'pin' }) %><span>Buenos Aires, Argentina</span></li>
+      </ul>
+    </div>
+    <div class="contact__form card">
+      <%- include('partials/contact-form', { variant: 'home' }) %>
+    </div>
+  </div>
+</section>
+
+<%- include('partials/vsl') %>

@@ -1,0 +1,9 @@
+node_modules/
+.env
+*.log
+.DS_Store
+Thumbs.db
+/test-results/
+/.shots/
+# Video original (48 MB): el sitio usa las versiones comprimidas vsl-720.mp4 / vsl-preview.mp4
+public/img/video/vsl.mp4

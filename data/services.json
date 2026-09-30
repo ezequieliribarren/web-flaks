@@ -1,0 +1,834 @@
+{
+  "chapters": [
+    {
+      "key": "tiendas",
+      "num": "01",
+      "name": "Tiendas digitales",
+      "lead": "que venden",
+      "glow": "#00FF7F"
+    },
+    {
+      "key": "landings",
+      "num": "02",
+      "name": "Landing pages",
+      "lead": "que convierten",
+      "glow": "#7B5CFF"
+    },
+    {
+      "key": "sitios",
+      "num": "03",
+      "name": "Sitios web",
+      "lead": "que ordenan tu negocio",
+      "glow": "#2FD7FF"
+    }
+  ],
+  "panels": [
+    {
+      "id": "desarrollo-web",
+      "num": ".01",
+      "name": "Desarrollo Web",
+      "lead": "Creamos la casa digital de tu marca.",
+      "points": [
+        {
+          "title": "Diseño 100% a medida"
+        },
+        {
+          "title": "Rápidos y pensados para Google"
+        },
+        {
+          "title": "Listos para pauta"
+        }
+      ],
+      "links": [
+        {
+          "label": "Landing page",
+          "note": "Lista en 5 días",
+          "href": "/landing-page"
+        },
+        {
+          "label": "Sitio web",
+          "note": "Tu empresa en Google",
+          "href": "/sitio-web"
+        },
+        {
+          "label": "Tienda online",
+          "note": "Cobrá con Mercado Pago",
+          "href": "/tienda-digital"
+        }
+      ]
+    },
+    {
+      "id": "redes-sociales",
+      "num": ".02",
+      "name": "Redes Sociales",
+      "lead": "Contenido que conecta y una marca que se ve profesional todos los días.",
+      "points": [
+        {
+          "title": "Generación de identidad"
+        },
+        {
+          "title": "Programación de contenido"
+        },
+        {
+          "title": "Estrategia y métricas"
+        }
+      ],
+      "href": "/redes-sociales",
+      "cta": "Ver detalle del servicio"
+    },
+    {
+      "id": "pauta-publicitaria",
+      "num": ".03",
+      "name": "Pauta Publicitaria",
+      "lead": "Campañas que llegan a quien te va a comprar, no a cualquiera.",
+      "points": [
+        {
+          "title": "Generación de audiencias"
+        },
+        {
+          "title": "Gestión de campañas"
+        },
+        {
+          "title": "Optimización continua"
+        }
+      ],
+      "href": "/pauta-publicitaria",
+      "cta": "Ver detalle del servicio"
+    }
+  ],
+  "pages": {
+    "landing-page": {
+      "slug": "landing-page",
+      "name": "Landing Page",
+      "navName": "Landing Pages",
+      "serviceType": "Landing page",
+      "delivery": "5 días hábiles",
+      "metaTitle": "Landing Page profesional en 5 días | FLAKS Agencia Digital",
+      "metaDescription": "Landing page a medida, optimizada para Google Ads y Meta Ads, lista en 5 días hábiles. Convertí visitantes en clientes desde el primer clic.",
+      "h1": "Landing page,",
+      "rotating": [
+        "que convierte",
+        "que vende",
+        "lista en 5 días"
+      ],
+      "subtitle": "Convertí visitantes en clientes desde el primer clic. Sin distracciones, sin rodeos.",
+      "benefits": [
+        "Conseguí mensajes de clientes",
+        "100% a medida para tu rubro",
+        "Optimizada para Google Ads",
+        "Cargá más rápido que tu competencia",
+        "Más consultas, menos rebote",
+        "Lista en 5 días hábiles",
+        "Diseño que transmite confianza"
+      ],
+      "audience": [
+        {
+          "title": "Lanzar un producto",
+          "text": "Una página enfocada en presentarlo y venderlo."
+        },
+        {
+          "title": "Campañas en Google Ads y Meta Ads",
+          "text": "Un destino rápido y claro para cada clic que pagás."
+        },
+        {
+          "title": "Un evento o una promo",
+          "text": "Una fecha, una oferta, una sola acción."
+        },
+        {
+          "title": "Captar leads",
+          "text": "Formularios cortos que la gente sí completa."
+        },
+        {
+          "title": "Recibir más mensajes",
+          "text": "WhatsApp a un toque en cada sección."
+        },
+        {
+          "title": "Un curso o servicio puntual",
+          "text": "Todo lo que hay que saber para decidir, en una página."
+        }
+      ],
+      "includes": [
+        {
+          "title": "Diseño a medida",
+          "text": "Pensado para tu rubro, tu oferta y el cliente que querés atraer."
+        },
+        {
+          "title": "Textos optimizados",
+          "text": "Titulares y llamados a la acción escritos para convertir."
+        },
+        {
+          "title": "WhatsApp + formulario",
+          "text": "Dos caminos para que te escriban sin fricción."
+        },
+        {
+          "title": "Hosting, dominio y SSL",
+          "text": "Incluidos el primer año. Vos no te ocupás de nada técnico."
+        }
+      ],
+      "process": [
+        {
+          "title": "Brief",
+          "text": "Nos contás qué vendés, a quién y qué querés lograr."
+        },
+        {
+          "title": "Diseño y desarrollo",
+          "text": "Diseñamos, escribimos y armamos tu landing."
+        },
+        {
+          "title": "Lanzamiento",
+          "text": "Lista para recibir tráfico de Ads desde el primer día."
+        }
+      ],
+      "formField": {
+        "name": "objetivo",
+        "label": "¿Qué querés lograr?",
+        "placeholder": "Ej.: recibir más consultas por WhatsApp para mi promo de verano"
+      },
+      "crossLink": {
+        "text": "¿Necesitás algo más grande? Mirá nuestros",
+        "label": "sitios web completos",
+        "href": "/sitio-web"
+      },
+      "kind": "build",
+      "nav": [
+        {
+          "id": "para-quien",
+          "label": "Para quién"
+        },
+        {
+          "id": "que-incluye",
+          "label": "Qué incluye"
+        },
+        {
+          "id": "portfolio",
+          "label": "Portfolio"
+        },
+        {
+          "id": "faq",
+          "label": "FAQ"
+        }
+      ],
+      "crossNote": "Una página, un objetivo: vender",
+      "portfolioCta": {
+        "text": "¿Querés una landing así para tu negocio?",
+        "label": "Crear mi landing"
+      },
+      "trust": [],
+      "promo": {
+        "id": "landing-5",
+        "trigger": "para-quien",
+        "badge": "-5%",
+        "title": "5% OFF en la creación de tu landing",
+        "text": "Escribinos por WhatsApp y te lo aplicamos.",
+        "cta": "Quiero mi descuento",
+        "waText": "Hola FLAKS! Quiero el 5% de descuento en la creación de mi landing page."
+      }
+    },
+    "sitio-web": {
+      "slug": "sitio-web",
+      "name": "Sitio Web",
+      "navName": "Web Profesional",
+      "serviceType": "Diseño web",
+      "delivery": "7 días hábiles",
+      "metaTitle": "Diseño de Sitio Web profesional | FLAKS Agencia Digital",
+      "metaDescription": "Diseño de sitios web a medida con SEO incluido, dominio y hosting. Mostrá tu empresa en Google y convertí visitantes en clientes.",
+      "h1": "Tu sitio web,",
+      "rotating": [
+        "a medida",
+        "en Google",
+        "que convence"
+      ],
+      "subtitle": "Mostrá tu empresa en Google con diseño a medida. Cargá rápido, transmití profesionalismo y convertí visitantes en clientes.",
+      "benefits": [
+        "Aparecé en Google",
+        "Diseño 100% a medida",
+        "SEO incluido desde el día 1",
+        "Carga en menos de 2 segundos",
+        "Transmití profesionalismo",
+        "Más consultas desde tu web",
+        "Dominio y hosting incluidos"
+      ],
+      "audience": [
+        {
+          "title": "Empresas sin presencia online",
+          "text": "Que te encuentren cuando te buscan."
+        },
+        {
+          "title": "Un cambio de imagen",
+          "text": "Tu sitio actual ya no te representa."
+        },
+        {
+          "title": "Servicios profesionales",
+          "text": "Abogados, contadores, médicos, arquitectos."
+        },
+        {
+          "title": "Comercios locales",
+          "text": "Horarios, ubicación y WhatsApp a mano."
+        },
+        {
+          "title": "Consultoras y estudios",
+          "text": "Cada servicio explicado en su propia página."
+        },
+        {
+          "title": "Emprendedores que crecen",
+          "text": "Del Instagram a una web propia."
+        }
+      ],
+      "includes": [
+        {
+          "title": "Diseño a medida",
+          "text": "Una identidad propia, sin plantillas genéricas."
+        },
+        {
+          "title": "SEO básico",
+          "text": "Títulos, metadescripciones, velocidad y estructura para que Google te entienda."
+        },
+        {
+          "title": "Formulario + WhatsApp",
+          "text": "Las consultas te llegan al mail y al celular."
+        },
+        {
+          "title": "Hosting, dominio y SSL",
+          "text": "Incluidos el primer año. Vos no te ocupás de nada técnico."
+        }
+      ],
+      "process": [
+        {
+          "title": "Brief",
+          "text": "Definimos secciones, contenido y objetivos del sitio."
+        },
+        {
+          "title": "Diseño y desarrollo",
+          "text": "Diseñamos cada página y la programamos a medida."
+        },
+        {
+          "title": "Lanzamiento",
+          "text": "Publicamos, conectamos tu dominio y lo damos de alta en Google."
+        }
+      ],
+      "formField": {
+        "name": "objetivo",
+        "label": "¿Qué querés lograr?",
+        "placeholder": "Ej.: que mi estudio aparezca en Google y reciba consultas"
+      },
+      "crossLink": {
+        "text": "¿Querés vender online? Mirá nuestras",
+        "label": "tiendas online con Mercado Pago",
+        "href": "/tienda-digital"
+      },
+      "kind": "build",
+      "nav": [
+        {
+          "id": "para-quien",
+          "label": "Para quién"
+        },
+        {
+          "id": "que-incluye",
+          "label": "Qué incluye"
+        },
+        {
+          "id": "portfolio",
+          "label": "Portfolio"
+        },
+        {
+          "id": "faq",
+          "label": "FAQ"
+        }
+      ],
+      "crossNote": "Tu empresa, profesional y en Google",
+      "portfolioCta": {
+        "text": "¿Querés un sitio así para tu empresa?",
+        "label": "Crear mi sitio"
+      },
+      "trust": [],
+      "promo": {
+        "id": "sitio-5",
+        "trigger": "para-quien",
+        "badge": "-5%",
+        "title": "5% OFF en la creación de tu sitio",
+        "text": "Escribinos por WhatsApp y te lo aplicamos.",
+        "cta": "Quiero mi descuento",
+        "waText": "Hola FLAKS! Quiero el 5% de descuento en la creación de mi sitio web."
+      },
+      "contactTitle": {
+        "text": "Estás a un paso",
+        "accent": "de escalar tu marca."
+      }
+    },
+    "tienda-digital": {
+      "slug": "tienda-digital",
+      "name": "Tienda Online",
+      "navName": "Tiendas Online",
+      "serviceType": "Tienda online",
+      "delivery": "7 días hábiles",
+      "metaTitle": "Tienda Online a medida con Mercado Pago | FLAKS Agencia Digital",
+      "metaDescription": "Tienda online a medida con Mercado Pago, catálogo fácil de gestionar y lista para publicitar. Empezá a vender todos los días.",
+      "h1": "Tu tienda online,",
+      "rotating": [
+        "vendiendo 24/7",
+        "con Mercado Pago",
+        "lista para crecer"
+      ],
+      "subtitle": "Vendé online con un catálogo ordenado, cobros con Mercado Pago y una tienda profesional que genera confianza desde el primer clic.",
+      "benefits": [
+        "Vendé todos los días",
+        "Cobros con Mercado Pago",
+        "Catálogo fácil de gestionar",
+        "Lista para publicitar en Ads",
+        "Diseño confiable que convierte",
+        "Stock y pedidos organizados",
+        "100% a medida para tu producto"
+      ],
+      "audience": [
+        {
+          "title": "Emprendedores que empiezan",
+          "text": "Tu primera tienda, bien hecha desde el día uno."
+        },
+        {
+          "title": "Tiendas físicas",
+          "text": "Llevá tu local al mundo online."
+        },
+        {
+          "title": "Productos propios",
+          "text": "Una marca que se ve profesional."
+        },
+        {
+          "title": "Revendedores",
+          "text": "Catálogos grandes, ordenados y fáciles de actualizar."
+        },
+        {
+          "title": "Servicios con cobro online",
+          "text": "Turnos, clases o reservas pagadas por adelantado."
+        },
+        {
+          "title": "Marcas en crecimiento",
+          "text": "Dejá de vender solo por mensaje."
+        }
+      ],
+      "includes": [
+        {
+          "title": "Catálogo de productos",
+          "text": "Foto, precio, descripción y stock de cada producto."
+        },
+        {
+          "title": "Medios de pago integrados",
+          "text": "Mercado Pago, Pago Nube y transferencia: tarjeta, cuotas y transferencia listos desde el día uno."
+        },
+        {
+          "title": "Diseño a medida",
+          "text": "Una tienda con la identidad de tu marca, no una plantilla más."
+        },
+        {
+          "title": "Hosting, dominio y SSL",
+          "text": "Incluidos el primer año. Vos no te ocupás de nada técnico."
+        }
+      ],
+      "process": [
+        {
+          "title": "Brief y catálogo",
+          "text": "Nos pasás tus productos, fotos y precios."
+        },
+        {
+          "title": "Diseño y configuración",
+          "text": "Diseñamos la tienda y configuramos pagos y envíos."
+        },
+        {
+          "title": "Lanzamiento",
+          "text": "Tu tienda online, lista para vender y para recibir pauta."
+        }
+      ],
+      "formField": {
+        "name": "producto",
+        "label": "¿Qué querés vender?",
+        "placeholder": "Ej.: ropa deportiva, unos 80 productos"
+      },
+      "crossLink": {
+        "text": "¿Querés probar primero con un solo producto? Mirá nuestras",
+        "label": "landing pages",
+        "href": "/landing-page"
+      },
+      "kind": "build",
+      "nav": [
+        {
+          "id": "para-quien",
+          "label": "Para quién"
+        },
+        {
+          "id": "que-incluye",
+          "label": "Qué incluye"
+        },
+        {
+          "id": "portfolio",
+          "label": "Portfolio"
+        },
+        {
+          "id": "faq",
+          "label": "FAQ"
+        }
+      ],
+      "crossNote": "Vendé online con Mercado Pago",
+      "portfolioCta": {
+        "text": "¿Querés una tienda así para tu marca?",
+        "label": "Crear mi tienda"
+      },
+      "trust": [],
+      "promo": {
+        "id": "tienda-10",
+        "trigger": "para-quien",
+        "badge": "-10%",
+        "title": "10% OFF en la creación de tu tienda",
+        "text": "Escribinos por WhatsApp y te lo aplicamos.",
+        "cta": "Quiero mi descuento",
+        "waText": "Hola FLAKS! Quiero el 10% de descuento en la creación de mi tienda online."
+      },
+      "contactTitle": {
+        "text": "Empezá a vender",
+        "accent": "tus productos."
+      }
+    },
+    "redes-sociales": {
+      "slug": "redes-sociales",
+      "kind": "managed",
+      "visual": "redes",
+      "name": "Redes Sociales",
+      "navName": "Redes Sociales",
+      "serviceType": "Gestión de redes sociales",
+      "metaTitle": "Gestión de Redes Sociales para marcas | FLAKS Agencia Digital",
+      "metaDescription": "Gestión de redes sociales: reels, carruseles, historias y programación de contenido para Instagram, Facebook y TikTok. Planes mensuales con reportes.",
+      "h1": "Tus redes,",
+      "rotating": [
+        "que conectan",
+        "siempre activas",
+        "con estrategia"
+      ],
+      "subtitle": "Reels, carruseles e historias con la identidad de tu marca, programación de contenido y reportes mensuales para que tus redes trabajen para vos.",
+      "trust": [],
+      "benefits": [
+        "Reels y carruseles mensuales",
+        "Programación de contenido",
+        "Estrategia editorial",
+        "Diseño profesional de marca",
+        "Reportes mensuales",
+        "Instagram",
+        "Facebook",
+        "TikTok",
+        "Crecimiento orgánico real"
+      ],
+      "audience": [
+        {
+          "title": "Publicás sin constancia",
+          "text": "Un calendario mensual y contenido listo, sin correr a último momento."
+        },
+        {
+          "title": "Tu marca no se ve profesional",
+          "text": "Diseño con identidad propia en cada pieza."
+        },
+        {
+          "title": "Ya invertís en pauta",
+          "text": "Contenido orgánico a la altura de tus anuncios."
+        },
+        {
+          "title": "No tenés tiempo de responder",
+          "text": "Nos ocupamos de los comentarios y la interacción."
+        },
+        {
+          "title": "Lanzás un producto o local",
+          "text": "Presencia activa desde el primer día."
+        },
+        {
+          "title": "Querés crecer en serio",
+          "text": "Estrategia, métricas y ajustes cada mes."
+        }
+      ],
+      "includes": [
+        {
+          "title": "Diseño de contenido",
+          "text": "Reels, carruseles e historias con tu identidad visual, pensados para cada formato."
+        },
+        {
+          "title": "Programación de contenido",
+          "text": "Planificamos y publicamos cada pieza en el día y horario en que mejor rinde."
+        },
+        {
+          "title": "Estrategia editorial",
+          "text": "Calendario mensual con objetivos claros para cada publicación."
+        },
+        {
+          "title": "Reportes y métricas",
+          "text": "Qué creció, qué funcionó y qué ajustamos el mes siguiente."
+        }
+      ],
+      "plans": [
+        {
+          "name": "Presencia",
+          "tag": "Para arrancar",
+          "items": [
+            "3 reels + 3 carruseles + 15 historias por mes",
+            "Diseño con la identidad de tu marca",
+            "Apertura y optimización de cuentas",
+            {
+              "text": "Campañas publicitarias",
+              "excluded": true
+            }
+          ]
+        },
+        {
+          "name": "Profesional",
+          "tag": "El más elegido",
+          "highlight": true,
+          "items": [
+            "3 reels + 3 carruseles + 20 historias por mes",
+            "Programación de contenido",
+            "Facebook e Instagram incluidos",
+            "Reportes detallados",
+            "Alineación con la pauta",
+            "Hasta 3 campañas mensuales en Meta"
+          ]
+        },
+        {
+          "name": "Total",
+          "tag": "Presencia completa",
+          "items": [
+            "6 reels + 6 carruseles + 25 historias por mes",
+            "Instagram · Facebook · TikTok · YouTube",
+            "Reportes semanales",
+            "Alineación con la pauta",
+            "Campañas ilimitadas"
+          ]
+        }
+      ],
+      "plansTitle": {
+        "eyebrow": "Planes",
+        "text": "Elegí el plan",
+        "accent": "para tu marca."
+      },
+      "process": [
+        {
+          "title": "Onboarding",
+          "text": "Conocemos tu marca, tu público y tus objetivos."
+        },
+        {
+          "title": "Producción",
+          "text": "Armamos el calendario y diseñamos el contenido del mes."
+        },
+        {
+          "title": "Publicación y gestión",
+          "text": "Publicamos, respondemos y medimos."
+        }
+      ],
+      "processTitle": {
+        "text": "Así trabajamos",
+        "accent": "mes a mes."
+      },
+      "formField": {
+        "name": "redes",
+        "label": "¿Qué redes tenés hoy?",
+        "placeholder": "Ej.: Instagram con 2.000 seguidores y Facebook"
+      },
+      "contactTitle": {
+        "text": "Tus redes,",
+        "accent": "en buenas manos."
+      },
+      "nav": [
+        {
+          "id": "para-quien",
+          "label": "Para quién"
+        },
+        {
+          "id": "que-incluye",
+          "label": "Qué incluye"
+        },
+        {
+          "id": "planes",
+          "label": "Planes"
+        },
+        {
+          "id": "faq",
+          "label": "FAQ"
+        }
+      ],
+      "customPlan": {
+        "text": "¿Necesitás algo a medida?",
+        "label": "Escribinos por WhatsApp",
+        "waText": "Hola FLAKS! Necesito un plan de redes sociales a medida."
+      },
+      "showcase": {
+        "eyebrow": "Redes que gestionamos",
+        "title": "Estas marcas ya no piensan qué publicar.",
+        "accent": "Lo pensamos nosotros.",
+        "text": "Contenido con identidad propia, todos los meses, para rubros muy distintos."
+      },
+      "promo": {
+        "id": "redes-10",
+        "trigger": "planes",
+        "badge": "-10%",
+        "title": "10% OFF en todos los planes",
+        "text": "Escribinos por WhatsApp y te lo aplicamos en el plan que elijas.",
+        "cta": "Quiero mi descuento",
+        "waText": "Hola FLAKS! Quiero el 10% de descuento en un plan de redes sociales."
+      },
+      "crossNote": "Contenido y gestión todos los meses",
+      "hideProcess": true,
+      "faqAfterShowcase": true
+    },
+    "pauta-publicitaria": {
+      "slug": "pauta-publicitaria",
+      "kind": "managed",
+      "visual": "pauta",
+      "name": "Pauta Publicitaria",
+      "navName": "Pauta Publicitaria",
+      "serviceType": "Publicidad online",
+      "metaTitle": "Pauta Publicitaria en Google Ads y Meta Ads | FLAKS Agencia Digital",
+      "metaDescription": "Gestión de campañas en Google Ads, Meta Ads y Mercado Libre Ads: segmentación precisa, optimización continua y reportes mensuales.",
+      "h1": "Tu pauta,",
+      "rotating": [
+        "que trae clientes",
+        "bien segmentada",
+        "que rinde más"
+      ],
+      "subtitle": "Campañas en Google Ads, Meta Ads y Mercado Libre Ads que llegan a quien te va a comprar, con optimización continua y reportes claros.",
+      "trust": [],
+      "benefits": [
+        "Google Ads",
+        "Meta Ads",
+        "Segmentación precisa",
+        "Reportes mensuales",
+        "A/B testing",
+        "ROAS optimizado"
+      ],
+      "audience": [
+        {
+          "title": "Querés consultas ya",
+          "text": "Campañas que traen contactos desde la primera semana."
+        },
+        {
+          "title": "Invertís y no sabés si rinde",
+          "text": "Medición clara de cada peso invertido."
+        },
+        {
+          "title": "Tenés una tienda online",
+          "text": "Shopping, remarketing y catálogo en Meta."
+        },
+        {
+          "title": "Vendés en Mercado Libre",
+          "text": "Productos patrocinados para ganar visibilidad."
+        },
+        {
+          "title": "Lanzás un producto o servicio",
+          "text": "Alcance rápido al público correcto."
+        },
+        {
+          "title": "Tenés un negocio local",
+          "text": "Anuncios segmentados por zona y horario."
+        }
+      ],
+      "includes": [
+        {
+          "title": "Configuración completa",
+          "text": "Cuentas, píxeles, conversiones y audiencias, bien medido desde el día uno."
+        },
+        {
+          "title": "Campañas y anuncios",
+          "text": "Estructura, textos y piezas para cada plataforma y objetivo."
+        },
+        {
+          "title": "Optimización continua",
+          "text": "Ajustes semanales, A/B testing y control del costo por resultado."
+        },
+        {
+          "title": "Reportes mensuales",
+          "text": "Qué invertiste, qué conseguiste y qué hacemos el mes siguiente."
+        }
+      ],
+      "platforms": [
+        {
+          "name": "Google Ads",
+          "icon": "search",
+          "items": [
+            "Búsquedas",
+            "Display",
+            "Shopping"
+          ]
+        },
+        {
+          "name": "Meta Ads",
+          "icon": "social",
+          "items": [
+            "Facebook",
+            "Instagram",
+            "Reels"
+          ]
+        },
+        {
+          "name": "Mercado Libre Ads",
+          "icon": "cart",
+          "items": [
+            "Sponsored",
+            "Display",
+            "Brand"
+          ]
+        }
+      ],
+      "plansTitle": {
+        "eyebrow": "Plataformas",
+        "text": "Donde está",
+        "accent": "tu cliente."
+      },
+      "process": [
+        {
+          "title": "Brief",
+          "text": "Definimos objetivo, público y presupuesto."
+        },
+        {
+          "title": "Configuración",
+          "text": "Cuentas, píxeles, conversiones y anuncios."
+        },
+        {
+          "title": "Lanzamiento",
+          "text": "Las campañas salen al aire y empiezan a aprender."
+        },
+        {
+          "title": "Optimización",
+          "text": "Ajustamos cada semana según los datos reales."
+        }
+      ],
+      "processTitle": {
+        "text": "De la idea",
+        "accent": "a los resultados."
+      },
+      "formField": {
+        "name": "plataformas",
+        "label": "¿En qué plataformas querés anunciar?",
+        "placeholder": "Ej.: Google Ads y Meta Ads, unos USD 300 por mes"
+      },
+      "contactTitle": {
+        "text": "Tu próxima campaña,",
+        "accent": "empieza acá."
+      },
+      "crossLink": {
+        "text": "¿Necesitás a dónde mandar ese tráfico? Mirá nuestras",
+        "label": "landing pages que convierten",
+        "href": "/landing-page"
+      },
+      "nav": [
+        {
+          "id": "para-quien",
+          "label": "Para quién"
+        },
+        {
+          "id": "que-incluye",
+          "label": "Qué incluye"
+        },
+        {
+          "id": "planes",
+          "label": "Plataformas"
+        },
+        {
+          "id": "faq",
+          "label": "FAQ"
+        }
+      ],
+      "crossNote": "Google, Meta y Mercado Libre Ads"
+    }
+  }
+}

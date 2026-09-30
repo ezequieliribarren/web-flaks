@@ -1,0 +1,256 @@
+<%
+  const pad = (n) => String(n).padStart(2, '0');
+  const lead = portfolio[0];
+  const isBuild = page.kind === 'build';
+  const trust = page.trust || ['Lista en ' + page.delivery, 'Hosting, dominio y SSL incluidos'];
+  const processTitle = page.processTitle || { text: 'De la idea al lanzamiento', accent: 'en ' + page.delivery + '.' };
+  const contactTitle = page.contactTitle || { text: 'Tu ' + page.name.toLowerCase() + ',', accent: 'lista en ' + page.delivery + '.' };
+%>
+<!-- ===================== HERO ===================== -->
+<section class="s-hero" aria-labelledby="s-title">
+  <div class="glow s-hero__glow" aria-hidden="true"></div>
+  <div class="s-hero__rays" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+  <div class="container s-hero__grid">
+    <div class="s-hero__copy">
+      <p class="chip"><span class="dot" aria-hidden="true"></span>Estamos en línea · Respondemos en el día</p>
+      <h1 class="s-hero__title" id="s-title"><%= page.h1 %> <span class="rotator accent" data-rotator="<%= JSON.stringify(page.rotating) %>"><%= page.rotating[0] %></span></h1>
+      <p class="s-hero__sub"><%= page.subtitle %></p>
+      <div class="s-hero__ctas">
+        <a class="btn btn--primary gtm-wa-hero-<%= gtmCode %>" href="<%= wa(waText) %>" target="_blank" rel="noopener" data-wa="hero"><%- include('partials/icon', { name: 'whatsapp' }) %>Hablar por WhatsApp<span class="sr-only"> (abre en una pestaña nueva)</span></a>
+        <a class="btn btn--ghost" href="#que-incluye">Ver qué incluye<%- include('partials/icon', { name: 'arrow-down' }) %></a>
+      </div>
+      <% if (trust.length) { %>
+      <ul class="s-hero__trust" role="list">
+        <% trust.forEach(function (t, i) { %><li><%- include('partials/icon', { name: i ? 'check' : 'bolt' }) %><%= t %></li><% }) %>
+      </ul>
+      <% } %>
+    </div>
+    <% if (lead) { %>
+<%
+      // Capturas del hero: la primera se carga ya (es el LCP); las demás recién cuando la página terminó de cargar.
+      const shots = portfolio.filter(function (p) { return exists(p.images.hero); });
+      const small = function (src) { const s2 = src.replace(/\.webp$/, '-800.webp'); return exists(s2) ? s2 : null; };
+      const hostOf = function (u) { return (u || '').replace(/^https?:\/\//, '').replace(/\/$/, ''); };
+      const rotData = shots.map(function (p) { return { title: p.title, url: p.url, host: hostOf(p.url) }; });
+    %>
+    <div class="s-hero__media s-hero__media--rotator" data-hero-rotator data-projects="<%= JSON.stringify(rotData) %>">
+      <div class="browser s-hero__main">
+        <div class="browser__bar" aria-hidden="true"><i></i><i></i><i></i><span class="browser__url" data-rot-url><%= hostOf(lead.url) %></span></div>
+        <div class="browser__screen">
+          <% shots.forEach(function (p, i) { const sm = small(p.images.hero); const srcset = sm ? asset(sm) + ' 800w, ' + asset(p.images.hero) + ' 1440w' : ''; %><img class="rot-img<%= i ? '' : ' is-active' %>" <%= i ? 'data-' : '' %>src="<%= asset(p.images.hero) %>"<% if (srcset) { %> <%= i ? 'data-' : '' %>srcset="<%= srcset %>" sizes="(min-width: 900px) 50vw, 92vw"<% } %> alt="<%= i ? '' : 'Proyecto real de FLAKS: portada del sitio de ' + p.title %>" data-alt="Proyecto real de FLAKS: portada del sitio de <%= p.title %>" width="1440" height="900"<% if (!i) { %> fetchpriority="high"<% } %> decoding="async"><% }) %>
+        </div>
+      </div>
+      <div class="browser s-hero__float" aria-hidden="true">
+        <div class="browser__bar"><i></i><i></i><i></i></div>
+        <div class="browser__screen">
+          <% shots.forEach(function (p, i) { const a = p.images.alt; const sm = small(a) || a; %><img class="rot-img<%= i ? '' : ' is-active' %>" <%= i ? 'data-' : '' %>src="<%= asset(exists(sm) ? sm : a) %>" alt="" width="1440" height="900" decoding="async"<% if (!i) { %> loading="lazy"<% } %>><% }) %>
+        </div>
+      </div>
+      <p class="s-hero__caption"><span class="num-label">Proyecto real</span> <a href="<%= lead.url %>" target="_blank" rel="noopener" data-rot-link><span data-rot-title><%= lead.title %></span><span class="sr-only"> (abre en una pestaña nueva)</span></a></p>
+    </div>
+    <% } else if (page.visual) { %>
+    <div class="s-hero__media s-hero__media--visual">
+      <%- include('partials/service-visual', { type: page.visual }) %>
+    </div>
+    <% } %>
+  </div>
+</section>
+
+<!-- ===================== BENEFICIOS ===================== -->
+<section class="s-benefits" aria-label="Beneficios">
+  <div class="s-benefits__row">
+    <% [0, 1].forEach(function (dup) { %><ul class="s-benefits__list" role="list"<% if (dup) { %> aria-hidden="true"<% } %>>
+      <% page.benefits.forEach(function (b) { %><li><%= b %><span class="s-benefits__sep" aria-hidden="true"><i></i><i></i></span></li><% }) %>
+    </ul><% }) %>
+  </div>
+</section>
+
+<!-- ===================== PARA QUIÉN ===================== -->
+<section class="section" id="para-quien" aria-labelledby="para-quien-title">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">Para quién es</p>
+      <h2 id="para-quien-title">¿Es para vos? <span class="accent">Mirá si te identificás.</span></h2>
+    </div>
+    <ul class="audience" role="list">
+      <% page.audience.forEach(function (a, i) { %><li class="audience__item" data-reveal>
+        <span class="num-label">.<%= pad(i + 1) %></span>
+        <h3><%= a.title %></h3>
+        <p class="muted"><%= a.text %></p>
+      </li><% }) %>
+    </ul>
+  </div>
+</section>
+
+<!-- ===================== QUÉ INCLUYE ===================== -->
+<section class="section s-includes" id="que-incluye" aria-labelledby="incluye-title">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">Qué incluye</p>
+      <h2 id="incluye-title">Todo resuelto, <span class="accent">de punta a punta.</span></h2>
+    </div>
+    <ol class="includes-list" role="list">
+      <% page.includes.forEach(function (inc, i) { %><li class="includes-list__item" data-reveal>
+        <span class="includes-list__num" aria-hidden="true">.<%= pad(i + 1) %></span>
+        <div>
+          <h3><%= inc.title %></h3>
+          <p class="muted"><%= inc.text %></p>
+        </div>
+      </li><% }) %>
+    </ol>
+    <div class="s-inline-cta" data-reveal>
+      <p><% if (page.delivery) { %>¿Lo querés para tu negocio? Lista en <strong><%= page.delivery %></strong>.<% } else { %>¿Lo querés para tu marca? <strong>Arrancamos este mes.</strong><% } %></p>
+      <a class="btn btn--primary gtm-wa-planes-<%= gtmCode %>" href="<%= wa(waText) %>" target="_blank" rel="noopener" data-wa="incluye"><%- include('partials/icon', { name: 'whatsapp' }) %>Pedir presupuesto por WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<% if (isBuild) { %>
+<!-- ===================== PORTFOLIO ===================== -->
+<section class="section s-portfolio" id="portfolio" aria-labelledby="portfolio-title">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">Portfolio</p>
+      <h2 id="portfolio-title">Proyectos reales, <span class="accent">online hoy.</span></h2>
+      <p class="muted">Pasá el mouse para ver cada sitio. Tocá para abrirlo.</p>
+    </div>
+    <div class="s-plist" data-plist data-reveal>
+      <%- include('partials/project-list', { list: portfolio }) %>
+    </div>
+    <div class="plist__preview" aria-hidden="true" data-plist-preview><img alt="" width="800" height="500" decoding="async"></div>
+    <% if (page.portfolioCta) { %>
+    <div class="s-portfolio__cta" data-reveal>
+      <p><%= page.portfolioCta.text %></p>
+      <a class="btn btn--primary gtm-wa-portfolio-<%= gtmCode %>" href="<%= wa(waText) %>" target="_blank" rel="noopener" data-wa="portfolio"><%- include('partials/icon', { name: 'whatsapp' }) %><%= page.portfolioCta.label %></a>
+    </div>
+    <% } %>
+  </div>
+</section>
+<% } else { %>
+<!-- ===================== PLANES / PLATAFORMAS ===================== -->
+<section class="section s-plans" id="planes" aria-labelledby="planes-title">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow"><%= page.plansTitle.eyebrow %></p>
+      <h2 id="planes-title"><%= page.plansTitle.text %> <span class="accent"><%= page.plansTitle.accent %></span></h2>
+    </div>
+    <ul class="plans" role="list">
+      <% (page.plans || page.platforms).forEach(function (pl) { %><li class="plan<%= pl.highlight ? ' plan--hl' : '' %>" data-reveal>
+        <% if (pl.icon) { %><span class="plan__icon"><%- include('partials/icon', { name: pl.icon, stroke: 1.6 }) %></span><% } %>
+        <% if (pl.tag) { %><p class="plan__tag"><%= pl.tag %></p><% } %>
+        <h3 class="plan__name"><%= pl.name %></h3>
+        <ul class="checks">
+          <% pl.items.forEach(function (it) { if (it && it.excluded) { %><li class="is-excluded"><%- include('partials/icon', { name: 'x' }) %><span><s><%= it.text %></s><span class="sr-only"> (no incluido)</span></span></li><% } else { %><li><%- include('partials/icon', { name: 'check' }) %><span><%= it %></span></li><% } }) %>
+        </ul>
+        <a class="btn <%= pl.highlight ? 'btn--primary' : 'btn--ghost' %> btn--block gtm-wa-planes-<%= gtmCode %>" href="<%= wa('Hola FLAKS! Quiero info de ' + (page.plans ? 'el plan ' + pl.name + ' de redes sociales' : 'pauta en ' + pl.name) + '.') %>" target="_blank" rel="noopener" data-wa="plan-<%= pl.name.toLowerCase().replace(/\s+/g, '-') %>">Consultar <%= page.plans ? 'plan ' + pl.name : 'por ' + pl.name %></a>
+      </li><% }) %>
+    </ul>
+    <% if (page.customPlan) { %>
+    <p class="s-custom" data-reveal><%= page.customPlan.text %> <a class="inline-link" href="<%= wa(page.customPlan.waText) %>" target="_blank" rel="noopener" data-wa="plan-a-medida"><%= page.customPlan.label %><span class="sr-only"> (abre en una pestaña nueva)</span></a> <span aria-hidden="true">→</span></p>
+    <% } %>
+  </div>
+</section>
+<% } %>
+
+<% if (!page.hideProcess) { %>
+<!-- ===================== PROCESO ===================== -->
+<section class="section s-process" id="proceso" aria-labelledby="proceso-title">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">Proceso</p>
+      <h2 id="proceso-title"><%= processTitle.text %> <span class="accent"><%= processTitle.accent %></span></h2>
+    </div>
+    <ol class="s-steps s-steps--<%= page.process.length %>" role="list">
+      <% page.process.forEach(function (st, i) { %><li class="s-step" data-reveal>
+        <span class="s-step__num">.0<%= i + 1 %></span>
+        <h3><%= st.title %></h3>
+        <p class="muted"><%= st.text %></p>
+      </li><% }) %>
+    </ol>
+  </div>
+</section>
+<% } %>
+
+<% if (!page.faqAfterShowcase) { %><%- include('partials/service-faq') %><% } %>
+
+<% if (page.showcase && social.length) { %>
+<!-- ===================== REDES QUE GESTIONAMOS ===================== -->
+<section class="section s-social" id="redes-gestionadas" aria-labelledby="social-title">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow"><%= page.showcase.eyebrow %></p>
+      <h2 id="social-title"><%= page.showcase.title %> <span class="accent"><%= page.showcase.accent %></span></h2>
+      <p class="muted"><%= page.showcase.text %></p>
+    </div>
+  </div>
+  <ul class="ig-grid" role="list">
+    <% social.forEach(function (a) { const img = '/img/social/' + a.handle + '-600.webp'; %><li class="ig-card" data-reveal>
+      <a href="https://www.instagram.com/<%= a.handle %>/" target="_blank" rel="noopener">
+        <span class="ig-card__phone">
+          <% if (exists(img)) { %><img src="<%= asset(img) %>" alt="Feed de Instagram de <%= a.name %> (@<%= a.handle %>), <%= a.category.toLowerCase() %>" width="600" height="1107" loading="lazy" decoding="async"><% } %>
+        </span>
+        <span class="ig-card__meta">
+          <strong><%= a.name %></strong>
+          <span>@<%= a.handle %> · <%= a.category %></span>
+        </span>
+        <span class="sr-only">(abre Instagram en una pestaña nueva)</span>
+      </a>
+    </li><% }) %>
+  </ul>
+</section>
+<% } %>
+
+<% if (page.faqAfterShowcase) { %><%- include('partials/service-faq') %><% } %>
+
+<!-- ===================== OTROS SERVICIOS ===================== -->
+<section class="s-cross" aria-labelledby="cross-title">
+  <div class="container">
+    <% if (page.crossLink) { %>
+    <h2 class="s-cross__title" id="cross-title"><%= page.crossLink.text %> <a href="<%= page.crossLink.href %>"><%= page.crossLink.label %></a>.</h2>
+    <% } else { %>
+    <h2 class="s-cross__title" id="cross-title">Otros servicios de FLAKS</h2>
+    <% } %>
+    <ul class="s-cross__list" role="list">
+      <% others.forEach(function (o) { %><li><a class="svc-link" href="/<%= o.slug %>">
+        <span class="svc-link__label"><%= o.name %></span>
+        <span class="svc-link__note"><%= o.crossNote %></span>
+        <%- include('partials/icon', { name: 'arrow' }) %>
+      </a></li><% }) %>
+    </ul>
+  </div>
+</section>
+
+<!-- ===================== CONTACTO ===================== -->
+<section class="section s-contact" id="contacto" aria-labelledby="contacto-title">
+  <div class="glow s-contact__glow" aria-hidden="true"></div>
+  <div class="container s-contact__grid">
+    <div class="s-contact__intro" data-reveal>
+      <p class="eyebrow">Empecemos</p>
+      <h2 id="contacto-title"><%= contactTitle.text %> <span class="accent"><%= contactTitle.accent %></span></h2>
+      <p class="lead">Dejanos tus datos y te escribimos en el día hábil con una propuesta concreta. Sin compromiso.</p>
+      <a class="btn btn--primary gtm-wa-cta-<%= gtmCode %>" href="<%= wa(waText) %>" target="_blank" rel="noopener" data-wa="contacto"><%- include('partials/icon', { name: 'whatsapp' }) %>Prefiero hablar por WhatsApp</a>
+    </div>
+    <div class="card" data-reveal>
+      <%- include('partials/contact-form', { variant: 'service' }) %>
+    </div>
+  </div>
+</section>
+
+<% if (page.promo) { %>
+<!-- Popup de descuento: aparece una vez por sesión al llegar a los planes -->
+<div class="promo" role="dialog" aria-modal="false" aria-labelledby="promo-title" hidden data-promo data-promo-id="<%= page.promo.id %>" data-promo-trigger="<%= page.promo.trigger || 'planes' %>">
+  <button class="promo__close" type="button" aria-label="Cerrar" data-promo-close><%- include('partials/icon', { name: 'x' }) %></button>
+  <p class="promo__badge" aria-hidden="true"><%= page.promo.badge %></p>
+  <div class="promo__body">
+    <p class="promo__title" id="promo-title"><%= page.promo.title %></p>
+    <p class="promo__text"><%= page.promo.text %></p>
+    <a class="btn btn--primary btn--sm" href="<%= wa(page.promo.waText) %>" target="_blank" rel="noopener" data-wa="promo" data-promo-cta><%- include('partials/icon', { name: 'whatsapp' }) %><%= page.promo.cta %></a>
+  </div>
+</div>
+<% } %>
+
+<!-- CTA fijo en móvil -->
+<div class="s-sticky" data-sticky-cta>
+  <a class="btn btn--primary gtm-wa-cta-<%= gtmCode %>" href="<%= wa(waText) %>" target="_blank" rel="noopener" data-wa="sticky"><%- include('partials/icon', { name: 'whatsapp' }) %>WhatsApp</a>
+  <a class="btn btn--ghost" href="#contacto" data-cta="sticky">Pedir presupuesto</a>
+</div>

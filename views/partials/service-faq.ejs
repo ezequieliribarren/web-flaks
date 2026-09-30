@@ -1,0 +1,19 @@
+<!-- ===================== FAQ ===================== -->
+<section class="section s-faq" id="faq" aria-labelledby="faq-title">
+  <div class="container s-faq__grid">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">Preguntas frecuentes</p>
+      <h2 id="faq-title">Lo que siempre <span class="accent">nos preguntan.</span></h2>
+      <p class="muted">¿No encontrás tu respuesta? <a class="inline-link" href="<%= wa(waText) %>" target="_blank" rel="noopener" data-wa="faq">Preguntanos por WhatsApp</a>.</p>
+    </div>
+    <div class="faq" data-reveal>
+      <% faqItems.forEach(function (f) { %><details class="faq__item">
+        <summary><span><%= f.q %></span><%- include('icon', { name: 'plus' }) %></summary>
+        <div class="faq__a">
+          <p><%= f.a %></p>
+          <% if (f.links) { %><p class="faq__links"><% f.links.forEach(function (l) { %><a class="btn btn--ghost btn--sm" href="<%= l.href %>"><%= l.label %><%- include('icon', { name: 'arrow' }) %></a><% }) %></p><% } %>
+        </div>
+      </details><% }) %>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,48 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title><%= title %></title>
+<meta name="description" content="<%= description %>">
+<meta name="robots" content="<%= robots %>">
+<% if (canonical) { %><link rel="canonical" href="<%= canonical %>">
+<link rel="alternate" hreflang="es-AR" href="<%= canonical %>">
+<link rel="alternate" hreflang="x-default" href="<%= canonical %>"><% } %>
+<meta name="geo.region" content="AR-C">
+<meta name="geo.placename" content="Buenos Aires, Argentina">
+<meta name="theme-color" content="#150F2E">
+<meta name="format-detection" content="telephone=no">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<meta property="og:site_name" content="FLAKS">
+<meta property="og:title" content="<%= title %>">
+<meta property="og:description" content="<%= description %>">
+<% if (canonical) { %><meta property="og:url" content="<%= canonical %>"><% } %>
+<meta property="og:image" content="<%= ogImage %>">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="<%= title %>">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="<%= title %>">
+<meta name="twitter:description" content="<%= description %>">
+<meta name="twitter:image" content="<%= ogImage %>">
+
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<link rel="dns-prefetch" href="https://www.google-analytics.com">
+<link rel="preload" href="/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
+<% if (locals.preloadImage) { %><link rel="preload" as="image" href="<%= preloadImage.src %>"<% if (preloadImage.srcset) { %> imagesrcset="<%= preloadImage.srcset %>" imagesizes="<%= preloadImage.sizes %>"<% } %> fetchpriority="high"><% } %>
+
+<link rel="icon" href="<%= asset('/img/brand/favicon-192.png') %>" type="image/png" sizes="192x192">
+<link rel="icon" href="<%= asset('/img/brand/favicon-32.png') %>" type="image/png" sizes="32x32">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/img/brand/apple-touch-icon.png">
+
+<script nonce="<%= nonce %>">document.documentElement.classList.add('js');</script>
+<link rel="stylesheet" href="<%= asset('/css/base.css') %>">
+<% styles.forEach(function (s) { %><link rel="stylesheet" href="<%= asset(s) %>">
+<% }) %>
+<% scripts.forEach(function (s) { %><script defer src="<%= asset(s) %>" nonce="<%= nonce %>"></script>
+<% }) %><script defer src="<%= asset('/js/main.js') %>" nonce="<%= nonce %>"></script>
+
+<%- include('gtm-head') %>
+<% jsonLd.forEach(function (obj) { %><script type="application/ld+json" nonce="<%= nonce %>"><%- toJsonLd(obj) %></script>
+<% }) %>

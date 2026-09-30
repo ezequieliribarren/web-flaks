@@ -1,0 +1,427 @@
+[
+  {
+    "slug": "lusqtoff-tigre",
+    "num": 1,
+    "title": "Lusqtoff Tigre",
+    "chapter": "tiendas",
+    "category": "Herramientas · Tienda oficial",
+    "url": "https://lusqtofftigre.com.ar/",
+    "tagline": "Un catálogo de herramientas ordenado para que el cliente encuentre en dos clics lo que vino a buscar.",
+    "bullets": [
+      "Catálogo segmentado por rubro, línea y tipo",
+      "Banners de temporada editables desde el panel",
+      "Carrito con envíos, cuotas y medios de pago"
+    ],
+    "alt": "Tienda online de Lusqtoff Tigre, catálogo de herramientas eléctricas segmentado por rubro",
+    "featured": true,
+    "enabled": true,
+    "pages": [
+      "tienda-digital"
+    ],
+    "images": {
+      "hero": "/img/projects/lusqtoff-tigre-hero.webp",
+      "alt": "/img/projects/lusqtoff-tigre-alt.webp"
+    }
+  },
+  {
+    "slug": "lusqtoff-hurlingham",
+    "num": 2,
+    "title": "Lusqtoff Hurlingham",
+    "chapter": "tiendas",
+    "category": "Herramientas · Mega Store",
+    "url": "https://lusqtoffmegastore.com.ar/",
+    "tagline": "Todas las líneas de la marca en una misma tienda, con identidad oscura de alto contraste.",
+    "bullets": [
+      "Navegación por líneas: Black Series, Home, Ecoline, Tromen y Pioneer",
+      "Precio, cuotas y compra directa desde la grilla",
+      "Buscador y filtros para catálogos grandes"
+    ],
+    "alt": "Tienda online Lusqtoff Mega Store de Hurlingham con diseño oscuro y líneas de producto",
+    "featured": true,
+    "enabled": true,
+    "pages": [
+      "tienda-digital"
+    ],
+    "images": {
+      "hero": "/img/projects/lusqtoff-hurlingham-hero.webp",
+      "alt": "/img/projects/lusqtoff-hurlingham-alt.webp"
+    }
+  },
+  {
+    "slug": "winman",
+    "num": 3,
+    "title": "Winman",
+    "chapter": "tiendas",
+    "category": "Herramientas · Mayorista y minorista",
+    "url": "https://winman.com.ar/",
+    "tagline": "Venta mayorista y minorista en el mismo sitio, sin que un cliente se cruce con el otro.",
+    "bullets": [
+      "Cuatro grandes categorías de producto",
+      "Envío gratis y descuento por transferencia a la vista",
+      "Barra fija con WhatsApp, envíos y cuotas"
+    ],
+    "alt": "Tienda online de Winman con grilla de herramientas para venta mayorista y minorista",
+    "featured": true,
+    "enabled": true,
+    "pages": [
+      "tienda-digital"
+    ],
+    "images": {
+      "hero": "/img/projects/winman-hero.webp",
+      "alt": "/img/projects/winman-alt.webp"
+    }
+  },
+  {
+    "slug": "broderi",
+    "num": 4,
+    "title": "Broderi Manteles",
+    "chapter": "tiendas",
+    "category": "Textiles · Directa y mayorista",
+    "url": "https://www.broderi.com.ar/",
+    "tagline": "La foto del producto es la que vende, así que todo el diseño está al servicio de la imagen.",
+    "bullets": [
+      "Portada con categorías destacadas",
+      "Descuento por transferencia y cuotas a la vista",
+      "Canal mayorista separado del minorista"
+    ],
+    "alt": "Tienda online de Broderi con fotos grandes de manteles y textiles para el hogar",
+    "featured": true,
+    "enabled": true,
+    "pages": [
+      "tienda-digital"
+    ],
+    "images": {
+      "hero": "/img/projects/broderi-hero.webp",
+      "alt": "/img/projects/broderi-alt.webp"
+    }
+  },
+  {
+    "slug": "clearline",
+    "num": 5,
+    "title": "Clearline",
+    "chapter": "tiendas",
+    "category": "Limpieza · Productos y servicios",
+    "url": "https://clearservices.ar/",
+    "tagline": "Una tienda que vende productos de limpieza y servicios contratables, sin que se mezclen.",
+    "bullets": [
+      "Productos y servicios conviviendo sin confusión",
+      "Slider y bloques promocionales editables",
+      "Checkout, envíos y pagos integrados"
+    ],
+    "alt": "Tienda online de Clearline con productos de limpieza y servicios contratables",
+    "featured": false,
+    "enabled": true,
+    "pages": [],
+    "images": {
+      "hero": "/img/projects/clearline-hero.webp",
+      "alt": "/img/projects/clearline-alt.webp"
+    }
+  },
+  {
+    "slug": "innova-salud",
+    "num": 6,
+    "title": "Innova Salud",
+    "chapter": "landings",
+    "category": "Salud · Medicina prepaga",
+    "url": "https://innovasalud.com.ar/",
+    "tagline": "Todo el sitio construido alrededor de un objetivo: que la persona cotice su plan sin dar vueltas.",
+    "bullets": [
+      "Formulario de cotización dentro del hero",
+      "Comparativa de prepagas con WhatsApp en cada plan",
+      "Preparada para recibir pauta"
+    ],
+    "alt": "Landing page de Innova Salud con formulario para cotizar medicina prepaga",
+    "featured": true,
+    "enabled": true,
+    "pages": [
+      "landing-page"
+    ],
+    "images": {
+      "hero": "/img/projects/innova-salud-hero.webp",
+      "alt": "/img/projects/innova-salud-alt.webp"
+    }
+  },
+  {
+    "slug": "siniestros-activos",
+    "num": 7,
+    "title": "Siniestros Activos",
+    "chapter": "landings",
+    "category": "Legales · Accidentes de tránsito",
+    "url": "https://siniestrosactivos.com/",
+    "tagline": "Trabaja sobre la urgencia y la confianza: el que tuvo un accidente necesita un abogado hoy.",
+    "bullets": [
+      "Hero que interpela el problema con CTA directo",
+      "Etapas del proceso explicadas paso a paso",
+      "Señales de respaldo en cada bloque"
+    ],
+    "alt": "Landing page de Siniestros Activos, estudio de abogados para accidentes de tránsito",
+    "featured": true,
+    "enabled": true,
+    "pages": [
+      "landing-page"
+    ],
+    "images": {
+      "hero": "/img/projects/siniestros-activos-hero.webp",
+      "alt": "/img/projects/siniestros-activos-alt.webp"
+    }
+  },
+  {
+    "slug": "full-tenders",
+    "num": 8,
+    "title": "Full Tenders",
+    "chapter": "landings",
+    "category": "E-commerce · Producto único",
+    "url": "https://fulltenders.com.ar/",
+    "tagline": "Explica el producto y cierra la venta en la misma página.",
+    "bullets": [
+      "Video demostrativo en el hero",
+      "Medidas, instalación y garantía antes de la objeción",
+      "CTA a WhatsApp en cada sección"
+    ],
+    "alt": "Landing page de Full Tenders con video demostrativo de tendederos",
+    "featured": true,
+    "enabled": true,
+    "pages": [
+      "landing-page"
+    ],
+    "images": {
+      "hero": "/img/projects/full-tenders-hero.webp",
+      "alt": "/img/projects/full-tenders-alt.webp"
+    }
+  },
+  {
+    "slug": "santa-milonguita",
+    "num": 9,
+    "title": "Santa Milonguita",
+    "chapter": "landings",
+    "category": "Logística · Mudanzas",
+    "url": "https://transportesantamilonguita.com/",
+    "tagline": "Tres niveles de servicio para que cada cliente encuentre el suyo.",
+    "bullets": [
+      "Servicios llave en mano, tradicional y clásico",
+      "Cada bloque con su botón de presupuesto",
+      "Identidad oscura con detalles dorados"
+    ],
+    "alt": "Sitio de mudanzas Santa Milonguita con tres niveles de servicio y diseño oscuro dorado",
+    "featured": true,
+    "enabled": true,
+    "pages": [
+      "sitio-web",
+      "landing-page"
+    ],
+    "images": {
+      "hero": "/img/projects/santa-milonguita-hero.webp",
+      "alt": "/img/projects/santa-milonguita-alt.webp"
+    }
+  },
+  {
+    "slug": "ruma",
+    "num": 10,
+    "title": "RUMA",
+    "chapter": "landings",
+    "category": "Mobiliario · Tapicería",
+    "url": "https://ruma.com.ar/",
+    "tagline": "Acá el sitio tiene que vender diseño, y la dirección de arte hace ese trabajo.",
+    "bullets": [
+      "Dirección de arte editorial con tipografía serif",
+      "Catálogo con consulta por línea",
+      "30 años de trayectoria contados en una sección propia"
+    ],
+    "alt": "Landing page editorial de RUMA, mobiliario y tapicería de diseño",
+    "featured": false,
+    "enabled": false,
+    "pages": [
+      "landing-page"
+    ],
+    "images": {
+      "hero": "/img/projects/ruma-hero.webp",
+      "alt": "/img/projects/ruma-alt.webp"
+    }
+  },
+  {
+    "slug": "tobyco",
+    "num": 11,
+    "title": "Tobyco Constructora",
+    "chapter": "sitios",
+    "category": "Construcción · Arquitectura",
+    "url": "https://tobycoconstructora.com.ar/",
+    "tagline": "Ocho áreas de trabajo, cada servicio con su propia página.",
+    "bullets": [
+      "Una página por servicio",
+      "Galerías de obras por tipo de trabajo",
+      "Formulario al cierre de cada recorrido"
+    ],
+    "alt": "Sitio web de Tobyco Constructora con servicios de construcción y galería de obras",
+    "featured": true,
+    "enabled": true,
+    "pages": [
+      "sitio-web"
+    ],
+    "images": {
+      "hero": "/img/projects/tobyco-hero.webp",
+      "alt": "/img/projects/tobyco-alt.webp"
+    }
+  },
+  {
+    "slug": "iannaci",
+    "num": 12,
+    "title": "Iannaci Propiedades",
+    "chapter": "sitios",
+    "category": "Inmobiliaria · Servicios",
+    "url": "https://iannacipropiedades.com.ar/",
+    "tagline": "Tres circuitos distintos en un mismo sitio: comprar, alquilar y vender.",
+    "bullets": [
+      "Formulario de consulta en el hero",
+      "Tasaciones, contratos y seguimiento",
+      "Reseñas de Google integradas"
+    ],
+    "alt": "Sitio web de la inmobiliaria Iannaci Propiedades con búsqueda para comprar y alquilar",
+    "featured": true,
+    "enabled": true,
+    "pages": [
+      "sitio-web"
+    ],
+    "images": {
+      "hero": "/img/projects/iannaci-hero.webp",
+      "alt": "/img/projects/iannaci-alt.webp"
+    }
+  },
+  {
+    "slug": "melesia",
+    "num": 13,
+    "title": "Melesia",
+    "chapter": "sitios",
+    "category": "Alimentos · Miel y dulces",
+    "url": "http://melesiasrl.com.ar/",
+    "tagline": "Cada línea de producto con su propia página.",
+    "bullets": [
+      "Una página por línea de producto",
+      "Botón «Hacé tu pedido» siempre visible",
+      "Fichas con gramajes y presentaciones"
+    ],
+    "alt": "Sitio web de Melesia con líneas de miel y dulces y fichas de producto",
+    "featured": true,
+    "enabled": true,
+    "pages": [
+      "sitio-web"
+    ],
+    "images": {
+      "hero": "/img/projects/melesia-hero.webp",
+      "alt": "/img/projects/melesia-alt.webp"
+    }
+  },
+  {
+    "slug": "tc-la-revista",
+    "num": 14,
+    "title": "TC La Revista",
+    "chapter": "sitios",
+    "category": "Medios · Automovilismo",
+    "url": "https://tclarevista.com.ar/",
+    "tagline": "Un portal de noticias del automovilismo con una sección propia para cada categoría.",
+    "bullets": [
+      "Secciones por categoría: TC, TN, TC Pick Up, TC Pista y más",
+      "Noticias con fecha y categoría a la vista",
+      "Galería de videos con entrevistas a pilotos"
+    ],
+    "alt": "Portal de noticias TC La Revista con secciones de Turismo Carretera y categorías nacionales",
+    "featured": true,
+    "enabled": true,
+    "pages": [
+      "sitio-web"
+    ],
+    "images": {
+      "hero": "/img/projects/tc-la-revista-hero.webp",
+      "alt": "/img/projects/tc-la-revista-alt.webp"
+    }
+  },
+  {
+    "slug": "psicotemas",
+    "num": 15,
+    "title": "Psicotemas",
+    "chapter": "sitios",
+    "category": "Salud mental · Psicología",
+    "url": "https://psicotemas.com.ar/",
+    "tagline": "Un centro de psicología donde cada paciente encuentra al profesional indicado para su motivo de consulta.",
+    "bullets": [
+      "Buscador por motivo de consulta con los profesionales de cada área",
+      "Secciones de equipo, artículos y capacitaciones",
+      "Primera sesión coordinada por WhatsApp en cuatro pasos"
+    ],
+    "alt": "Sitio web de Psicotemas con buscador de psicólogos por motivo de consulta",
+    "featured": false,
+    "enabled": true,
+    "pages": [
+      "sitio-web"
+    ],
+    "images": {
+      "hero": "/img/projects/psicotemas-hero.webp",
+      "alt": "/img/projects/psicotemas-alt.webp"
+    }
+  },
+  {
+    "slug": "electro-a-la-orden",
+    "num": 16,
+    "title": "Electro a la Orden",
+    "chapter": "sitios",
+    "category": "Electrodomésticos · Mayorista",
+    "url": "https://electroalaorden.com.ar/",
+    "tagline": "Sitio institucional y catálogo con carrito en la misma estructura.",
+    "bullets": [
+      "Seis categorías de producto",
+      "Ofertas relámpago en la portada",
+      "Buscador y carrito para armar el pedido mayorista"
+    ],
+    "alt": "Sitio mayorista de Electro a la Orden con catálogo de electrodomésticos y carrito",
+    "featured": false,
+    "enabled": true,
+    "pages": [
+      "tienda-digital"
+    ],
+    "images": {
+      "hero": "/img/projects/electro-a-la-orden-hero.webp",
+      "alt": "/img/projects/electro-a-la-orden-alt.webp"
+    }
+  },
+  {
+    "slug": "farmacia-strycek",
+    "num": 17,
+    "title": "Farmacia Strycek",
+    "chapter": "sitios",
+    "category": "Farmacia · Tienda online",
+    "url": "https://farmaciastrycek.com.ar/",
+    "tagline": "Cinco rubros distintos, cada uno con su propia sección.",
+    "bullets": [
+      "Ortopedia, dermocosmética, perfumería y más",
+      "Precio tachado y precio final visibles",
+      "Banners rotativos editables"
+    ],
+    "alt": "Sitio de Farmacia Strycek con secciones de ortopedia, dermocosmética y perfumería",
+    "featured": false,
+    "enabled": true,
+    "pages": [],
+    "images": {
+      "hero": "/img/projects/farmacia-strycek-hero.webp",
+      "alt": "/img/projects/farmacia-strycek-alt.webp"
+    }
+  },
+  {
+    "slug": "id-brand",
+    "num": 18,
+    "title": "ID Brand",
+    "chapter": "landings",
+    "category": "Marca · Landing",
+    "url": "",
+    "tagline": "Pendiente: completar cuando esté el dominio.",
+    "bullets": [],
+    "alt": "Landing page de ID Brand",
+    "featured": false,
+    "enabled": false,
+    "pages": [
+      "landing-page"
+    ],
+    "images": {
+      "hero": "/img/projects/id-brand-hero.webp",
+      "alt": "/img/projects/id-brand-alt.webp"
+    }
+  }
+]

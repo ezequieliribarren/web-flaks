@@ -1,0 +1,44 @@
+<%
+  const onHome = pageKey === 'home';
+  const h = (id) => (onHome ? `#${id}` : `/#${id}`);
+  const navItems = [
+    { id: 'servicios', label: 'Servicios' },
+    { id: 'proyectos', label: 'Proyectos' },
+    { id: 'proceso', label: 'Proceso' },
+    { id: 'contacto', label: 'Contacto' },
+  ];
+%>
+<header class="site-header" data-header>
+  <div class="container">
+    <a class="brand" href="/" aria-label="FLAKS, ir al inicio"><%- include('logo', { variant: 'header' }) %></a>
+    <nav class="nav" aria-label="Principal">
+      <ul>
+        <% navItems.forEach(function (it) { %><li><a href="<%= h(it.id) %>" data-nav="<%= it.id %>"><%= it.label %></a></li>
+        <% }) %>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn--primary btn--sm" href="<%= wa() %>" target="_blank" rel="noopener" data-wa="header"><%- include('icon', { name: 'whatsapp' }) %><span>Hablemos<span class="sr-only"> por WhatsApp (abre en una pestaña nueva)</span></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle><span></span><span class="sr-only">Abrir menú</span></button>
+    </div>
+  </div>
+</header>
+<div class="mobile-menu" id="mobile-menu" hidden data-mobile-menu>
+  <nav aria-label="Menú móvil">
+    <ul>
+      <% navItems.forEach(function (it, i) { %><li><a href="<%= h(it.id) %>"><small>0<%= i + 1 %></small><%= it.label %></a></li>
+      <% }) %>
+    </ul>
+  </nav>
+  <div class="mobile-menu__group">
+    <p class="eyebrow">Servicios</p>
+    <ul class="mobile-menu__services">
+      <li><a href="/landing-page">Landing page</a></li>
+      <li><a href="/sitio-web">Sitio web</a></li>
+      <li><a href="/tienda-digital">Tienda online</a></li>
+      <li><a href="/redes-sociales">Redes sociales</a></li>
+      <li><a href="/pauta-publicitaria">Pauta publicitaria</a></li>
+    </ul>
+  </div>
+  <a class="btn btn--primary btn--block" href="<%= wa() %>" target="_blank" rel="noopener" data-wa="menu"><%- include('icon', { name: 'whatsapp' }) %>Hablar por WhatsApp</a>
+</div>

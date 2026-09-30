@@ -1,0 +1,106 @@
+{
+  "landing-page": [
+    {
+      "q": "¿Cuánto tarda en estar lista?",
+      "a": "{plazo} desde que nos pasás el brief. Vos nos contás qué querés vender y nosotros nos encargamos del resto."
+    },
+    {
+      "q": "¿Sirve para campañas de Google Ads y Meta Ads?",
+      "a": "Sí, está pensada para eso: carga rápida, URL limpia y una estructura enfocada en una sola acción. Es lo que Google y Meta premian con mejor nivel de calidad y menor costo por clic."
+    },
+    {
+      "q": "¿El dominio y el hosting están incluidos?",
+      "a": "Sí. El primer año de hosting, dominio y certificado SSL está incluido. Después se renueva de forma anual."
+    },
+    {
+      "q": "¿Puedo convertirla después en un sitio o una tienda?",
+      "a": "Sí. La landing se puede escalar a un sitio web completo o a una tienda online cuando tu negocio lo necesite, sin empezar de cero."
+    }
+  ],
+  "sitio-web": [
+    {
+      "q": "¿Cuánto tarda en estar listo?",
+      "a": "{plazo} desde que tenemos el material listo: textos, logo y fotos. Si no tenés los textos, te ayudamos a armarlos."
+    },
+    {
+      "q": "¿Incluye SEO?",
+      "a": "Sí, SEO básico desde el día 1: títulos y metadescripciones, velocidad de carga, estructura de encabezados y sitemap para que Google entienda tu sitio."
+    },
+    {
+      "q": "¿Puedo actualizar el contenido yo mismo?",
+      "a": "Sí. Te damos acceso al panel para que cambies textos, fotos y datos cuando quieras."
+    },
+    {
+      "q": "¿El dominio y el hosting están incluidos?",
+      "a": "Sí. El primer año de hosting, dominio y certificado SSL está incluido. Después se renueva de forma anual."
+    },
+    {
+      "q": "¿Y si necesito algo más simple o más grande?",
+      "a": "Si querés una sola página enfocada en vender algo puntual, te conviene una landing page. Si querés vender online con carrito y cobros, una tienda online.",
+      "links": [
+        {
+          "label": "Ver landing pages",
+          "href": "/landing-page"
+        },
+        {
+          "label": "Ver tiendas online",
+          "href": "/tienda-digital"
+        }
+      ]
+    }
+  ],
+  "tienda-digital": [
+    {
+      "q": "¿En qué plataforma se arma la tienda?",
+      "a": "En Tienda Nube, la plataforma de e-commerce más usada de Argentina. Es estable, segura y la podés administrar sin conocimientos técnicos. Además, realizamos e-commerce a medida en WordPress."
+    },
+    {
+      "q": "¿Cuánto tarda en estar lista?",
+      "a": "{plazo}, según la cantidad de productos del catálogo."
+    },
+    {
+      "q": "¿Cómo cobro las ventas?",
+      "a": "Con Mercado Pago, Pago Nube y transferencia bancaria: tarjetas de crédito y débito, cuotas y pagos por transferencia."
+    },
+    {
+      "q": "¿Puedo administrarla yo?",
+      "a": "Sí. Cargás productos, precios, stock y pedidos desde el panel de Tienda Nube, sin depender de nadie."
+    }
+  ],
+  "redes-sociales": [
+    {
+      "q": "¿Qué redes gestionan?",
+      "a": "Instagram, Facebook y TikTok. Según el plan, también LinkedIn y YouTube."
+    },
+    {
+      "q": "¿Tengo que publicar el contenido?",
+      "a": "No. A partir del plan Profesional nos encargamos de programar y publicar todo el contenido en tus redes, en los días y horarios que mejor funcionan. En el plan Presencia te entregamos las piezas listas para que las publiques vos."
+    },
+    {
+      "q": "¿Tengo que brindar acceso a mi cuenta?",
+      "a": "No, generamos un usuario con acceso limitado desde Meta Business Suite, solo para programar contenido, publicar y ver métricas. No compartís tu contraseña y podés quitar el acceso cuando quieras."
+    },
+    {
+      "q": "¿Qué material tengo que aportar?",
+      "a": "Fotos y videos en crudo de tu negocio, que compartís en una carpeta de Google Drive. Nosotros los editamos y los convertimos en contenido."
+    }
+  ],
+  "pauta-publicitaria": [
+    {
+      "q": "¿Cuál es el presupuesto mínimo de inversión?",
+      "a": "No hay un monto mínimo establecido. El presupuesto se fija según tus objetivos, tu rubro y la competencia en cada plataforma: te proponemos una inversión inicial y la ajustamos con los resultados."
+    },
+    {
+      "q": "¿El presupuesto publicitario está incluido en el servicio?",
+      "a": "No. La inversión en publicidad se paga directamente a cada plataforma (Google, Meta o Mercado Libre) y es aparte del honorario por la gestión de las campañas."
+    },
+    {
+      "q": "¿Cuándo empiezo a ver resultados?",
+      "a": "Las campañas tienen una fase de aprendizaje de 7 a 14 días. En el primer mes ya tenés datos reales para optimizar."
+    },
+    {
+      "q": "¿Trabajan con Mercado Libre Ads?",
+      "a": "Sí: productos patrocinados, display y brand ads dentro de Mercado Libre."
+    }
+  ]
+}

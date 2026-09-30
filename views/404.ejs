@@ -1,0 +1,17 @@
+<section class="simple-page">
+  <div class="glow" style="width:70vw;height:70vw;right:-25vw;top:-25vw" aria-hidden="true"></div>
+  <div class="container notfound">
+    <p class="notfound__code" aria-hidden="true"><%= locals.is500 ? '500' : '404' %></p>
+    <h1><%= locals.is500 ? 'Algo salió mal.' : 'Esta página no existe.' %></h1>
+    <p class="lead"><%= locals.is500 ? 'Tuvimos un problema de nuestro lado. Probá de nuevo en unos minutos, o mirá lo que hacemos:' : 'Puede que el enlace esté roto o que la página haya cambiado de lugar. Esto es lo que buscás, seguro:' %></p>
+    <nav class="notfound__links" aria-label="Servicios">
+      <a href="/landing-page">Landing page, lista en 5 días<%- include('partials/icon', { name: 'arrow' }) %></a>
+      <a href="/sitio-web">Sitio web profesional<%- include('partials/icon', { name: 'arrow' }) %></a>
+      <a href="/tienda-digital">Tienda online con Mercado Pago<%- include('partials/icon', { name: 'arrow' }) %></a>
+    </nav>
+    <div class="hero__ctas" style="display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1rem">
+      <a class="btn btn--primary" href="<%= wa() %>" target="_blank" rel="noopener" data-wa="404"><%- include('partials/icon', { name: 'whatsapp' }) %>Hablar por WhatsApp</a>
+      <a class="btn btn--ghost" href="/">Volver al inicio</a>
+    </div>
+  </div>
+</section>

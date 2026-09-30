@@ -1,0 +1,50 @@
+[
+  {
+    "project": "lusqtoff-tigre",
+    "author": "Equipo Lusqtoff Tigre",
+    "role": "Tienda oficial de herramientas",
+    "rating": 5,
+    "text": "TEXTO DE EJEMPLO. Teníamos un catálogo desordenado. Hoy los clientes encuentran lo que buscan en dos clics y nos escriben menos para preguntar.",
+    "verified": false
+  },
+  {
+    "project": "innova-salud",
+    "author": "Equipo Innova Salud",
+    "role": "Medicina prepaga",
+    "rating": 5,
+    "text": "TEXTO DE EJEMPLO. La landing quedó pensada para una sola cosa: que la gente cotice. Rápida, clara y lista para la pauta desde el primer día.",
+    "verified": false
+  },
+  {
+    "project": "tobyco",
+    "author": "Equipo Tobyco Constructora",
+    "role": "Construcción y arquitectura",
+    "rating": 5,
+    "text": "TEXTO DE EJEMPLO. Cada servicio tiene su página y sus obras. Ahora mandamos el link y el sitio explica solo lo que hacemos.",
+    "verified": false
+  },
+  {
+    "project": "winman",
+    "author": "Equipo Winman",
+    "role": "Herramientas mayorista y minorista",
+    "rating": 5,
+    "text": "TEXTO DE EJEMPLO. Mayoristas y minoristas en el mismo sitio sin mezclarse. El equipo de FLAKS entendió el negocio desde la primera reunión.",
+    "verified": false
+  },
+  {
+    "project": "santa-milonguita",
+    "author": "Equipo Santa Milonguita",
+    "role": "Mudanzas",
+    "rating": 5,
+    "text": "TEXTO DE EJEMPLO. Tres generaciones de trabajo contadas en un sitio que transmite confianza. Los pedidos de presupuesto llegan directo al WhatsApp.",
+    "verified": false
+  },
+  {
+    "project": "iannaci",
+    "author": "Equipo Iannaci Propiedades",
+    "role": "Inmobiliaria",
+    "rating": 5,
+    "text": "TEXTO DE EJEMPLO. Comprar, alquilar y vender, cada uno con su recorrido. El sitio se ve profesional y es fácil de actualizar.",
+    "verified": false
+  }
+]
