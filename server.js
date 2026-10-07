@@ -14,7 +14,8 @@ const { toJsonLd } = require('./lib/seo');
 const app = express();
 const PORT = process.env.PORT || 3000;
 const SITE_URL = (process.env.SITE_URL || 'https://flaks.com.ar').replace(/\/$/, '');
-const WHATSAPP = process.env.WHATSAPP_NUMBER || '5491157455803';
+// wa.me solo acepta dígitos: se limpia el valor por si en el panel se cargó como "+54 9 11 5745-5803".
+const WHATSAPP = String(process.env.WHATSAPP_NUMBER || '').replace(/\D/g, '') || '5491157455803';
 // Vacío en .env = sin GTM (desarrollo). Sin definir = contenedor de producción.
 const GTM_ID = process.env.GTM_ID ?? 'GTM-TWHGP8NC';
 const PUBLIC = path.join(__dirname, 'public');
