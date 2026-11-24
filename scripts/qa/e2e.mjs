@@ -163,8 +163,9 @@ for (const [slug, pct] of [['landing-page', 5], ['sitio-web', 5], ['tienda-digit
   await page.goto(`${BASE}/recursos/15-ganchos`, { waitUntil: 'networkidle' });
   check('recurso: 15 ganchos', (await page.locator('[data-gancho]').count()) === 15);
   check('recurso: un solo h1', (await page.locator('h1').count()) === 1);
-  const waCtas = await page.$$eval('.rs-cta a[href^="https://wa.me/"]', (a) => a.length);
-  check('recurso: 3 CTAs intermedios a WhatsApp', waCtas === 3, String(waCtas));
+  const waCtas = await page.$$eval('.rs-cta:not(#cta-final-wrap) a[href^="https://wa.me/"]', (a) => a.length);
+  check('recurso: 3 CTAs intermedios + 1 de cierre a WhatsApp', waCtas === 4, String(waCtas));
+  check('recurso: el cierre enlaza a /redes-sociales', (await page.locator('#cta-final ~ .rs-cta__actions a[href="/redes-sociales"]').count()) === 1);
   check('recurso: sin CTA final repetido', (await page.locator('.rs-final').count()) === 0);
   check('recurso: barra fija oculta en la portada', !(await page.evaluate(() => document.querySelector('[data-rs-sticky]').classList.contains('is-visible'))));
   await page.evaluate(() => document.getElementById('gancho-8').scrollIntoView());

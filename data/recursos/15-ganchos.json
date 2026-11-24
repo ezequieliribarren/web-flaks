@@ -339,6 +339,10 @@
     "accent": "tus redes?",
     "text": "Aplicamos estos 15 ganchos (y muchos más) todos los meses en las marcas que gestionamos. Contanos qué vendés y te armamos una propuesta.",
     "button": "Hablar por WhatsApp",
-    "waText": "Hola FLAKS! Leí los 15 ganchos y quiero que gestionen mis redes."
+    "waText": "Hola FLAKS! Leí los 15 ganchos y quiero que gestionen mis redes.",
+    "link": {
+      "label": "Ver planes de redes sociales",
+      "href": "/redes-sociales"
+    }
   }
 }

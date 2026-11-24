@@ -108,6 +108,17 @@
       </div>
     </section>
 
+    <!-- ===================== CTA FINAL ===================== -->
+    <aside class="rs-cta rs-cta--redes" aria-labelledby="cta-final">
+      <p class="rs-cta__eyebrow">Redes sociales</p>
+      <h2 class="rs-cta__title" id="cta-final"><%= r.finalCta.title %> <%= r.finalCta.accent %></h2>
+      <p class="rs-cta__text"><%= r.finalCta.text %></p>
+      <div class="rs-cta__actions">
+        <a class="rs-btn rs-btn--light gtm-wa-cta-rc" href="<%= wa(r.finalCta.waText) %>" target="_blank" rel="noopener" data-wa="recurso-final"><%- include('partials/icon', { name: 'whatsapp' }) %><%= r.finalCta.button %><span class="sr-only"> (abre WhatsApp en una pestaña nueva)</span></a>
+        <a class="rs-cta__link" href="<%= r.finalCta.link.href %>"><%= r.finalCta.link.label %><%- include('partials/icon', { name: 'arrow' }) %></a>
+      </div>
+    </aside>
+
     <!-- ===================== COMPARTIR ===================== -->
     <section class="rs-share" aria-labelledby="share-title">
       <h2 id="share-title">¿Te sirvió? Compartilo</h2>
