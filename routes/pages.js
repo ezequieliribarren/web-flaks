@@ -9,6 +9,7 @@ router.get('/', (req, res) => {
   res.render('home', {
     title: site.home.metaTitle,
     description: site.home.metaDescription,
+    h1: site.home.seoH1,
     pageKey: 'home',
     bodyClass: 'page-home',
     panels: services.panels,

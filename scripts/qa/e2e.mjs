@@ -76,13 +76,15 @@ for (const slug of ['landing-page', 'sitio-web', 'tienda-digital', 'redes-social
   await ctx.close();
 }
 
-// 4) Redirect que queda: /desarrollo-web → 301 a /#servicios.
+// 4) /desarrollo-web → 301 a /sitio-web. Barra final → 301 sin barra.
 {
   const { ctx, page } = await newPage();
   const resp = await page.goto(`${BASE}/desarrollo-web/`, { waitUntil: 'networkidle' });
   const chain = resp.request().redirectedFrom();
   check('/desarrollo-web → 301', chain && (await chain.response()).status() === 301);
-  check('/desarrollo-web termina en la home', new URL(page.url()).pathname === '/');
+  check('/desarrollo-web termina en /sitio-web', new URL(page.url()).pathname === '/sitio-web');
+  const slash = await page.goto(`${BASE}/redes-sociales/?utm_source=t`, { waitUntil: 'networkidle' });
+  check('barra final → 301 sin barra y con UTM', (await slash.request().redirectedFrom()?.response())?.status() === 301 && new URL(page.url()).pathname === '/redes-sociales' && page.url().includes('utm_source=t'));
   await ctx.close();
 }
 

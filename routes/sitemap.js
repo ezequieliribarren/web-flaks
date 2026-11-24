@@ -2,7 +2,6 @@
 const fs = require('fs');
 const path = require('path');
 const express = require('express');
-const { redirects } = require('../lib/content');
 
 const router = express.Router();
 const root = path.join(__dirname, '..');
@@ -33,9 +32,8 @@ router.get('/sitemap.xml', (req, res) => {
 });
 
 router.get('/robots.txt', (req, res) => {
-  const disallow = Object.keys(redirects).map((from) => `Disallow: ${from}`).join('\n');
   res.type('text/plain').set('Cache-Control', 'public, max-age=3600').send(
-    `User-agent: *\nAllow: /\n${disallow}\nDisallow: /api/\n\nSitemap: ${res.locals.siteUrl}/sitemap.xml\n`
+    `User-agent: *\nAllow: /\nDisallow: /api/\n\nSitemap: ${res.locals.siteUrl}/sitemap.xml\n`
   );
 });
 

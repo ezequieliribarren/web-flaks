@@ -103,7 +103,7 @@
       "navName": "Landing Pages",
       "serviceType": "Landing page",
       "delivery": "5 días hábiles",
-      "metaTitle": "Landing Page profesional en 5 días | FLAKS Agencia Digital",
+      "metaTitle": "Diseño de Landing Page en 5 días para Google y Meta Ads | FLAKS",
       "metaDescription": "Landing page a medida, optimizada para Google Ads y Meta Ads, lista en 5 días hábiles. Convertí visitantes en clientes desde el primer clic.",
       "h1": "Landing page,",
       "rotating": [
@@ -222,7 +222,8 @@
         "text": "Escribinos por WhatsApp y te lo aplicamos.",
         "cta": "Quiero mi descuento",
         "waText": "Hola FLAKS! Quiero el 5% de descuento en la creación de mi landing page."
-      }
+      },
+      "seoH1": "Landing pages que convierten, listas en 5 días"
     },
     "sitio-web": {
       "slug": "sitio-web",
@@ -230,7 +231,7 @@
       "navName": "Web Profesional",
       "serviceType": "Diseño web",
       "delivery": "7 días hábiles",
-      "metaTitle": "Diseño de Sitio Web profesional | FLAKS Agencia Digital",
+      "metaTitle": "Diseño de Páginas Web para Empresas y Pymes | FLAKS",
       "metaDescription": "Diseño de sitios web a medida con SEO incluido, dominio y hosting. Mostrá tu empresa en Google y convertí visitantes en clientes.",
       "h1": "Tu sitio web,",
       "rotating": [
@@ -353,7 +354,8 @@
       "contactTitle": {
         "text": "Estás a un paso",
         "accent": "de escalar tu marca."
-      }
+      },
+      "seoH1": "Diseño de páginas web a medida para tu empresa"
     },
     "tienda-digital": {
       "slug": "tienda-digital",
@@ -361,7 +363,7 @@
       "navName": "Tiendas Online",
       "serviceType": "Tienda online",
       "delivery": "7 días hábiles",
-      "metaTitle": "Tienda Online a medida con Mercado Pago | FLAKS Agencia Digital",
+      "metaTitle": "Diseño de Tienda Online en Tienda Nube | FLAKS",
       "metaDescription": "Tienda online a medida con Mercado Pago, catálogo fácil de gestionar y lista para publicitar. Empezá a vender todos los días.",
       "h1": "Tu tienda online,",
       "rotating": [
@@ -484,7 +486,8 @@
       "contactTitle": {
         "text": "Empezá a vender",
         "accent": "tus productos."
-      }
+      },
+      "seoH1": "Creamos tu tienda online con Tienda Nube y Mercado Pago"
     },
     "redes-sociales": {
       "slug": "redes-sociales",
@@ -493,7 +496,7 @@
       "name": "Redes Sociales",
       "navName": "Redes Sociales",
       "serviceType": "Gestión de redes sociales",
-      "metaTitle": "Gestión de Redes Sociales para marcas | FLAKS Agencia Digital",
+      "metaTitle": "Community Manager y Manejo de Redes Sociales | FLAKS",
       "metaDescription": "Gestión de redes sociales: reels, carruseles, historias y programación de contenido para Instagram, Facebook y TikTok. Planes mensuales con reportes.",
       "h1": "Tus redes,",
       "rotating": [
@@ -669,7 +672,8 @@
       },
       "crossNote": "Contenido y gestión todos los meses",
       "hideProcess": true,
-      "faqAfterShowcase": true
+      "faqAfterShowcase": true,
+      "seoH1": "Community manager y gestión de redes para tu marca"
     },
     "pauta-publicitaria": {
       "slug": "pauta-publicitaria",
@@ -678,7 +682,7 @@
       "name": "Pauta Publicitaria",
       "navName": "Pauta Publicitaria",
       "serviceType": "Publicidad online",
-      "metaTitle": "Pauta Publicitaria en Google Ads y Meta Ads | FLAKS Agencia Digital",
+      "metaTitle": "Agencia de Google Ads y Meta Ads | Publicidad Online | FLAKS",
       "metaDescription": "Gestión de campañas en Google Ads, Meta Ads y Mercado Libre Ads: segmentación precisa, optimización continua y reportes mensuales.",
       "h1": "Tu pauta,",
       "rotating": [
@@ -828,7 +832,8 @@
           "label": "FAQ"
         }
       ],
-      "crossNote": "Google, Meta y Mercado Libre Ads"
+      "crossNote": "Google, Meta y Mercado Libre Ads",
+      "seoH1": "Publicidad en Google Ads y Meta Ads que trae consultas"
     }
   }
 }

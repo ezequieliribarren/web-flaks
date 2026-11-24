@@ -13,7 +13,8 @@
   <div class="container s-hero__grid">
     <div class="s-hero__copy">
       <p class="chip"><span class="dot" aria-hidden="true"></span>Estamos en línea · Respondemos en el día</p>
-      <h1 class="s-hero__title" id="s-title"><%= page.h1 %> <span class="rotator accent" data-rotator="<%= JSON.stringify(page.rotating) %>"><%= page.rotating[0] %></span></h1>
+      <h1 class="s-hero__h1" id="s-title"><%= page.seoH1 %></h1>
+      <p class="s-hero__title"><%= page.h1 %> <span class="rotator accent" data-rotator="<%= JSON.stringify(page.rotating) %>"><%= page.rotating[0] %></span></p>
       <p class="s-hero__sub"><%= page.subtitle %></p>
       <div class="s-hero__ctas">
         <a class="btn btn--primary gtm-wa-hero-<%= gtmCode %>" href="<%= wa(waText) %>" target="_blank" rel="noopener" data-wa="hero"><%- include('partials/icon', { name: 'whatsapp' }) %>Hablar por WhatsApp<span class="sr-only"> (abre en una pestaña nueva)</span></a>
