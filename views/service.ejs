@@ -204,6 +204,17 @@
 <% if (page.faqAfterShowcase) { %><%- include('partials/service-faq') %><% } %>
 
 <!-- ===================== OTROS SERVICIOS ===================== -->
+<% if (locals.guides && guides.length) { %>
+<section class="section s-guides" aria-labelledby="guides-title">
+  <div class="container">
+    <h2 class="eyebrow" id="guides-title">Guías relacionadas</h2>
+    <ul class="blog-cards blog-cards--sm" role="list">
+      <% guides.forEach(function (g) { %><li><a class="blog-card" href="/blog/<%= g.slug %>"><span class="blog-card__meta"><span class="blog-tag"><%= serviceName(g.service) %></span><span><%= g.readMinutes %> min</span></span><span class="blog-card__title"><%= g.title %></span></a></li><% }) %>
+    </ul>
+  </div>
+</section>
+<% } %>
+
 <section class="s-cross" aria-labelledby="cross-title">
   <div class="container">
     <% if (page.crossLink) { %>

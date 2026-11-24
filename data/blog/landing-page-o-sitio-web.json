@@ -1,0 +1,114 @@
+{
+  "slug": "landing-page-o-sitio-web",
+  "service": "sitio-web",
+  "title": "Landing page o sitio web: cuál necesita tu negocio",
+  "metaTitle": "Landing Page o Sitio Web: cuál elegir para tu negocio | FLAKS",
+  "metaDescription": "Diferencias entre una landing page y un sitio web, cuándo conviene cada uno, cómo se compara en objetivo, SEO y costo, y cómo empezar con una y crecer a la otra.",
+  "keywords": ["landing page o sitio web", "diferencia entre landing page y sitio web", "qué necesita mi negocio", "página web para empresas"],
+  "published_at": "2026-11-24",
+  "updated": "2026-11-24",
+  "answer": "Si querés **conseguir consultas con publicidad paga** y vender una sola cosa, empezá por una landing page. Si querés **aparecer en Google de forma orgánica**, mostrar varios servicios y transmitir confianza como empresa, necesitás un sitio web. Muchas pymes arrancan con una landing y la hacen crecer a sitio cuando el negocio lo pide.",
+  "intro": "Es una de las dudas que más nos hacen antes de empezar un proyecto. La respuesta depende de tu objetivo, no de cuál suena más profesional. Acá va cómo decidir.",
+  "ctaTitle": "¿No sabés cuál te conviene?",
+  "ctaLine": "Contanos qué vendés y te recomendamos qué hacer primero.",
+  "ctaText": "Hola FLAKS! Leí la guía de landing page o sitio web y quiero que me ayuden a decidir.",
+  "finalTitle": "Te ayudamos a elegir",
+  "finalText": "En una charla corta definimos qué necesita tu negocio hoy y cómo escalarlo después, sin rehacer todo.",
+  "sections": [
+    {
+      "id": "diferencia",
+      "h2": "Cuál es la diferencia entre una landing page y un sitio web",
+      "blocks": [
+        "Una **landing page** es una sola página pensada para una acción concreta: que la persona te escriba, complete un formulario o compre. No tiene menú ni caminos alternativos.",
+        "Un **sitio web** tiene varias páginas (inicio, servicios, nosotros, contacto, a veces blog) y está pensado para que la gente conozca tu empresa, recorra tu oferta y confíe en vos.",
+        {
+          "table": {
+            "caption": "Comparación entre landing page y sitio web",
+            "head": ["", "Landing page", "Sitio web"],
+            "rows": [
+              ["Objetivo", "Una acción: consulta, venta o reserva", "Presentar la empresa y varios servicios"],
+              ["Estructura", "Una página, sin menú", "Varias páginas con navegación"],
+              ["Tráfico ideal", "Anuncios de Google Ads y Meta Ads", "Búsquedas orgánicas, redes, referidos"],
+              ["Posicionamiento en Google", "Limitado: tiene un solo tema", "Mayor: cada página puede posicionar una búsqueda"],
+              ["Velocidad de puesta en marcha", "Más rápida", "Más trabajo de contenido"],
+              ["Ideal para", "Probar una oferta o campaña", "Construir presencia y credibilidad"]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "cuando-landing",
+      "h2": "Cuándo conviene una landing page",
+      "blocks": [
+        {
+          "ul": [
+            "Vas a invertir en **Google Ads o Meta Ads** y querés medir cuántas consultas trae cada campaña.",
+            "Vendés **un servicio o producto principal** y querés que la gente se enfoque en eso.",
+            "Querés **probar una oferta** antes de armar algo más grande.",
+            "Tenés poco tiempo o presupuesto y necesitás salir rápido."
+          ]
+        },
+        "Una landing bien hecha tiene la ventaja de ser medible: sabés exactamente cuántas personas entraron y cuántas contactaron. Para entender cómo armarla, leé la [guía de landing page para Google Ads](/blog/landing-page-para-google-ads)."
+      ]
+    },
+    {
+      "id": "cuando-sitio",
+      "h2": "Cuándo conviene un sitio web",
+      "blocks": [
+        {
+          "ul": [
+            "Querés **aparecer en Google sin pagar por cada clic**: un sitio con varias páginas tiene más oportunidades de aparecer en búsquedas distintas.",
+            "Ofrecés **varios servicios** y cada uno necesita su explicación.",
+            "Tus clientes **te buscan por el nombre** antes de contratar y esperan encontrar información seria.",
+            "Querés sumar un **blog o recursos** para atraer consultas con el tiempo."
+          ]
+        },
+        "Un sitio web es una inversión de más largo plazo: tarda más en dar resultados orgánicos, pero cada página suma y trabaja todos los días. Si querés una idea de qué incluye, mirá el servicio de [sitios web profesionales](/sitio-web)."
+      ]
+    },
+    {
+      "id": "empezar-y-crecer",
+      "h2": "Se puede empezar con una landing y crecer después",
+      "blocks": [
+        "No tenés que elegir una vez y para siempre. Una estrategia frecuente en pymes es **lanzar una landing para empezar a recibir consultas ya**, y a medida que el negocio crece, sumar páginas hasta tener un sitio completo.",
+        "Lo importante es que la landing esté bien armada desde el principio (dominio propio, estructura limpia, medición) para que escalarla no implique rehacerla."
+      ]
+    },
+    {
+      "id": "como-decidir",
+      "h2": "Tres preguntas para decidir",
+      "blocks": [
+        {
+          "ol": [
+            "**¿De dónde va a venir la gente?** Si de anuncios: landing. Si de Google orgánico y recomendaciones: sitio.",
+            "**¿Cuántas cosas vendés?** Una: landing. Varias que necesitan explicación: sitio.",
+            "**¿Cuánto tiempo tenés?** Si necesitás resultados rápido: landing. Si podés construir a mediano plazo: sitio."
+          ]
+        },
+        "Y si todavía tenés dudas, escribinos: en una charla corta definimos cuál tiene más sentido para tu caso."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "¿Una landing page aparece en Google?",
+      "a": "Puede aparecer, pero con límites: al tener un solo tema, compite por pocas búsquedas. Si tu objetivo es el posicionamiento orgánico, un sitio con varias páginas tiene más alcance."
+    },
+    {
+      "q": "¿Qué sale más rápido de hacer?",
+      "a": "La landing. En FLAKS entregamos landing pages en 5 días hábiles y sitios web en 7 días hábiles, siempre que tengamos el material listo."
+    },
+    {
+      "q": "¿Puedo pasar de una landing a un sitio completo?",
+      "a": "Sí. Si la landing está bien armada, se puede ampliar a un sitio web con más páginas sin empezar de cero."
+    },
+    {
+      "q": "¿Necesito las dos?",
+      "a": "No siempre. Muchos negocios tienen un sitio institucional y además una landing por cada campaña publicitaria, para medir cada oferta por separado."
+    }
+  ],
+  "sources": [
+    { "label": "Google Search Central: guía de inicio de SEO", "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide" }
+  ]
+}

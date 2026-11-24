@@ -1,6 +1,7 @@
 const express = require('express');
 const { site, services, faq, projects, chapters, reviews, social, projectsForPage } = require('../lib/content');
 const seo = require('../lib/seo');
+const { posts } = require('./blog');
 
 const router = express.Router();
 
@@ -41,8 +42,11 @@ for (const slug of Object.keys(services.pages)) {
         : { src: asset(lead.images.hero) };
     }
 
+    const guides = posts.filter((p) => p.service === slug).slice(0, 3);
     res.render('service', {
       preloadImage,
+      guides,
+      serviceName: (s) => (services.pages[s] ? services.pages[s].name : 'Marketing digital'),
       title: page.metaTitle,
       description: page.metaDescription,
       pageKey: slug,
@@ -57,7 +61,7 @@ for (const slug of Object.keys(services.pages)) {
       gtmCode: { 'landing-page': 'lp', 'sitio-web': 'sw', 'tienda-digital': 'td', 'redes-sociales': 'rs', 'pauta-publicitaria': 'pp' }[slug],
       social: page.showcase ? social : [],
       ogImage: `${siteUrl}/img/og/${slug}.png`,
-      styles: ['/css/service.css'],
+      styles: guides.length ? ['/css/service.css', '/css/blog.css'] : ['/css/service.css'],
       scripts: ['/js/service.js'],
       jsonLd: [
         seo.organization(siteUrl, whatsapp),

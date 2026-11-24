@@ -3,6 +3,8 @@ const fs = require('fs');
 const path = require('path');
 const express = require('express');
 
+const { posts } = require('./blog');
+
 const router = express.Router();
 const root = path.join(__dirname, '..');
 const mtime = (...files) =>
@@ -24,9 +26,14 @@ const urls = [
 
 router.get('/sitemap.xml', (req, res) => {
   const base = res.locals.siteUrl;
-  const body = urls
+  const latest = posts.map((p) => p.updated).sort().pop();
+  const blogEntries = [
+    ...(posts.length ? [`  <url>\n    <loc>${base}/blog</loc>\n    <lastmod>${latest}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.7</priority>\n  </url>`] : []),
+    ...posts.map((p) => `  <url>\n    <loc>${base}/blog/${p.slug}</loc>\n    <lastmod>${p.updated}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.7</priority>\n  </url>`),
+  ];
+  const body = [...urls
     .map((u) => `  <url>\n    <loc>${base}${u.loc}</loc>\n    <lastmod>${mtime(...u.files)}</lastmod>\n    <changefreq>${u.changefreq}</changefreq>\n    <priority>${u.priority}</priority>\n  </url>`)
-    .join('\n');
+    , ...blogEntries].join('\n');
   res.type('application/xml').set('Cache-Control', 'public, max-age=3600')
     .send(`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${body}\n</urlset>\n`);
 });

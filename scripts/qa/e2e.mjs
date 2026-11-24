@@ -1,5 +1,6 @@
 // Uso interno de QA: pruebas de punta a punta del comportamiento clave.
 // node scripts/e2e.mjs   (con el servidor corriendo en BASE o localhost:3000)
+import fs from 'fs';
 import { chromium } from 'playwright';
 
 const BASE = process.env.BASE || 'http://localhost:3000';
@@ -228,6 +229,39 @@ for (const [label, opts] of [
   check(`${label}: sin scroll horizontal de página`, !info.overflowX);
   if (label === 'reduced-motion') check('reduced-motion: sin pines', info.spacers === 0);
   check(`${label}: sin errores`, errors.length === 0, errors.join(' | '));
+  await ctx.close();
+}
+
+// 7) Blog: índice, guías, schema, sitemap, enlaces internos y medición de lectura.
+{
+  const slugs = fs.readdirSync('data/blog').filter((f) => f.endsWith('.json')).map((f) => JSON.parse(fs.readFileSync('data/blog/' + f, 'utf8'))).filter((p) => p.published !== false).map((p) => p.slug);
+  const sitemap = await (await fetch(`${BASE}/sitemap.xml`)).text();
+  check('blog: /blog en el sitemap', sitemap.includes('/blog</loc>'));
+  const { ctx, page, errors } = await newPage();
+  await page.goto(`${BASE}/blog`, { waitUntil: 'networkidle' });
+  check('blog: índice lista todas las guías', (await page.locator('.blog-card').count()) === slugs.length, String(await page.locator('.blog-card').count()));
+  for (const slug of slugs) {
+    check(`blog/${slug}: en el sitemap`, sitemap.includes(`/blog/${slug}</loc>`));
+    await page.goto(`${BASE}/blog/${slug}`, { waitUntil: 'networkidle' });
+    check(`blog/${slug}: un solo h1`, (await page.locator('h1').count()) === 1);
+    const ld = await page.$$eval('script[type="application/ld+json"]', (n) => n.map((x) => JSON.parse(x.textContent)['@type']));
+    check(`blog/${slug}: schema BlogPosting + FAQPage + BreadcrumbList`, ['BlogPosting', 'FAQPage', 'BreadcrumbList'].every((t) => ld.includes(t)), ld.join(','));
+    check(`blog/${slug}: canonical propio`, (await page.getAttribute('link[rel="canonical"]', 'href')).endsWith(`/blog/${slug}`));
+    check(`blog/${slug}: respuesta rápida y FAQ`, (await page.locator('.blog-answer').count()) === 1 && (await page.locator('.faq__item').count()) >= 3);
+    check(`blog/${slug}: CTAs de WhatsApp medibles por guía`, (await page.locator(`[data-wa="blog-${slug}-mid"]`).count()) === 1 && (await page.locator(`[data-wa="blog-${slug}-end"]`).count()) === 1);
+    // Enlaces internos: ninguno roto.
+    const hrefs = await page.$$eval('.blog-body a[href^="/"], .blog-related a[href^="/"]', (a) => [...new Set(a.map((x) => x.getAttribute('href').split('#')[0]))]);
+    const bad = [];
+    for (const h of hrefs) { const r = await fetch(BASE + h, { redirect: 'manual' }); if (r.status !== 200) bad.push(h + ' ' + r.status); }
+    check(`blog/${slug}: enlaces internos sin romper`, bad.length === 0, bad.join(', '));
+  }
+  // Evento de lectura
+  await page.goto(`${BASE}/blog/${slugs[0]}`, { waitUntil: 'networkidle' });
+  await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+  await page.waitForTimeout(600);
+  const prog = await page.evaluate(() => (window.dataLayer || []).filter((e) => e.event === 'article_progress').map((e) => e.percent + ':' + e.article_slug));
+  check('blog: article_progress 25/50/75/100 con el slug', prog.length === 4 && prog.every((p) => p.endsWith(':' + slugs[0])), prog.join(' '));
+  check('blog: sin errores de consola', errors.length === 0, errors.join(' | '));
   await ctx.close();
 }
 

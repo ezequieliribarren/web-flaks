@@ -1,0 +1,149 @@
+{
+  "slug": "landing-page-para-google-ads",
+  "service": "landing-page",
+  "title": "Landing page para Google Ads: cómo armarla para que convierta",
+  "metaTitle": "Landing Page para Google Ads: guía para que convierta | FLAKS",
+  "metaDescription": "Qué tiene que tener una landing page para campañas de Google Ads y Meta Ads: estructura, velocidad, mensaje y medición. Guía práctica para negocios de Argentina.",
+  "keywords": ["landing page para google ads", "landing page que convierte", "diseño de landing page", "landing page para campañas"],
+  "published_at": "2026-11-24",
+  "updated": "2026-11-24",
+  "answer": "Una landing page para Google Ads tiene que hacer una sola cosa: convertir a la persona que llega desde un anuncio en una consulta. Para eso necesita un mensaje que coincida con el anuncio, **una única acción** (WhatsApp o formulario), carga rápida en el celular y medición de cada contacto. Si mandás ese tráfico a la home de tu sitio, pagás por clics que se pierden entre menús y secciones que no tienen nada que ver con lo que la persona buscó.",
+  "intro": "Cada clic en un anuncio cuesta plata. La landing page es el lugar donde ese gasto se transforma en consultas o se pierde. Esta guía resume lo que aplicamos en las landings que armamos en FLAKS para campañas de Google Ads y Meta Ads.",
+  "ctaTitle": "¿Tenés campañas y no te llegan consultas?",
+  "ctaLine": "Revisamos tu anuncio y tu página y te decimos qué corregir primero.",
+  "ctaText": "Hola FLAKS! Leí la guía de landing page para Google Ads y quiero que revisen mi caso.",
+  "finalTitle": "¿Armamos tu landing en 5 días?",
+  "finalText": "Diseño a medida, textos pensados para convertir, WhatsApp y formulario conectados, y la medición lista para que sepas cuántas consultas trae cada campaña.",
+  "sections": [
+    {
+      "id": "por-que-no-la-home",
+      "h2": "Por qué no conviene mandar los anuncios a la home",
+      "blocks": [
+        "La home de un sitio tiene que servir a todos: clientes nuevos, clientes actuales, proveedores, gente que busca un teléfono. Por eso tiene menú, muchas secciones y varios caminos posibles. Una persona que hizo clic en un anuncio de «diseño de tienda online» no quiere recorrer todo eso: quiere ver enseguida que llegó al lugar correcto.",
+        "Una landing page, en cambio, tiene un objetivo único. No tiene menú que distraiga ni enlaces que saquen a la persona de la página. Todo el contenido empuja hacia una acción: escribirte por WhatsApp, completar un formulario o agendar una llamada.",
+        { "tip": "**Regla simple:** si la persona puede hacer más de tres cosas distintas en la página, no es una landing. Es un sitio." }
+      ]
+    },
+    {
+      "id": "estructura",
+      "h2": "Las 7 partes de una landing page que convierte",
+      "blocks": [
+        "No hace falta inventar nada: las landings que funcionan repiten una estructura bastante estable. Lo que cambia es el mensaje y el orden según el negocio.",
+        {
+          "ol": [
+            "**Un título que repite la promesa del anuncio.** Si el anuncio dice «Tienda online lista en 7 días», el título de la landing dice lo mismo. Cuando el mensaje cambia entre el anuncio y la página, la gente se va.",
+            "**Un subtítulo que explica para quién es y qué obtiene.** Una o dos líneas, sin jerga.",
+            "**El botón principal visible sin hacer scroll**, también en celular. Es la acción que querés que haga la persona.",
+            "**Beneficios concretos**, no características. «Cargás tus productos vos mismo» vale más que «panel de administración».",
+            "**Prueba social real**: proyectos hechos, reseñas verificables, logos de clientes. Nunca inventada.",
+            "**Cómo funciona**, en tres pasos. Reduce la incertidumbre de empezar.",
+            "**Preguntas frecuentes** que respondan las dudas que frenan la consulta: plazos, qué incluye, cómo se paga."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "velocidad",
+      "h2": "Velocidad: lo que Google mide de tu landing",
+      "blocks": [
+        "En Google Ads, la experiencia de la página de destino es uno de los factores que forman el **Nivel de Calidad** de tus anuncios, junto con la relevancia del anuncio y la tasa de clics esperada. Un buen Nivel de Calidad puede bajar el costo por clic; uno malo lo encarece.",
+        "Además, la mayoría de los clics llegan desde el celular, donde la paciencia es poca. Google publica tres métricas de experiencia de página (Core Web Vitals) con umbrales concretos:",
+        {
+          "table": {
+            "caption": "Umbrales de Core Web Vitals que Google considera buenos",
+            "head": ["Métrica", "Qué mide", "Valor bueno"],
+            "rows": [
+              ["LCP", "Cuánto tarda en verse el contenido principal", "Hasta 2,5 segundos"],
+              ["INP", "Qué tan rápido responde la página a un toque o clic", "Hasta 200 milisegundos"],
+              ["CLS", "Cuánto se mueve el diseño mientras carga", "Hasta 0,1"]
+            ]
+          }
+        },
+        "Lo que más pesa en la práctica: imágenes optimizadas (WebP al tamaño real), pocas librerías de JavaScript, tipografías livianas y no cargar widgets de terceros que no aportan. Podés medir tu página gratis en PageSpeed Insights, en la pestaña de celular."
+      ]
+    },
+    {
+      "id": "whatsapp-o-formulario",
+      "h2": "Qué acción pedir: WhatsApp, formulario o llamada",
+      "blocks": [
+        "No hay una respuesta única, pero sí un criterio. En negocios de servicios y comercios de Argentina, **WhatsApp suele convertir mejor** porque es el canal que la gente ya usa todos los días y no exige completar campos. El formulario sirve cuando necesitás datos antes de responder (por ejemplo, para cotizar).",
+        {
+          "ul": [
+            "**WhatsApp:** menos fricción, respuesta rápida, ideal para consultas y presupuestos simples.",
+            "**Formulario:** filtra mejor a quien consulta y deja los datos ordenados, pero pierde a quien no quiere completar campos.",
+            "**Agendar llamada:** conviene para servicios de ticket alto, donde la venta es más consultiva."
+          ]
+        },
+        "Lo recomendable es ofrecer una acción principal y, como mucho, una secundaria. Un botón de WhatsApp bien visible y un formulario corto al final cubren a casi todos."
+      ]
+    },
+    {
+      "id": "medicion",
+      "h2": "Cómo medir si la landing funciona",
+      "blocks": [
+        "Una landing sin medición es una apuesta. Antes de lanzar las campañas, dejá configurado esto:",
+        {
+          "ul": [
+            "**Conversiones en Google Analytics 4:** marcá como evento clave el clic en WhatsApp y el envío del formulario. Con dos eventos claros alcanza para saber cuántas consultas entran.",
+            "**Conversiones en Google Ads:** importá esos mismos eventos para que el algoritmo optimice hacia consultas y no hacia clics.",
+            "**Parámetros UTM** en cada anuncio, para saber qué campaña trajo cada consulta.",
+            "**Un registro de las consultas** (planilla o CRM), para contrastar cuántas se transformaron en ventas."
+          ]
+        },
+        "El dato clave es el **costo por consulta**: lo que gastaste en anuncios dividido por la cantidad de consultas que llegaron. Es el número que te dice si la campaña conviene, mucho más que los clics o las impresiones."
+      ]
+    },
+    {
+      "id": "errores",
+      "h2": "Errores comunes que hacen perder consultas",
+      "blocks": [
+        {
+          "ul": [
+            "Un título genérico («Bienvenidos») que no repite lo que prometía el anuncio.",
+            "El botón de contacto escondido más abajo de la primera pantalla en celular.",
+            "Menú de navegación completo que invita a irse.",
+            "Fotos pesadas que hacen que la página tarde en cargar.",
+            "Formularios con demasiados campos obligatorios.",
+            "Prueba social inventada o genérica, que resta confianza en vez de sumar.",
+            "No probar el flujo completo: enviar el formulario o hacer clic en WhatsApp antes de lanzar."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "en-flaks",
+      "h2": "Cómo trabajamos las landing pages en FLAKS",
+      "blocks": [
+        "Armamos landings a medida para campañas de Google Ads y Meta Ads, con una única acción de contacto, carga rápida y medición conectada. El primer año de **hosting, dominio y certificado SSL** está incluido, y el plazo de entrega es de **5 días hábiles** desde que nos pasás el brief.",
+        "Si querés ver cómo queda en la práctica, mirá la [página de landing pages](/landing-page) con ejemplos reales, o leé [cómo decidir entre una landing page y un sitio web](/blog/landing-page-o-sitio-web)."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "¿Una landing page sirve también para Meta Ads?",
+      "a": "Sí. La estructura es la misma: mensaje coherente con el anuncio, una acción única y carga rápida en celular. En Meta suele ser todavía más importante la velocidad, porque el tráfico llega casi todo desde el teléfono."
+    },
+    {
+      "q": "¿Cuánto tarda en estar lista una landing page?",
+      "a": "En FLAKS entregamos la landing en 5 días hábiles desde que recibimos el brief con lo que querés vender, tu logo y las fotos o el material disponible."
+    },
+    {
+      "q": "¿Necesito tener un sitio web para tener una landing?",
+      "a": "No. La landing funciona sola, con su propia dirección. Después, si tu negocio lo necesita, se puede escalar a un [sitio web completo](/sitio-web) sin empezar de cero."
+    },
+    {
+      "q": "¿Cuántas consultas puedo esperar?",
+      "a": "Depende del rubro, de la inversión en anuncios y de la oferta. No hay un número honesto sin conocer tu caso. Lo que sí se puede asegurar es medir cuántas consultas trae cada campaña desde el primer día, para ir ajustando."
+    },
+    {
+      "q": "¿Con qué frecuencia conviene cambiar la landing?",
+      "a": "Conviene revisarla cada vez que cambie la oferta o el anuncio, y probar variantes (título, botón, orden de secciones) con datos de al menos un par de semanas antes de decidir qué funciona mejor."
+    }
+  ],
+  "sources": [
+    { "label": "web.dev: Core Web Vitals (Google)", "url": "https://web.dev/articles/vitals" },
+    { "label": "Ayuda de Google Ads: Nivel de Calidad", "url": "https://support.google.com/google-ads/answer/6167118" },
+    { "label": "PageSpeed Insights", "url": "https://pagespeed.web.dev/" }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "slug": "tienda-nube-o-woocommerce",
+  "service": "tienda-digital",
+  "title": "Tienda Nube o WooCommerce: cuál elegir para vender online en Argentina",
+  "metaTitle": "Tienda Nube o WooCommerce: cuál elegir en Argentina | FLAKS",
+  "metaDescription": "Comparamos Tienda Nube y WooCommerce: costos, mantenimiento, medios de pago, envíos y flexibilidad. Cómo elegir según tu negocio si vas a vender online en Argentina.",
+  "keywords": ["tienda nube o woocommerce", "tienda nube vs woocommerce", "crear tienda online argentina", "mejor plataforma ecommerce argentina"],
+  "published_at": "2026-11-24",
+  "updated": "2026-11-24",
+  "answer": "**Tienda Nube** conviene si querés vender rápido, sin ocuparte de la parte técnica y con medios de pago y envíos de Argentina ya integrados. **WooCommerce** conviene si necesitás control total y funciones muy a medida, y tenés quien se ocupe del hosting, la seguridad y las actualizaciones. Para la mayoría de las pymes que empiezan a vender online, Tienda Nube es el camino más simple.",
+  "intro": "Elegir mal la plataforma de tu tienda sale caro: después de cargar cientos de productos, cambiar es un dolor de cabeza. Esta comparación es práctica, pensada para quien tiene un negocio y no quiere meterse en lo técnico. En FLAKS armamos tiendas sobre Tienda Nube, así que te lo decimos de entrada, y te contamos igual cuándo WooCommerce tiene más sentido.",
+  "ctaTitle": "¿Querés tu tienda online lista?",
+  "ctaLine": "Te contamos qué necesitás para arrancar y cuánto lleva.",
+  "ctaText": "Hola FLAKS! Leí la comparación de Tienda Nube y WooCommerce y quiero armar mi tienda online.",
+  "finalTitle": "¿Armamos tu tienda online?",
+  "finalText": "Diseño a medida, catálogo cargado, medios de pago integrados y lista para publicitar. Te acompañamos hasta tus primeras ventas.",
+  "sections": [
+    {
+      "id": "como-funciona-cada-una",
+      "h2": "Cómo funciona cada plataforma",
+      "blocks": [
+        "**Tienda Nube** es una plataforma «llave en mano»: pagás un plan y tenés la tienda funcionando, con hosting, seguridad y actualizaciones incluidos. Se administra desde un panel pensado para quien no programa.",
+        "**WooCommerce** es un plugin gratuito de WordPress que convierte tu sitio en una tienda. El plugin no cuesta, pero necesitás contratar hosting y dominio, mantener WordPress y los plugins actualizados, y ocuparte de la seguridad y las copias de respaldo."
+      ]
+    },
+    {
+      "id": "comparacion",
+      "h2": "Comparación punto por punto",
+      "blocks": [
+        {
+          "table": {
+            "caption": "Comparación entre Tienda Nube y WooCommerce",
+            "head": ["", "Tienda Nube", "WooCommerce"],
+            "rows": [
+              ["Puesta en marcha", "Rápida: panel listo para cargar productos", "Más lenta: hay que instalar y configurar todo"],
+              ["Costo", "Plan mensual de la plataforma", "El plugin es gratis, pero pagás hosting, dominio, plugins y mantenimiento"],
+              ["Mantenimiento técnico", "Lo hace la plataforma", "Lo hacés vos o quien contrates"],
+              ["Seguridad y actualizaciones", "Incluidas", "Tu responsabilidad"],
+              ["Medios de pago y envíos locales", "Integraciones listas para Argentina", "Se resuelven con plugins, a veces pagos"],
+              ["Flexibilidad de diseño y funciones", "Buena, dentro de lo que permite la plataforma", "Casi ilimitada, con desarrollo a medida"],
+              ["Ideal para", "Pymes que quieren vender sin complicarse", "Proyectos con requerimientos muy particulares"]
+            ]
+          }
+        },
+        "Revisá siempre los precios y condiciones vigentes en el sitio de cada plataforma, porque cambian con frecuencia."
+      ]
+    },
+    {
+      "id": "cuando-tienda-nube",
+      "h2": "Cuándo conviene Tienda Nube",
+      "blocks": [
+        {
+          "ul": [
+            "Estás empezando a vender online y querés **salir rápido**.",
+            "No tenés equipo técnico y no querés ocuparte de **servidores ni actualizaciones**.",
+            "Necesitás **medios de pago y envíos de Argentina** ya integrados.",
+            "Querés que cargar y editar productos sea fácil para vos o tu equipo.",
+            "Vas a hacer publicidad en Google y Meta y necesitás una tienda **lista para medir**."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cuando-woocommerce",
+      "h2": "Cuándo conviene WooCommerce",
+      "blocks": [
+        {
+          "ul": [
+            "Necesitás **funciones muy específicas** que una plataforma cerrada no ofrece (por ejemplo, lógicas de precios complejas o integraciones a medida).",
+            "Ya tenés un **sitio en WordPress** y querés sumarle ventas.",
+            "Tenés **un equipo técnico** o un proveedor de confianza que se ocupe del mantenimiento.",
+            "Querés **control total** sobre el código y los datos, y aceptás la responsabilidad que eso implica."
+          ]
+        },
+        "La trampa más común es elegir WooCommerce porque «el plugin es gratis» y después descubrir que el mantenimiento, la seguridad y los plugins pagos suman más que el plan mensual de una plataforma cerrada."
+      ]
+    },
+    {
+      "id": "que-mirar-antes",
+      "h2": "Qué mirar antes de decidir",
+      "blocks": [
+        {
+          "ol": [
+            "**Cuántos productos vas a vender** y con qué variantes (talles, colores).",
+            "**Cómo vas a cobrar:** tarjeta, transferencia, cuotas, Mercado Pago.",
+            "**Cómo vas a enviar:** correo, mensajería, retiro en local.",
+            "**Quién va a cargar y mantener la tienda** día a día.",
+            "**Cuánto vas a invertir en publicidad**, para que la tienda esté lista para medir y escalar."
+          ]
+        },
+        "Sobre la publicidad: una tienda con catálogo ordenado y buena velocidad rinde más en [Google Ads y Meta Ads](/pauta-publicitaria). Es parte de la decisión, no un detalle."
+      ]
+    },
+    {
+      "id": "en-flaks",
+      "h2": "Cómo armamos tiendas online en FLAKS",
+      "blocks": [
+        "Armamos tiendas a medida sobre Tienda Nube, con catálogo, medios de pago integrados (incluido Mercado Pago), hosting, dominio y SSL el primer año, y la tienda lista para publicitar. El plazo de entrega es de **7 días hábiles** desde que tenemos tu catálogo.",
+        "Podés ver ejemplos reales en la página de [tiendas online](/tienda-digital)."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "¿Puedo cambiar de plataforma más adelante?",
+      "a": "Se puede, pero implica migrar productos, imágenes, clientes y direcciones, y puede afectar el posicionamiento. Por eso conviene elegir bien desde el principio."
+    },
+    {
+      "q": "¿Tienda Nube sirve para vender mucho volumen?",
+      "a": "Sirve para la gran mayoría de las pymes. Si tu negocio tiene requisitos muy particulares o un volumen muy alto, conviene evaluar soluciones a medida."
+    },
+    {
+      "q": "¿WooCommerce es más barato?",
+      "a": "Depende. El plugin es gratuito, pero el hosting, el dominio, los plugins de pago y el mantenimiento suman costos. Conviene comparar el costo total, no solo el precio de entrada."
+    },
+    {
+      "q": "¿Cuánto tarda en estar lista mi tienda?",
+      "a": "En FLAKS armamos tiendas en 7 días hábiles desde que tenemos el catálogo con productos, precios y fotos."
+    },
+    {
+      "q": "¿Se puede vender con Mercado Pago?",
+      "a": "Sí. Las tiendas que armamos incluyen medios de pago integrados, entre ellos Mercado Pago."
+    }
+  ],
+  "sources": [
+    { "label": "Tienda Nube: sitio oficial", "url": "https://www.tiendanube.com/" },
+    { "label": "WooCommerce: documentación oficial", "url": "https://woocommerce.com/documentation/" }
+  ]
+}

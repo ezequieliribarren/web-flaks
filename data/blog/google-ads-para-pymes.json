@@ -1,0 +1,128 @@
+{
+  "slug": "google-ads-para-pymes",
+  "service": "pauta-publicitaria",
+  "title": "Google Ads para pymes: cómo empezar sin tirar plata",
+  "metaTitle": "Google Ads para Pymes: cómo empezar y cuánto invertir | FLAKS",
+  "metaDescription": "Guía para pymes: cómo funciona Google Ads, qué tipos de campaña elegir, cómo definir el presupuesto, qué medir (costo por consulta) y los errores que hacen gastar de más.",
+  "keywords": ["google ads para pymes", "cómo hacer publicidad en google", "cuánto invertir en google ads", "agencia de google ads"],
+  "published_at": "2026-11-24",
+  "updated": "2026-11-24",
+  "answer": "Para empezar con Google Ads sin gastar de más: elegí **una sola campaña de búsqueda** enfocada en tu servicio principal, mandá el tráfico a una **landing page** (no a la home), configurá la medición de consultas antes de gastar y definí un presupuesto que puedas sostener varias semanas para juntar datos. Lo que importa no es el clic sino el **costo por consulta**.",
+  "intro": "Google Ads es una de las formas más directas de llegar a alguien que ya está buscando lo que vendés. También es fácil gastar mucho sin resultados si se configura mal. Esta guía explica cómo empezar con criterio.",
+  "ctaTitle": "¿Querés que armemos tus campañas?",
+  "ctaLine": "Configuramos, lanzamos y optimizamos con reportes mensuales.",
+  "ctaText": "Hola FLAKS! Leí la guía de Google Ads para pymes y quiero consultar por la gestión de mis campañas.",
+  "finalTitle": "Campañas que traen consultas, no solo clics",
+  "finalText": "Configuramos Google Ads y Meta Ads con medición desde el día uno, optimizamos de forma continua y te mostramos reportes claros.",
+  "sections": [
+    {
+      "id": "como-funciona",
+      "h2": "Cómo funciona Google Ads",
+      "blocks": [
+        "Con Google Ads pagás para que tu anuncio aparezca cuando alguien busca ciertas palabras en Google. En las campañas de búsqueda, lo habitual es pagar **por clic** (CPC): solo gastás cuando alguien hace clic en tu anuncio.",
+        "Cada vez que se hace una búsqueda, Google decide qué anuncios muestra y en qué orden según una subasta. No gana solo el que más ofrece: pesa también la **calidad del anuncio y de la página de destino**. Por eso una buena landing puede bajar tus costos."
+      ]
+    },
+    {
+      "id": "tipos-de-campana",
+      "h2": "Qué tipo de campaña elegir",
+      "blocks": [
+        {
+          "table": {
+            "caption": "Tipos de campaña de Google Ads y para qué sirven",
+            "head": ["Tipo", "Para qué sirve", "Cuándo conviene"],
+            "rows": [
+              ["Búsqueda", "Aparecer cuando alguien busca lo que vendés", "Casi siempre: es el mejor punto de partida para servicios"],
+              ["Shopping", "Mostrar productos con foto y precio", "Tiendas online con catálogo"],
+              ["Display", "Banners en sitios y apps", "Para recordar tu marca; menos directo para consultas"],
+              ["YouTube", "Anuncios en video", "Cuando tenés material en video y querés alcance"]
+            ]
+          }
+        },
+        "Para una pyme que empieza, la recomendación es **búsqueda** (y Shopping si vendés productos). Display tiene sentido más adelante, para recordarle tu marca a quien ya te conoció."
+      ]
+    },
+    {
+      "id": "presupuesto",
+      "h2": "Cuánto invertir: cómo pensar el presupuesto",
+      "blocks": [
+        "No existe un monto universal, porque el costo por clic cambia mucho según el rubro y la zona. En lugar de adivinar, pensalo así:",
+        {
+          "ol": [
+            "**Definí cuánto vale una consulta o una venta para vos.** Si una venta te deja ganancia, calculá cuánto podés pagar por conseguirla.",
+            "**Estimá la tasa de conversión.** Si de cada 100 visitas, 3 consultan, tu tasa es del 3 %. Si no tenés datos, asumí que será baja al principio.",
+            "**Calculá el costo por consulta posible.** Costo por clic dividido tasa de conversión. Con un clic de $1 y una tasa del 3 %, cada consulta cuesta unos $33 (cifras ilustrativas, no promesas).",
+            "**Elegí un presupuesto que puedas sostener** varias semanas: las campañas necesitan tiempo para juntar datos y optimizarse."
+          ]
+        },
+        { "tip": "Un presupuesto muy chico durante pocos días no alcanza para sacar conclusiones. Es mejor invertir una suma moderada de forma sostenida que gastar fuerte una semana y frenar." }
+      ]
+    },
+    {
+      "id": "que-medir",
+      "h2": "Qué medir: el costo por consulta",
+      "blocks": [
+        "Los clics y las impresiones son números de vanidad si no se conectan con consultas. Las métricas que importan:",
+        {
+          "ul": [
+            "**Conversiones:** cuántas personas te escribieron por WhatsApp o completaron el formulario.",
+            "**Costo por conversión (por consulta):** lo que gastaste dividido las conversiones.",
+            "**Tasa de conversión de la landing:** qué porcentaje de las visitas consulta.",
+            "**ROAS** (en tiendas online): cuánto vendiste por cada peso invertido."
+          ]
+        },
+        "Para medir bien, dejá configurados los eventos de contacto en Google Analytics 4 y en Google Ads antes de lanzar. Sin eso, estás pagando a ciegas."
+      ]
+    },
+    {
+      "id": "errores",
+      "h2": "Errores que hacen gastar de más",
+      "blocks": [
+        {
+          "ul": [
+            "Mandar el tráfico a la home en vez de a una [landing page](/blog/landing-page-para-google-ads) pensada para convertir.",
+            "No usar **palabras clave negativas**: pagás clics de gente que busca otra cosa.",
+            "Lanzar sin medir las consultas.",
+            "Segmentar demasiado amplio (todo el país) cuando vendés en una zona.",
+            "Tocar la campaña todos los días: el algoritmo necesita tiempo para aprender.",
+            "Mezclar muchos servicios en una sola campaña."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "en-flaks",
+      "h2": "Cómo trabajamos la pauta en FLAKS",
+      "blocks": [
+        "Gestionamos campañas en **Google Ads, Meta Ads y Mercado Libre Ads**: configuración completa, anuncios, optimización continua, pruebas A/B y reportes mensuales. Trabajamos coordinados con tu landing y tus redes para que todo apunte al mismo objetivo.",
+        "Conocé el servicio en la página de [pauta publicitaria](/pauta-publicitaria)."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "¿Cuánto cuesta anunciar en Google Ads?",
+      "a": "Pagás por clic y vos definís el presupuesto diario. El costo por clic varía según el rubro y la competencia. Lo recomendable es fijar un monto que puedas sostener varias semanas y medir el costo por consulta."
+    },
+    {
+      "q": "¿Cuánto tarda en dar resultados?",
+      "a": "Los primeros clics llegan enseguida, pero las campañas necesitan algunas semanas para juntar datos y optimizarse. Evaluá los resultados con un período razonable, no a los dos días."
+    },
+    {
+      "q": "¿Necesito un sitio web para hacer Google Ads?",
+      "a": "Necesitás una página de destino. Lo ideal es una landing page enfocada en una acción, más efectiva que enviar a la home de un sitio."
+    },
+    {
+      "q": "¿Google Ads o Meta Ads?",
+      "a": "Google Ads llega a quien ya busca lo que vendés; Meta Ads (Facebook e Instagram) llega a quien podría interesarse aunque no esté buscando. Para servicios suele convenir empezar por Google; para productos visuales, Meta suele rendir bien. Se combinan."
+    },
+    {
+      "q": "¿Puedo hacer las campañas yo mismo?",
+      "a": "Sí, pero requiere tiempo y práctica para configurar la medición, elegir palabras clave y optimizar. Muchas pymes prefieren delegarlo para no gastar de más mientras aprenden."
+    }
+  ],
+  "sources": [
+    { "label": "Ayuda de Google Ads", "url": "https://support.google.com/google-ads" },
+    { "label": "Google Analytics: eventos clave", "url": "https://support.google.com/analytics/answer/9267568" }
+  ]
+}

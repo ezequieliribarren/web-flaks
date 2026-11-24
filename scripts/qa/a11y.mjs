@@ -5,7 +5,7 @@
 import { chromium } from 'playwright';
 
 const BASE = process.env.BASE || 'http://localhost:3000';
-const PAGES = ['/', '/landing-page', '/sitio-web', '/tienda-digital', '/redes-sociales', '/pauta-publicitaria', '/recursos', '/recursos/15-ganchos', '/privacidad', '/no-existe'];
+const PAGES = ['/', '/landing-page', '/sitio-web', '/tienda-digital', '/redes-sociales', '/pauta-publicitaria', '/recursos', '/recursos/15-ganchos', '/blog', '/blog/landing-page-para-google-ads', '/blog/tienda-nube-o-woocommerce', '/privacidad', '/no-existe'];
 let fails = 0;
 const report = (ok, msg) => { if (!ok) fails++; console.log(`${ok ? '✓' : '✗'} ${msg}`); };
 

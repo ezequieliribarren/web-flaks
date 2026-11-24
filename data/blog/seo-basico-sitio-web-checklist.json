@@ -1,0 +1,104 @@
+{
+  "slug": "seo-basico-sitio-web-checklist",
+  "service": "sitio-web",
+  "title": "SEO básico para tu sitio web: checklist de 12 puntos para aparecer en Google",
+  "metaTitle": "SEO básico para tu sitio web: checklist de 12 puntos | FLAKS",
+  "metaDescription": "Checklist de SEO básico para sitios web de pymes: títulos, encabezados, velocidad, celular, Google Business, enlaces y medición con Search Console. Para empezar a aparecer en Google.",
+  "keywords": ["seo básico", "seo para pymes", "cómo aparecer en google", "checklist seo sitio web"],
+  "published_at": "2026-11-24",
+  "updated": "2026-11-24",
+  "answer": "Para aparecer en Google tu sitio necesita tener **una página por cada servicio**, **un título y un encabezado principal con la búsqueda que querés captar**, **carga rápida en celular**, una **ficha de Google Business** y estar registrado en **Search Console**. El SEO no se resuelve de un día para otro: los resultados llegan de forma gradual y se miden con las consultas reales que llegan.",
+  "intro": "No hace falta ser técnico para dejar el SEO básico bien resuelto. Esta checklist reúne los doce puntos que revisamos primero en cualquier sitio de una pyme. Marcalos de a uno.",
+  "ctaTitle": "¿Querés que revisemos tu sitio?",
+  "ctaLine": "Te decimos qué corregir primero para aparecer en Google.",
+  "ctaText": "Hola FLAKS! Leí la checklist de SEO básico y quiero que revisen mi sitio web.",
+  "finalTitle": "Un sitio pensado para aparecer en Google",
+  "finalText": "Armamos sitios con SEO básico desde el día uno: títulos, estructura, velocidad y sitemap. Y te ayudamos a medir qué consultas llegan.",
+  "sections": [
+    {
+      "id": "estructura",
+      "h2": "Estructura y contenido",
+      "blocks": [
+        { "h3": "1. Una página por cada servicio" },
+        "Si ofrecés tres servicios, creá tres páginas, cada una explicando uno en profundidad. Una sola página con todo mezclado compite mal en Google.",
+        { "h3": "2. Un título (title) claro con la búsqueda principal" },
+        "El título que aparece en la pestaña y en Google debería incluir la palabra que la gente busca, por ejemplo «Diseño de páginas web para empresas», y mantenerse corto (alrededor de 60 caracteres) para que no se corte.",
+        { "h3": "3. Un solo H1 que diga qué ofrecés" },
+        "El encabezado principal de la página tiene que explicar claramente de qué trata. Evitá H1 poéticos como «Soluciones que inspiran»: Google (y las personas) necesitan entender de qué se trata.",
+        { "h3": "4. Metadescripción que invite a hacer clic" },
+        "Es el texto que aparece bajo el título en los resultados. Dos líneas que expliquen el beneficio y motiven a entrar (alrededor de 155 caracteres).",
+        { "h3": "5. Contenido propio y útil" },
+        "Respondé las dudas reales de tus clientes: qué incluye, cuánto tarda, cómo se trabaja. Textos copiados o genéricos no posicionan."
+      ]
+    },
+    {
+      "id": "tecnico",
+      "h2": "Aspectos técnicos",
+      "blocks": [
+        { "h3": "6. Que se vea bien y cargue rápido en el celular" },
+        "La mayoría de las búsquedas locales se hacen desde el teléfono. Google mide la experiencia de página con Core Web Vitals: contenido principal en menos de 2,5 segundos, respuesta a toques en menos de 200 milisegundos y diseño estable. Medilo gratis en PageSpeed Insights.",
+        { "h3": "7. HTTPS activo" },
+        "Tu sitio debe cargar con el candado (certificado SSL). Hoy es un estándar.",
+        { "h3": "8. Un sitemap enviado a Google" },
+        "Es un archivo que lista las páginas de tu sitio. Enviarlo en Search Console ayuda a que Google las encuentre más rápido.",
+        { "h3": "9. Imágenes optimizadas con texto alternativo" },
+        "Usá formatos livianos (WebP) y describí cada imagen en el atributo alt. Mejora la velocidad y la accesibilidad."
+      ]
+    },
+    {
+      "id": "presencia",
+      "h2": "Presencia y medición",
+      "blocks": [
+        { "h3": "10. Ficha de Google Business completa" },
+        "Para negocios con atención local, es lo que más rápido puede traer consultas. Completá categoría, servicios, fotos, horarios y el sitio web correcto, y pedí reseñas a tus clientes.",
+        { "h3": "11. Enlaces de otros sitios hacia el tuyo" },
+        "Que otros sitios confiables te mencionen y enlacen (clientes, proveedores, directorios del rubro) le indica a Google que sos una referencia. Priorizá la calidad antes que la cantidad.",
+        { "h3": "12. Search Console y Analytics configurados" },
+        "[Google Search Console](https://search.google.com/search-console) te muestra con qué búsquedas aparecés, cuántas veces y cuántos clics recibís. Es la herramienta clave para saber si el SEO funciona. Sumale Google Analytics 4 con tus eventos de contacto para medir cuántas visitas se transforman en consultas."
+      ]
+    },
+    {
+      "id": "cuanto-tarda",
+      "h2": "Cuánto tarda en dar resultados el SEO",
+      "blocks": [
+        "El SEO es una inversión de mediano plazo. Una página nueva necesita que Google la encuentre, la indexe y la evalúe, y después compite con otros sitios. En general, los primeros movimientos se ven en semanas y los resultados más sólidos en meses.",
+        "Para saber si vas bien, mirá en Search Console si aumentan las **impresiones** (cuántas veces apareces) y después los **clics** y las **consultas** que llegan. Sin medición no hay forma de saberlo.",
+        { "tip": "Desconfiá de quien te garantice la posición 1 en Google en poco tiempo. Nadie controla el algoritmo; lo que sí se controla es hacer bien lo básico y medir." }
+      ]
+    },
+    {
+      "id": "en-flaks",
+      "h2": "El SEO básico en los sitios de FLAKS",
+      "blocks": [
+        "Los sitios que armamos incluyen **SEO básico desde el día uno**: títulos y metadescripciones, estructura de encabezados, velocidad de carga y sitemap. Podés ver qué incluye en la página de [sitios web profesionales](/sitio-web), o leer [cómo elegir entre landing page y sitio web](/blog/landing-page-o-sitio-web)."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "¿Cuánto tarda un sitio nuevo en aparecer en Google?",
+      "a": "Google puede indexar las páginas en días o semanas, pero posicionarse en búsquedas competitivas lleva más tiempo. Registrar el sitio en Search Console y enviar el sitemap ayuda a acelerar la indexación."
+    },
+    {
+      "q": "¿Qué es Search Console?",
+      "a": "Es una herramienta gratuita de Google que muestra con qué búsquedas aparece tu sitio, cuántos clics recibe y si hay problemas técnicos."
+    },
+    {
+      "q": "¿Necesito un blog para hacer SEO?",
+      "a": "No es obligatorio, pero un blog con guías que respondan las dudas de tus clientes suma páginas que pueden aparecer en más búsquedas y atrae consultas con el tiempo."
+    },
+    {
+      "q": "¿Qué diferencia hay entre SEO y Google Ads?",
+      "a": "El SEO busca aparecer en los resultados orgánicos sin pagar por clic y tarda más en dar resultados. Google Ads paga por cada clic y da visibilidad inmediata. Se complementan."
+    },
+    {
+      "q": "¿El SEO se hace una vez o hay que mantenerlo?",
+      "a": "Lo básico se configura una vez, pero el SEO es continuo: conviene sumar contenido, revisar la velocidad, cuidar la ficha de Google Business y mirar los datos de Search Console con regularidad."
+    }
+  ],
+  "sources": [
+    { "label": "Google Search Central: guía de inicio de SEO", "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide" },
+    { "label": "web.dev: Core Web Vitals", "url": "https://web.dev/articles/vitals" },
+    { "label": "Google Search Console", "url": "https://search.google.com/search-console" }
+  ]
+}
