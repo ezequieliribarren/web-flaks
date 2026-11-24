@@ -216,7 +216,7 @@ git push -u origin main
 - [ ] `robots.txt` y `sitemap.xml` OK, con 7 URLs.
 - [ ] El evento `generate_lead` llega a GTM desde el formulario de **las 3 páginas de servicio** y la home. Revisalo en Vista previa de Tag Manager y en tiempo real de GA4.
 - [ ] Los clics de WhatsApp (`whatsapp_click`) llegan a GTM, si los usás como conversión.
-- [ ] Llega el mail de prueba a info@flaks.com.ar, con la página de origen y los UTM.
+- [ ] Llega el mail de prueba a ventas@flaks.com.ar, con la página de origen y los UTM.
 - [ ] **Search Console:** enviá el sitemap nuevo y revisá que las 3 URLs de servicio aparezcan como "Indexada", sin errores de cobertura.
 - [ ] **Google Ads y Meta:** los anuncios siguen aprobados, con la URL final sin cambios, y las conversiones se registran.
 

@@ -104,7 +104,7 @@ router.post(
     try {
       await t.sendMail({
         from: process.env.MAIL_FROM || process.env.SMTP_USER,
-        to: process.env.MAIL_TO || 'info@flaks.com.ar',
+        to: process.env.MAIL_TO || 'ventas@flaks.com.ar',
         replyTo: data.email || undefined,
         subject: `Nueva consulta web — ${data.servicio || 'General'} — ${data.nombre}`,
         text,
