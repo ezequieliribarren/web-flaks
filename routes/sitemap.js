@@ -44,4 +44,36 @@ router.get('/robots.txt', (req, res) => {
   );
 });
 
+// llms.txt: resumen del sitio en texto plano para asistentes de IA (convención llmstxt.org).
+router.get('/llms.txt', (req, res) => {
+  const base = res.locals.siteUrl;
+  const svc = [
+    ['landing-page', 'Landing pages para campañas de Google Ads y Meta Ads'],
+    ['sitio-web', 'Sitios web a medida para empresas y pymes'],
+    ['tienda-digital', 'Tiendas online sobre plataformas como Tienda Nube, con Mercado Pago'],
+    ['redes-sociales', 'Gestión de redes sociales'],
+    ['pauta-publicitaria', 'Pauta publicitaria en Google Ads y Meta Ads'],
+  ].map(([slug, d]) => `- [${d}](${base}/${slug})`).join('\n');
+  const guides = posts.map((p) => `- [${p.title}](${base}/blog/${p.slug}): ${p.metaDescription}`).join('\n');
+  res.type('text/plain; charset=utf-8').set('Cache-Control', 'public, max-age=3600').send(
+    `# FLAKS Agencia Digital
+
+> Agencia digital de Buenos Aires, Argentina. Diseño de páginas web, landing pages, tiendas online, gestión de redes sociales y pauta publicitaria para pymes y empresas.
+
+## Servicios
+
+${svc}
+
+## Guías
+
+${guides}
+
+## Contacto
+
+- Sitio: ${base}/
+- Instagram: https://www.instagram.com/flaksweb/
+`
+  );
+});
+
 module.exports = router;

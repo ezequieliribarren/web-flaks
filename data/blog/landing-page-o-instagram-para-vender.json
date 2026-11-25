@@ -1,0 +1,104 @@
+{
+  "slug": "landing-page-o-instagram-para-vender",
+  "service": "landing-page",
+  "title": "Landing page o solo Instagram: qué te conviene para vender",
+  "metaTitle": "Landing page o solo Instagram para vender | FLAKS",
+  "metaDescription": "Instagram o landing page: qué te da cada uno, qué te falta si vendés solo por redes y cómo usarlos juntos para recibir más consultas.",
+  "keywords": ["landing page o instagram", "vender solo por instagram", "link en la bio", "necesito una página web si tengo instagram"],
+  "published_at": "2026-11-25",
+  "updated": "2026-11-25",
+  "answer": "Instagram te da **alcance y confianza**, pero no es tuyo: dependés de un algoritmo y de que la gente tenga ganas de escribirte. Una landing page te da **un lugar propio, claro y medible** al que mandar a esa gente. Lo mejor es usar los dos: Instagram para que te conozcan y la landing para convertir esa atención en consultas.",
+  "intro": "Muchos negocios venden solo por Instagram y funciona hasta cierto punto. La pregunta es qué se pierde cuando no hay una página propia detrás. Acá lo comparamos sin vueltas.",
+  "ctaTitle": "¿Querés pasar de seguidores a consultas?",
+  "ctaLine": "Armamos una landing que complemente tu Instagram y mida cada consulta.",
+  "ctaText": "Hola FLAKS! Leí la guía de landing page o Instagram y quiero una landing para mi negocio.",
+  "finalTitle": "Sumá una landing a tu Instagram",
+  "finalText": "Un lugar propio, claro y medible para convertir tus visitas en consultas.",
+  "sections": [
+    {
+      "id": "que-da-instagram",
+      "h2": "Qué te da Instagram y qué le falta",
+      "blocks": [
+        {
+          "ul": [
+            "**A favor:** alcance, contenido visual, cercanía con tu comunidad y mucha gente que ya está ahí.",
+            "**En contra:** no es tuyo (si cambia el algoritmo o te bloquean la cuenta, perdés el canal), la información está dispersa, el link de la bio es limitado y es difícil medir qué consulta vino de qué publicación."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "que-da-landing",
+      "h2": "Qué te da una landing page",
+      "blocks": [
+        {
+          "ul": [
+            "**Un lugar propio** que controlás vos, con tu dominio.",
+            "**Un mensaje ordenado:** qué ofrecés, para quién, por qué elegirte y cómo contactarte.",
+            "**Una acción clara,** como un botón de WhatsApp o un formulario corto.",
+            "**Medición:** sabés cuántas personas llegaron y cuántas te escribieron.",
+            "**Credibilidad** frente a quien no te conoce y busca más información."
+          ]
+        },
+        "Si querés entender mejor qué es, leé [qué es una landing page](/blog/que-es-una-landing-page)."
+      ]
+    },
+    {
+      "id": "comparacion",
+      "h2": "Comparación rápida",
+      "blocks": [
+        {
+          "table": {
+            "caption": "Instagram y landing page comparados",
+            "head": ["", "Solo Instagram", "Instagram + landing page"],
+            "rows": [
+              ["Control del canal", "Depende de la red", "Tenés un lugar propio"],
+              ["Información", "Dispersa en posteos e historias", "Ordenada en un solo lugar"],
+              ["Medición de consultas", "Limitada", "Clara, por botón y por origen"],
+              ["Publicidad paga", "Funciona, pero con menos enfoque", "Podés mandar el tráfico a una página pensada para convertir"],
+              ["Credibilidad", "Depende del perfil", "Refuerza la confianza con información completa"]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "como-usarlos",
+      "h2": "Cómo usarlos juntos",
+      "blocks": [
+        {
+          "ol": [
+            "Poné el enlace de la landing en la **bio de Instagram** y en las historias destacadas.",
+            "Usá las historias y los reels para **llevar a la landing** con un llamado claro.",
+            "Si hacés [anuncios](/pauta-publicitaria), mandá el tráfico a la landing, no al perfil.",
+            "Medí cuántas consultas llegan desde cada fuente.",
+            "Mantené el mensaje coherente: lo que prometés en Instagram tiene que verse en la landing."
+          ]
+        },
+        "Si además necesitás ayuda con el contenido, conocé nuestro servicio de [redes sociales](/redes-sociales)."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "¿Necesito una página web si ya vendo por Instagram?",
+      "a": "No es obligatoria, pero una landing te da un lugar propio, más credibilidad y medición. Es especialmente útil si hacés publicidad o querés crecer más allá de tu comunidad actual."
+    },
+    {
+      "q": "¿Qué conviene primero, una landing o un sitio web?",
+      "a": "Si tenés una oferta principal, empezá por una landing: es más rápida y barata de armar. Mirá la guía de [landing page o sitio web](/blog/landing-page-o-sitio-web)."
+    },
+    {
+      "q": "¿Qué pongo en el link de la bio?",
+      "a": "El enlace a tu landing page, con un mensaje claro y un botón de contacto, en lugar de una lista de enlaces dispersos."
+    },
+    {
+      "q": "¿Una landing reemplaza a Instagram?",
+      "a": "No. Se complementan: Instagram atrae y genera confianza, y la landing convierte esa atención en consultas."
+    }
+  ],
+  "sources": [
+    { "label": "Centro de ayuda para empresas de Facebook e Instagram", "url": "https://www.facebook.com/business/help" },
+    { "label": "Google Analytics: eventos clave", "url": "https://support.google.com/analytics/answer/9267568" }
+  ]
+}

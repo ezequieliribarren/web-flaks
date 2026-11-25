@@ -2,7 +2,11 @@
 
 Objetivo: que el sitio reciba **consultas orgánicas** (de Google y de buscadores de IA) y poder **demostrar con datos** cuántas llegan y de qué guía vienen.
 
-Última actualización: 24/11/2026.
+Última actualización: 25/11/2026.
+
+> **Precios:** las guías de costos mencionan valores "desde" en un solo párrafo (landing, sitio corporativo, tienda y ecommerce, en pesos de noviembre de 2026). Revisarlos cada pocos meses y actualizar `updated`. El servicio de redes se cotiza sin publicar precios.
+
+> **llms.txt:** `/llms.txt` resume el sitio y lista las guías para asistentes de IA; se genera solo desde `data/blog`.
 
 ---
 
@@ -24,10 +28,16 @@ Objetivo: que el sitio reciba **consultas orgánicas** (de Google y de buscadore
 
 ---
 
-## 2. Guías publicadas (6)
+## 2. Guías publicadas (12)
 
 | Guía | Servicio | Búsqueda que apunta a captar |
 |---|---|---|
+| Cuánto cuesta una página web en Argentina | Sitio web | cuánto cuesta una página web (precios "desde" al pasar, en un párrafo) |
+| Cuánto cuesta un community manager o agencia de redes | Redes sociales | cuánto cobra un community manager (sin precios) |
+| Qué es una landing page y para qué sirve | Landing page | qué es una landing page |
+| Cómo vender por WhatsApp con tu sitio web | Sitio web | vender por whatsapp, botón de whatsapp |
+| Checklist antes de lanzar Google Ads | Pauta | checklist google ads |
+| Landing page o solo Instagram para vender | Landing page | landing page o instagram |
 | Landing page para Google Ads: cómo armarla para que convierta | Landing page | landing page para google ads, landing que convierte |
 | Landing page o sitio web: cuál necesita tu negocio | Sitio web | landing page o sitio web, diferencia |
 | Tienda Nube o WooCommerce: cuál elegir en Argentina | Tienda online | tienda nube o woocommerce |

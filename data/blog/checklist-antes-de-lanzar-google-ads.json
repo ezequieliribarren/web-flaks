@@ -1,0 +1,100 @@
+{
+  "slug": "checklist-antes-de-lanzar-google-ads",
+  "service": "pauta-publicitaria",
+  "title": "Checklist antes de lanzar tu primera campaña de Google Ads",
+  "metaTitle": "Checklist antes de lanzar Google Ads: 10 puntos | FLAKS",
+  "metaDescription": "Checklist de 10 puntos para revisar antes de lanzar una campaña de Google Ads: objetivo, medición, landing, palabras clave, presupuesto y errores que hacen gastar de más.",
+  "keywords": ["checklist google ads", "antes de lanzar una campaña de google ads", "configurar google ads paso a paso", "errores en google ads"],
+  "published_at": "2026-11-25",
+  "updated": "2026-11-25",
+  "answer": "Antes de lanzar Google Ads revisá estos puntos: **objetivo claro, medición de consultas funcionando, landing que coincida con el anuncio, palabras clave con intención de compra, palabras negativas, ubicación y horarios correctos, presupuesto diario definido y una fecha para revisar resultados**. Lo más caro suele ser lanzar sin medición: gastás y no sabés qué funcionó.",
+  "intro": "Una campaña mal configurada gasta presupuesto desde el primer día. Esta lista resume lo que revisamos en FLAKS antes de activar una campaña. Sirve si la armás vos o si evaluás el trabajo de otro.",
+  "ctaTitle": "¿Querés que revisemos tu campaña?",
+  "ctaLine": "Miramos tu cuenta o armamos la campaña desde cero, con medición desde el primer día.",
+  "ctaText": "Hola FLAKS! Leí el checklist de Google Ads y quiero que revisen o armen mi campaña.",
+  "finalTitle": "Lanzá con la campaña bien armada",
+  "finalText": "Configuramos objetivos, medición y anuncios para que cada peso se pueda seguir.",
+  "sections": [
+    {
+      "id": "antes-de-gastar",
+      "h2": "Antes de gastar un peso (puntos 1 a 4)",
+      "blocks": [
+        {
+          "ol": [
+            "**Definí el objetivo:** consultas, llamadas o ventas. Una sola meta por campaña.",
+            "**Verificá la medición:** que cada consulta por WhatsApp, llamada o formulario se registre como conversión. Sin esto no podés evaluar nada. Mirá cómo en [eventos clave de Google Analytics](https://support.google.com/analytics/answer/9267568).",
+            "**Revisá la página de destino:** que el mensaje coincida con el anuncio, cargue rápido en el celular y tenga una acción clara. Si no tenés una, la guía de [landing page para Google Ads](/blog/landing-page-para-google-ads) te explica cómo armarla.",
+            "**Definí cuánto vale una consulta** para tu negocio. Con ese número sabés cuánto podés pagar por cada una."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "configuracion",
+      "h2": "Configuración de la campaña (puntos 5 a 8)",
+      "blocks": [
+        {
+          "ol": [
+            "**Elegí palabras clave con intención de compra,** como \"diseño de tienda online\" y no solo palabras amplias como \"tienda\".",
+            "**Cargá palabras negativas** para evitar clics que no te sirven (por ejemplo \"gratis\", \"curso\", \"empleo\" si no corresponden).",
+            "**Ajustá ubicación e idioma:** mostrá los anuncios solo donde podés atender.",
+            "**Definí horarios** si solo respondés en ciertos momentos del día."
+          ]
+        },
+        {
+          "tip": "Revisá que la campaña de búsqueda no tenga activada la red de Display si tu objetivo son consultas directas: suele traer clics de menor intención."
+        }
+      ]
+    },
+    {
+      "id": "lanzamiento",
+      "h2": "Lanzamiento y seguimiento (puntos 9 y 10)",
+      "blocks": [
+        {
+          "ol": [
+            "**Fijá un presupuesto diario** que puedas sostener varias semanas, no un gasto único grande.",
+            "**Agendá revisiones:** mirá términos de búsqueda, costo por consulta y conversiones a la semana y al mes. Las primeras semanas son de aprendizaje, no saques conclusiones en dos días."
+          ]
+        },
+        "Si es tu primera campaña, la guía [Google Ads para pymes](/blog/google-ads-para-pymes) explica cómo empezar sin tirar plata. Si preferís delegarlo, conocé nuestro servicio de [pauta publicitaria](/pauta-publicitaria)."
+      ]
+    },
+    {
+      "id": "errores",
+      "h2": "Errores comunes que hacen gastar de más",
+      "blocks": [
+        {
+          "ul": [
+            "Mandar todo el tráfico a la página de inicio.",
+            "No medir las consultas y juzgar solo por clics.",
+            "Dejar palabras clave demasiado amplias sin negativas.",
+            "Cambiar la campaña todos los días y no dejar que aprenda.",
+            "No revisar los términos de búsqueda reales."
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "¿Qué tengo que tener listo antes de lanzar Google Ads?",
+      "a": "Un objetivo, la medición de conversiones funcionando, una página de destino coherente con el anuncio y un presupuesto diario definido."
+    },
+    {
+      "q": "¿Cuánto tiempo tardo en ver resultados?",
+      "a": "Las primeras semanas son de aprendizaje y ajuste. Evaluá tendencias a las 2 a 4 semanas, no a los dos días."
+    },
+    {
+      "q": "¿Para qué sirven las palabras clave negativas?",
+      "a": "Para evitar que tu anuncio aparezca en búsquedas que no te sirven, lo que reduce clics inútiles y ahorra presupuesto."
+    },
+    {
+      "q": "¿Puedo lanzar sin una landing page?",
+      "a": "Podés, pero enviar el tráfico a la home suele perder consultas porque la persona no encuentra rápido lo que buscó. Una landing enfocada mejora el resultado."
+    }
+  ],
+  "sources": [
+    { "label": "Ayuda de Google Ads", "url": "https://support.google.com/google-ads" },
+    { "label": "Google Analytics: eventos clave", "url": "https://support.google.com/analytics/answer/9267568" }
+  ]
+}

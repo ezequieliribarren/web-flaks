@@ -1,0 +1,91 @@
+{
+  "slug": "que-es-una-landing-page",
+  "service": "landing-page",
+  "title": "Qué es una landing page y para qué sirve en tu negocio",
+  "metaTitle": "Qué es una landing page y para qué sirve | FLAKS",
+  "metaDescription": "Qué es una landing page, en qué se diferencia de una página web, qué elementos tiene una que convierte y cuándo conviene usarla para conseguir consultas.",
+  "keywords": ["qué es una landing page", "para qué sirve una landing page", "landing page ejemplo", "diferencia landing page y página web"],
+  "published_at": "2026-11-25",
+  "updated": "2026-11-25",
+  "answer": "Una **landing page** es una página web de una sola pantalla larga, pensada para que la persona que llega haga **una acción concreta**: escribirte por WhatsApp, completar un formulario, reservar o comprar. No tiene menú ni caminos alternativos. Sirve sobre todo para convertir visitas de anuncios o de redes en consultas medibles.",
+  "intro": "El término se usa mucho, pero se confunde con \"cualquier página web\". Acá va qué es, qué la hace distinta y cuándo tiene sentido armar una.",
+  "ctaTitle": "¿Necesitás una landing para tus anuncios?",
+  "ctaLine": "Contanos qué vendés y te decimos cómo armarla para que convierta.",
+  "ctaText": "Hola FLAKS! Leí la guía de qué es una landing page y quiero una para mi negocio.",
+  "finalTitle": "Armemos tu landing page",
+  "finalText": "Definimos el mensaje, la acción y la medición para que cada visita cuente.",
+  "sections": [
+    {
+      "id": "definicion",
+      "h2": "Qué es una landing page",
+      "blocks": [
+        "\"Landing\" significa aterrizaje: es la página en la que \"aterriza\" una persona después de hacer clic en un anuncio, un enlace de Instagram o un mensaje. A diferencia de un [sitio web](/sitio-web), que presenta toda la empresa, la landing se concentra en **una oferta y una acción**.",
+        "Por eso suele ser una sola página, con un mensaje principal arriba, los beneficios, algo de prueba social y un botón o formulario bien visible."
+      ]
+    },
+    {
+      "id": "para-que-sirve",
+      "h2": "Para qué sirve",
+      "blocks": [
+        {
+          "ul": [
+            "**Convertir tráfico de anuncios** de [Google Ads o Meta Ads](/pauta-publicitaria) en consultas, en lugar de mandarlo a la home.",
+            "**Probar una oferta** o un servicio nuevo sin armar un sitio completo.",
+            "**Medir** cuántas personas llegan y cuántas te escriben, porque hay una sola acción para contar.",
+            "**Reemplazar el link de la bio** de Instagram con algo más claro y profesional."
+          ]
+        },
+        "Si querés profundizar en el uso con publicidad, mirá la guía de [landing page para Google Ads](/blog/landing-page-para-google-ads)."
+      ]
+    },
+    {
+      "id": "elementos",
+      "h2": "Qué tiene una landing que convierte",
+      "blocks": [
+        {
+          "ol": [
+            "**Un título claro** que diga qué ofrecés y para quién, coherente con el anuncio que trajo a la persona.",
+            "**Los beneficios** más importantes, escritos desde lo que gana el cliente.",
+            "**Prueba social:** reseñas, logos de clientes o casos reales.",
+            "**Una sola acción** repetida: botón de WhatsApp o formulario corto.",
+            "**Carga rápida en el celular,** porque la mayoría entra desde el teléfono.",
+            "**Medición:** que cada consulta quede registrada."
+          ]
+        },
+        {
+          "tip": "Si la página tiene muchos enlaces que llevan a otros lugares, deja de ser una landing: cada salida es una consulta que se puede perder."
+        }
+      ]
+    },
+    {
+      "id": "cuando",
+      "h2": "Cuándo conviene y cuándo no",
+      "blocks": [
+        "Conviene cuando tenés **una oferta clara y vas a mandar tráfico pago o de redes**. No alcanza si querés aparecer en Google por muchas búsquedas distintas o mostrar varios servicios: para eso necesitás un sitio con más páginas.",
+        "Para decidir entre una y otro, leé la guía [landing page o sitio web](/blog/landing-page-o-sitio-web)."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "¿Qué es una landing page en palabras simples?",
+      "a": "Es una página única, con un solo objetivo, a la que llega alguien desde un anuncio o un enlace para que haga una acción concreta, como escribirte o comprar."
+    },
+    {
+      "q": "¿En qué se diferencia de una página web?",
+      "a": "Un sitio web tiene varias páginas y presenta toda la empresa. La landing tiene una sola y se enfoca en una oferta. Se compara en detalle en la guía de [landing page o sitio web](/blog/landing-page-o-sitio-web)."
+    },
+    {
+      "q": "¿Necesito una landing si no hago publicidad?",
+      "a": "Puede servirte igual para reemplazar el link de Instagram o presentar una oferta puntual, pero su mayor valor aparece cuando mandás tráfico pago."
+    },
+    {
+      "q": "¿Una landing sirve para aparecer en Google?",
+      "a": "Poco: al tener un solo tema, posiciona una búsqueda acotada. Para aparecer por muchas búsquedas conviene un sitio con varias páginas y guías."
+    }
+  ],
+  "sources": [
+    { "label": "Ayuda de Google Ads", "url": "https://support.google.com/google-ads" },
+    { "label": "Google Analytics: eventos clave", "url": "https://support.google.com/analytics/answer/9267568" }
+  ]
+}

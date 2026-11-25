@@ -1,0 +1,104 @@
+{
+  "slug": "como-vender-por-whatsapp-con-tu-sitio-web",
+  "service": "sitio-web",
+  "title": "Cómo vender por WhatsApp con tu sitio web: guía para pymes",
+  "metaTitle": "Cómo vender por WhatsApp con tu sitio web | FLAKS",
+  "metaDescription": "Cómo conectar tu sitio web con WhatsApp para recibir consultas: dónde poner el botón, qué mensaje precargar, cómo responder y cómo medir cuántas consultas llegan.",
+  "keywords": ["vender por whatsapp", "botón de whatsapp en página web", "whatsapp para ventas", "consultas por whatsapp desde mi sitio"],
+  "published_at": "2026-11-25",
+  "updated": "2026-11-25",
+  "answer": "Para vender por WhatsApp desde tu sitio necesitás cuatro cosas: un **botón visible en cada página**, un **mensaje precargado** que diga de dónde viene la consulta, una **respuesta rápida** y **medición** de cuántas consultas llegan y desde qué página. Sin esas cuatro, el botón existe pero no se puede mejorar.",
+  "intro": "En Argentina, WhatsApp es el canal que la mayoría prefiere para consultar. El problema no suele ser tener el botón: es no saber qué pasa después. Acá va cómo armarlo de punta a punta.",
+  "ctaTitle": "¿Querés que tu sitio traiga consultas por WhatsApp?",
+  "ctaLine": "Armamos el botón, el mensaje y la medición para que veas cuántas llegan.",
+  "ctaText": "Hola FLAKS! Leí la guía de cómo vender por WhatsApp con mi sitio y quiero que me ayuden.",
+  "finalTitle": "Convertí visitas en conversaciones",
+  "finalText": "Dejamos tu sitio conectado con WhatsApp y medido, sin vueltas.",
+  "sections": [
+    {
+      "id": "donde-poner-el-boton",
+      "h2": "Dónde poner el botón de WhatsApp",
+      "blocks": [
+        "El botón tiene que estar donde la persona decide escribirte, sin tener que buscarlo:",
+        {
+          "ul": [
+            "**Arriba de la página,** en el primer pantallazo.",
+            "**Después de explicar el servicio o el producto,** cuando ya entendió qué ofrecés.",
+            "**Flotante en el celular,** para que siempre esté a mano.",
+            "**Al final de la página,** como cierre."
+          ]
+        },
+        "Usá un texto concreto como \"Pedir presupuesto por WhatsApp\" en vez de \"Contacto\"."
+      ]
+    },
+    {
+      "id": "mensaje-precargado",
+      "h2": "Un mensaje precargado que te ahorra preguntas",
+      "blocks": [
+        "WhatsApp permite abrir la conversación con un texto ya escrito mediante un enlace de \"click to chat\" (formato wa.me/número?text=…). Aprovechalo para que cada consulta llegue con contexto:",
+        {
+          "ul": [
+            "Incluí **de qué página o servicio** viene, por ejemplo: \"Hola! Vi la página de tiendas online y quiero consultar\".",
+            "Mantenelo corto: la persona lo puede editar antes de enviar.",
+            "Usá un mensaje distinto por página para saber qué contenido trae más consultas."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "responder",
+      "h2": "Cómo responder para vender",
+      "blocks": [
+        "Una consulta que tarda horas en responderse suele enfriarse. Algunas prácticas simples:",
+        {
+          "ol": [
+            "**Respondé rápido,** idealmente en minutos dentro del horario de atención.",
+            "**Usá un saludo y respuestas rápidas** guardadas para las preguntas más frecuentes.",
+            "**Hacé una pregunta** para entender qué necesita antes de mandar precios o catálogos.",
+            "**Proponé el próximo paso:** una llamada, una propuesta o un link de pago.",
+            "**Registrá cada consulta** en una planilla o CRM para hacer seguimiento."
+          ]
+        },
+        "WhatsApp Business ofrece herramientas pensadas para esto, como catálogo, etiquetas y mensajes automáticos. Conocelas en [WhatsApp Business](https://business.whatsapp.com/)."
+      ]
+    },
+    {
+      "id": "medir",
+      "h2": "Cómo medir cuántas consultas llegan",
+      "blocks": [
+        "Si no medís, no sabés qué página o qué campaña trae consultas. Lo que conviene dejar configurado:",
+        {
+          "ul": [
+            "Un **evento de clic en WhatsApp** en Google Analytics, marcado como evento clave.",
+            "El **origen** de cada clic (en qué página y en qué botón se hizo).",
+            "El **canal** que trajo a la persona (Google, Instagram, orgánico, anuncio)."
+          ]
+        },
+        "En los sitios que armamos en FLAKS dejamos esta medición configurada. Si querés ver cómo se hace, mirá nuestro servicio de [sitio web](/sitio-web) o la guía de [landing page para Google Ads](/blog/landing-page-para-google-ads)."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "¿Cómo pongo un botón de WhatsApp en mi página web?",
+      "a": "Con un enlace de click to chat con el formato wa.me/tu-número, que abre la conversación en WhatsApp. Podés sumar un texto precargado para que la consulta llegue con contexto."
+    },
+    {
+      "q": "¿Conviene un formulario o WhatsApp?",
+      "a": "Depende de tu público. WhatsApp suele tener menos fricción para consultas rápidas. Un formulario sirve cuando necesitás datos previos. Muchos sitios ofrecen ambos."
+    },
+    {
+      "q": "¿Cómo sé cuántas consultas me trae el sitio por WhatsApp?",
+      "a": "Registrando el clic en el botón como evento en Google Analytics y marcándolo como evento clave. Así ves cuántos clics hubo y de qué página o campaña vinieron."
+    },
+    {
+      "q": "¿Puedo usar WhatsApp Business en vez de WhatsApp común?",
+      "a": "Sí, y es lo recomendable para un negocio: permite catálogo, etiquetas, mensajes automáticos y un perfil de empresa."
+    }
+  ],
+  "sources": [
+    { "label": "WhatsApp: crear un enlace click to chat", "url": "https://faq.whatsapp.com/5913398998672934" },
+    { "label": "WhatsApp Business", "url": "https://business.whatsapp.com/" },
+    { "label": "Google Analytics: eventos clave", "url": "https://support.google.com/analytics/answer/9267568" }
+  ]
+}
