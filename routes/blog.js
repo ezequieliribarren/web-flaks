@@ -4,6 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const express = require('express');
 const seo = require('../lib/seo');
+const { recursos } = require('./recursos');
 const { site, services } = require('../lib/content');
 
 const router = express.Router();
@@ -60,11 +61,14 @@ router.get('/blog', (req, res) => {
     title: 'Blog de marketing digital para pymes | FLAKS',
     description: 'Guías prácticas de FLAKS sobre páginas web, landing pages, tiendas online, redes sociales y publicidad en Google y Meta, escritas para negocios de Argentina.',
     pageKey: 'blog',
-    bodyClass: 'page-blog',
+    bodyClass: 'page-resource page-blog',
+    isResource: true,
+    recursos,
+    fullTitle: (x) => `${x.title.text} ${x.title.accent} ${x.title.rest}`,
     posts,
     serviceName,
     fmtDate,
-    styles: ['/css/blog.css'],
+    styles: ['/css/recurso.css', '/css/blog.css'],
     jsonLd: [
       {
         '@context': 'https://schema.org',
@@ -104,7 +108,8 @@ router.get('/blog/:slug', (req, res, next) => {
     description: post.metaDescription,
     robots: draft ? 'noindex,nofollow' : 'index,follow',
     pageKey: 'blog-post',
-    bodyClass: 'page-blog page-blog-post',
+    bodyClass: 'page-resource page-blog page-blog-post',
+    isResource: true,
     post,
     related,
     svc,
@@ -113,7 +118,7 @@ router.get('/blog/:slug', (req, res, next) => {
     md,
     draft,
     waTextMid: post.ctaText || `Hola FLAKS! Leí la guía "${post.title}" y quiero consultar.`,
-    styles: ['/css/blog.css'],
+    styles: ['/css/recurso.css', '/css/blog.css'],
     scripts: ['/js/blog.js'],
     jsonLd: [
       {

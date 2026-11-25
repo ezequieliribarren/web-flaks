@@ -1,33 +1,49 @@
-<section class="simple-page blog-hero">
-  <div class="glow" style="width:60vw;height:60vw;right:-25vw;top:-20vw" aria-hidden="true"></div>
-  <div class="container">
+<section class="rs-hero rs-hero--index blog-hero">
+  <div class="rs-wrap">
     <nav class="crumbs" aria-label="Migas de pan"><ol><li><a href="/">Inicio</a></li><li aria-current="page">Blog</li></ol></nav>
-    <p class="eyebrow">Blog de FLAKS</p>
-    <h1 class="blog-hero__title">Guías de marketing digital para negocios de Argentina</h1>
-    <p class="blog-hero__sub">Respuestas directas y sin vueltas sobre páginas web, tiendas online, redes sociales y publicidad en Google y Meta. Lo que le explicamos a nuestros clientes antes de empezar a trabajar.</p>
+    <p class="rs-badge"><span aria-hidden="true">✳</span> Blog de FLAKS</p>
+    <h1 class="rs-title">Guías de marketing digital para <span class="rs-accent">negocios de Argentina</span></h1>
+    <p class="rs-sub">Respuestas directas y sin vueltas sobre páginas web, tiendas online, redes sociales y publicidad en Google y Meta. Lo que le explicamos a nuestros clientes antes de empezar a trabajar.</p>
   </div>
 </section>
 
-<section class="section blog-list" aria-label="Artículos">
-  <div class="container">
-    <% if (!posts.length) { %><p class="blog-empty">Estamos preparando las primeras guías.</p><% } %>
-    <ul class="blog-cards" role="list">
-      <% posts.forEach(function (p) { %><li>
-        <a class="blog-card" href="/blog/<%= p.slug %>">
-          <span class="blog-card__meta"><span class="blog-tag"><%= serviceName(p.service) %></span><span><%= p.readMinutes %> min de lectura</span></span>
-          <span class="blog-card__title"><%= p.title %></span>
-          <span class="blog-card__text"><%= p.metaDescription %></span>
-          <span class="blog-card__foot">Actualizado el <time datetime="<%= p.updated %>"><%= fmtDate(p.updated) %></time><%- include('partials/icon', { name: 'arrow' }) %></span>
-        </a>
-      </li><% }) %>
-    </ul>
-  </div>
-</section>
+<div class="rs-wrap rs-body blog-list">
+  <h2 class="blog-h2">Guías</h2>
+  <% if (!posts.length) { %><p class="blog-empty">Estamos preparando las primeras guías.</p><% } %>
+  <ul class="blog-cards" role="list">
+    <% posts.forEach(function (p) { %><li>
+      <a class="blog-card" href="/blog/<%= p.slug %>">
+        <span class="blog-card__meta"><span class="blog-tag"><%= serviceName(p.service) %></span><span><%= p.readMinutes %> min de lectura</span></span>
+        <span class="blog-card__title"><%= p.title %></span>
+        <span class="blog-card__text"><%= p.metaDescription %></span>
+        <span class="blog-card__foot"><span>Actualizado el <time datetime="<%= p.updated %>"><%= fmtDate(p.updated) %></time></span><%- include('partials/icon', { name: 'arrow' }) %></span>
+      </a>
+    </li><% }) %>
+  </ul>
 
-<section class="section blog-cta">
-  <div class="container blog-cta__box">
-    <h2>¿Preferís que lo resolvamos por vos?</h2>
-    <p>Contanos qué necesitás y te respondemos en el día con una propuesta.</p>
-    <a class="btn btn--primary" href="<%= wa('Hola FLAKS! Vi el blog y quiero consultar por un servicio.') %>" target="_blank" rel="noopener" data-wa="blog-index"><%- include('partials/icon', { name: 'whatsapp' }) %>Hablar por WhatsApp<span class="sr-only"> (abre en una pestaña nueva)</span></a>
-  </div>
-</section>
+  <% if (recursos && recursos.length) { %>
+  <h2 class="blog-h2" id="recursos">Recursos gratuitos</h2>
+  <p class="blog-lead">Material práctico que compartimos en Instagram, listo para aplicar.</p>
+  <ul class="rs-cards" role="list">
+    <% recursos.forEach(function (r) { %><li>
+      <a class="rs-card" href="/recursos/<%= r.slug %>">
+        <img src="<%= asset('/img/recursos/' + r.slug + '/' + r.cover + '-600.webp') %>" alt="" width="1080" height="1350" loading="lazy" decoding="async">
+        <span class="rs-card__body">
+          <span class="rs-card__meta"><%= r.category %> · <%= r.readMinutes %> min</span>
+          <span class="rs-card__title"><%= fullTitle(r) %></span>
+          <span class="rs-cta__link rs-cta__link--dark">Leer el recurso<%- include('partials/icon', { name: 'arrow' }) %></span>
+        </span>
+      </a>
+    </li><% }) %>
+  </ul>
+  <% } %>
+
+  <aside class="rs-cta rs-cta--blog" aria-labelledby="blog-cta-t">
+    <p class="rs-cta__eyebrow">FLAKS Agencia Digital</p>
+    <h2 class="rs-cta__title" id="blog-cta-t">¿Preferís que lo resolvamos por vos?</h2>
+    <p class="rs-cta__text">Contanos qué necesitás y te respondemos en el día con una propuesta.</p>
+    <div class="rs-cta__actions">
+      <a class="rs-btn rs-btn--light" href="<%= wa('Hola FLAKS! Vi el blog y quiero consultar por un servicio.') %>" target="_blank" rel="noopener" data-wa="blog-index"><%- include('partials/icon', { name: 'whatsapp' }) %>Hablar por WhatsApp<span class="sr-only"> (abre en una pestaña nueva)</span></a>
+    </div>
+  </aside>
+</div>

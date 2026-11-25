@@ -247,7 +247,7 @@ for (const [label, opts] of [
     const ld = await page.$$eval('script[type="application/ld+json"]', (n) => n.map((x) => JSON.parse(x.textContent)['@type']));
     check(`blog/${slug}: schema BlogPosting + FAQPage + BreadcrumbList`, ['BlogPosting', 'FAQPage', 'BreadcrumbList'].every((t) => ld.includes(t)), ld.join(','));
     check(`blog/${slug}: canonical propio`, (await page.getAttribute('link[rel="canonical"]', 'href')).endsWith(`/blog/${slug}`));
-    check(`blog/${slug}: respuesta rápida y FAQ`, (await page.locator('.blog-answer').count()) === 1 && (await page.locator('.faq__item').count()) >= 3);
+    check(`blog/${slug}: respuesta rápida y FAQ`, (await page.locator('.blog-answer').count()) === 1 && (await page.locator('.rs-faq__item').count()) >= 3);
     check(`blog/${slug}: CTAs de WhatsApp medibles por guía`, (await page.locator(`[data-wa="blog-${slug}-mid"]`).count()) === 1 && (await page.locator(`[data-wa="blog-${slug}-end"]`).count()) === 1);
     // Enlaces internos: ninguno roto.
     const hrefs = await page.$$eval('.blog-body a[href^="/"], .blog-related a[href^="/"]', (a) => [...new Set(a.map((x) => x.getAttribute('href').split('#')[0]))]);

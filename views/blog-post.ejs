@@ -1,11 +1,10 @@
-<article class="simple-page blog-post" data-article="<%= post.slug %>" data-article-service="<%= post.service %>">
-  <div class="glow" style="width:55vw;height:55vw;right:-25vw;top:-22vw" aria-hidden="true"></div>
-  <div class="container blog-wrap">
+<article class="blog-post" data-article="<%= post.slug %>" data-article-service="<%= post.service %>">
+  <div class="rs-wrap blog-wrap">
     <nav class="crumbs" aria-label="Migas de pan"><ol><li><a href="/">Inicio</a></li><li><a href="/blog">Blog</a></li><li aria-current="page"><%= serviceName(post.service) %></li></ol></nav>
     <% if (draft) { %><p class="blog-draft" role="note">Borrador: no está publicado ni indexado. <%= post.draftNote || '' %></p><% } %>
 
     <header class="blog-head">
-      <p class="eyebrow"><%= serviceName(post.service) %></p>
+      <p class="rs-badge"><span aria-hidden="true">✳</span> <%= serviceName(post.service) %></p>
       <h1 class="blog-title"><%= post.title %></h1>
       <p class="blog-byline">Por el equipo de FLAKS · Actualizado el <time datetime="<%= post.updated %>"><%= fmtDate(post.updated) %></time> · <%= post.readMinutes %> min de lectura</p>
     </header>
@@ -46,7 +45,7 @@
       <% if (i === 1) { %>
       <aside class="blog-cta-inline" aria-label="Consulta">
         <p><strong><%= post.ctaTitle || '¿Querés que lo hagamos por vos?' %></strong> <%= post.ctaLine || 'Contanos tu caso y te respondemos en el día.' %></p>
-        <a class="btn btn--primary btn--sm" href="<%= wa(waTextMid) %>" target="_blank" rel="noopener" data-wa="blog-<%= post.slug %>-mid"><%- include('partials/icon', { name: 'whatsapp' }) %>Consultar por WhatsApp<span class="sr-only"> (abre en una pestaña nueva)</span></a>
+        <a class="rs-btn rs-btn--primary" href="<%= wa(waTextMid) %>" target="_blank" rel="noopener" data-wa="blog-<%= post.slug %>-mid"><%- include('partials/icon', { name: 'whatsapp' }) %>Consultar por WhatsApp<span class="sr-only"> (abre en una pestaña nueva)</span></a>
       </aside>
       <% } %>
       <% }) %>
@@ -54,10 +53,10 @@
       <% if (post.faq && post.faq.length) { %>
       <section class="blog-sec" id="preguntas" aria-labelledby="preguntas-t">
         <h2 id="preguntas-t">Preguntas frecuentes</h2>
-        <div class="faq">
-          <% post.faq.forEach(function (f) { %><details class="faq__item">
+        <div class="rs-faq__list">
+          <% post.faq.forEach(function (f) { %><details class="rs-faq__item">
             <summary><h3><%= f.q %></h3><%- include('partials/icon', { name: 'plus' }) %></summary>
-            <p class="faq__a"><%- md(f.a) %></p>
+            <p><%- md(f.a) %></p>
           </details><% }) %>
         </div>
       </section>
@@ -75,8 +74,8 @@
       <h2 id="final-t"><%= post.finalTitle || '¿Hablamos de tu proyecto?' %></h2>
       <p><%= post.finalText || 'Te contamos qué conviene para tu caso, cuánto lleva y cómo lo medimos. Sin compromiso.' %></p>
       <div class="blog-final__actions">
-        <a class="btn btn--primary" href="<%= wa(waTextMid) %>" target="_blank" rel="noopener" data-wa="blog-<%= post.slug %>-end"><%- include('partials/icon', { name: 'whatsapp' }) %>Hablar por WhatsApp<span class="sr-only"> (abre en una pestaña nueva)</span></a>
-        <% if (svc) { %><a class="btn btn--ghost" href="/<%= svc.slug %>">Ver el servicio de <%= svc.name.toLowerCase() %></a><% } %>
+        <a class="rs-btn rs-btn--primary rs-btn--lg" href="<%= wa(waTextMid) %>" target="_blank" rel="noopener" data-wa="blog-<%= post.slug %>-end"><%- include('partials/icon', { name: 'whatsapp' }) %>Hablar por WhatsApp<span class="sr-only"> (abre en una pestaña nueva)</span></a>
+        <% if (svc) { %><a class="rs-btn rs-btn--ghost" href="/<%= svc.slug %>">Ver el servicio de <%= svc.name.toLowerCase() %></a><% } %>
       </div>
     </aside>
 
